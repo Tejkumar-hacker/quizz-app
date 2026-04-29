@@ -1,14 +1,13 @@
 <h2 class="title">🎯 Test Result (Round {{ round }})</h2>
 
-<!-- EMPTY STATE -->
 <div *ngIf="answers.length === 0" class="empty">
   No results found. Please take a test.
 </div>
 
 <div *ngIf="answers.length > 0">
 
-  <!-- SUMMARY CARD -->
-  <div class="summary-card">
+  <!-- SUMMARY -->
+  <div class="summary-card fade-in">
     <div class="stat">
       <span>Total</span>
       <strong>{{ answers.length }}</strong>
@@ -32,18 +31,18 @@
     </div>
   </div>
 
-  <!-- ACTION BUTTONS -->
-  <div class="top-actions">
+  <!-- ACTIONS -->
+  <div class="top-actions fade-in">
     <button class="reset-btn" (click)="resetRound()">🔄 Restart</button>
     <button class="home-btn" (click)="goHome()">🏠 Home</button>
   </div>
 
-  <button *ngIf="round === '1'" class="round2-btn" (click)="startRound2()">
+  <button *ngIf="round === '1'" class="round2-btn fade-in" (click)="startRound2()">
     🚀 Start Round 2
   </button>
 
   <!-- SECTION LIST -->
-  <div *ngIf="!selectedSection">
+  <div *ngIf="!selectedSection" class="fade-slide">
 
     <h3 class="section-title">Section-wise Performance</h3>
 
@@ -71,18 +70,17 @@
   </div>
 
   <!-- REVIEW -->
-  <div *ngIf="selectedSection">
+  <div *ngIf="selectedSection" class="review-container fade-slide">
 
     <button class="back-btn" (click)="back()">⬅ Back</button>
 
     <h3 class="review-title">{{ selectedSection }} Review</h3>
 
     <div
-      *ngFor="let q of sections[selectedSection]?.questions; let i = index"
-      class="review-card"
+      *ngFor="let q of sections[selectedSection]?.questions; let i = index; trackBy: trackByIndex"
+      class="review-card card-anim"
     >
 
-      <!-- HEADER -->
       <div class="question-header">
         <span class="q-number">Q{{ i + 1 }}</span>
 
@@ -95,10 +93,8 @@
         </span>
       </div>
 
-      <!-- QUESTION -->
       <p class="question-text">{{ q.question }}</p>
 
-      <!-- OPTIONS -->
       <div class="options">
         <div
           *ngFor="let opt of q.options"
@@ -109,7 +105,6 @@
         >
           {{ opt }}
 
-          <!-- ICONS -->
           <span class="icon correct-icon" *ngIf="opt === q.correct">✔</span>
           <span
             class="icon wrong-icon"

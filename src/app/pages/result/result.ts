@@ -22,15 +22,12 @@ export class Result {
     const nav = this.router.getCurrentNavigation();
 
     if (nav?.extras?.state) {
-      // ✅ from quiz navigation
       this.answers = nav.extras.state['answers'] || [];
       this.round = nav.extras.state['round'] || '1';
 
-      // ✅ persist for refresh
       localStorage.setItem('answers', JSON.stringify(this.answers));
       localStorage.setItem('round', this.round);
     } else {
-      // ✅ fallback (after refresh)
       this.answers = JSON.parse(localStorage.getItem('answers') || '[]');
       this.round = localStorage.getItem('round') || '1';
     }
@@ -38,7 +35,6 @@ export class Result {
     this.calculateSections();
   }
 
-  // ✅ GROUP QUESTIONS BY SECTION
   calculateSections() {
     this.sections = {};
 
@@ -54,16 +50,12 @@ export class Result {
       }
 
       this.sections[sec].total++;
-
-      if (ans.isCorrect) {
-        this.sections[sec].correct++;
-      }
+      if (ans.isCorrect) this.sections[sec].correct++;
 
       this.sections[sec].questions.push(ans);
     });
   }
 
-  // ✅ FIX: keyvalue pipe key type issue
   selectSection(s: string | number | symbol) {
     this.selectedSection = String(s);
   }
@@ -72,12 +64,8 @@ export class Result {
     this.selectedSection = null;
   }
 
-  // 🚀 START ROUND 2
   startRound2() {
-    if (!this.answers.length) {
-      this.router.navigate(['/']);
-      return;
-    }
+    if (!this.answers.length) return;
 
     const section = this.answers[0].section;
 
@@ -86,12 +74,8 @@ export class Result {
     });
   }
 
-  // 🔄 RESTART CURRENT ROUND
   resetRound() {
-    if (!this.answers.length) {
-      this.router.navigate(['/']);
-      return;
-    }
+    if (!this.answers.length) return;
 
     const section = this.answers[0].section;
 
@@ -102,9 +86,12 @@ export class Result {
     });
   }
 
-  // 🏠 GO HOME
   goHome() {
     localStorage.clear();
     this.router.navigate(['/']);
+  }
+
+  trackByIndex(index: number) {
+    return index;
   }
 }

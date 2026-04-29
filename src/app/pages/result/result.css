@@ -1,10 +1,9 @@
-/* PAGE */
 :host {
   display: block;
   padding: 20px;
   background: #f5f7fb;
   min-height: 100vh;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 /* TITLE */
@@ -13,7 +12,7 @@
   margin-bottom: 20px;
 }
 
-/* SUMMARY CARD */
+/* SUMMARY */
 .summary-card {
   max-width: 600px;
   margin: auto;
@@ -30,16 +29,15 @@
 }
 
 .stat span {
-  display: block;
-  color: #777;
   font-size: 13px;
+  color: #777;
 }
 
 .stat strong {
   font-size: 20px;
 }
 
-.stat .correct {
+.correct {
   color: #4caf50;
 }
 
@@ -56,33 +54,31 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 500;
-  transition: 0.15s ease;
+  transition: 0.15s;
 }
 
 button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-5px);
 }
 
-/* BUTTON COLORS */
 .reset-btn {
   background: #ff9800;
-  color: white;
+  color: #fff;
 }
 
 .home-btn {
   background: #3f51b5;
-  color: white;
+  color: #fff;
 }
 
 .round2-btn {
   display: block;
   margin: 10px auto;
   background: #4caf50;
-  color: white;
+  color: #fff;
 }
 
-/* SECTION GRID */
+/* GRID */
 .section-title {
   text-align: center;
   margin: 20px 0;
@@ -95,20 +91,20 @@ button:hover {
 }
 
 .card {
-  padding: 15px;
   background: #fff;
+  padding: 15px;
   border-radius: 10px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.15s ease;
+  transition: 0.15s;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
-/* MINI PROGRESS */
+/* MINI BAR */
 .mini-bar {
   height: 6px;
   background: #eee;
@@ -123,6 +119,10 @@ button:hover {
 }
 
 /* REVIEW */
+.review-container {
+  will-change: transform, opacity;
+}
+
 .review-title {
   text-align: center;
   margin: 15px 0;
@@ -136,7 +136,6 @@ button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
 }
 
-/* HEADER */
 .question-header {
   display: flex;
   justify-content: space-between;
@@ -147,7 +146,6 @@ button:hover {
   font-weight: bold;
 }
 
-/* STATUS */
 .status {
   padding: 4px 10px;
   border-radius: 6px;
@@ -163,10 +161,8 @@ button:hover {
   background: #f44336;
 }
 
-/* QUESTION */
 .question-text {
   margin-bottom: 10px;
-  font-weight: 500;
 }
 
 /* OPTIONS */
@@ -183,19 +179,16 @@ button:hover {
   position: relative;
 }
 
-/* CORRECT */
 .option.correct {
   background: #e8f5e9;
   border-color: #4caf50;
 }
 
-/* WRONG */
 .option.wrong {
   background: #ffebee;
   border-color: #f44336;
 }
 
-/* SELECTED */
 .option.selected {
   border: 2px solid #3f51b5;
 }
@@ -215,11 +208,11 @@ button:hover {
   color: #c62828;
 }
 
-/* BACK BUTTON */
+/* BACK */
 .back-btn {
   margin-bottom: 10px;
   background: #555;
-  color: white;
+  color: #fff;
 }
 
 /* EMPTY */
