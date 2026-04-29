@@ -1,0 +1,41 @@
+<h2 class="title">{{ section }} Review</h2>
+
+<button class="back-btn" (click)="back()">⬅ Back</button>
+
+<div *ngIf="filteredAnswers.length === 0" class="empty">
+  No questions found.
+</div>
+
+<div *ngFor="let a of filteredAnswers; let i = index" class="review-card">
+
+  <div class="header">
+    <span class="q-no">Q{{ i + 1 }}</span>
+
+    <span
+      class="status"
+      [class.correct]="a.isCorrect"
+      [class.wrong]="!a.isCorrect"
+    >
+      {{ a.isCorrect ? '✔ Correct' : '✖ Wrong' }}
+    </span>
+  </div>
+
+  <p class="question">{{ a.question }}</p>
+
+  <div class="options">
+    <div
+      *ngFor="let opt of a.options"
+      class="option"
+      [class.correct]="opt === a.correct"
+      [class.selected]="opt === a.selected"
+      [class.wrong]="opt === a.selected && opt !== a.correct"
+    >
+      {{ opt }}
+    </div>
+  </div>
+
+  <p *ngIf="a.explanation" class="explanation">
+    💡 {{ a.explanation }}
+  </p>
+
+</div>

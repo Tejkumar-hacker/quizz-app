@@ -1,0 +1,51 @@
+<div *ngIf="questions$ | async as questions; else loading">
+
+  <!-- PROGRESS -->
+  <div class="progress-text">
+    Question {{ currentIndex + 1 }} / {{ questions.length }}
+  </div>
+
+  <div class="progress-bar">
+    <div
+      class="progress-fill"
+      [style.width.%]="(answeredCount / questions.length) * 100"
+    ></div>
+  </div>
+
+  <!-- ✅ DEFINE q HERE -->
+  <div *ngIf="questions[currentIndex] as q" class="question-card">
+
+    <h3>{{ q.question }}</h3>
+
+    <!-- OPTIONS -->
+    <div class="options">
+      <div
+        *ngFor="let opt of q.options"
+        (click)="select(opt)"
+        class="option"
+        [class.selected]="opt === selectedOption"
+        [class.correct]="submitted && opt === q.correctAnswer"
+        [class.wrong]="submitted && opt === selectedOption && opt !== q.correctAnswer"
+      >
+        {{ opt }}
+      </div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="actions">
+      <button (click)="submit(q)" [disabled]="!selectedOption || submitted">
+        Submit
+      </button>
+
+      <button (click)="next(questions.length)" *ngIf="submitted">
+        Next
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<ng-template #loading>
+  <p>Loading questions...</p>
+</ng-template>

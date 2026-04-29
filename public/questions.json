@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "section": "HTML",
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Text Markup Language",
+      "HighText Machine Language",
+      "Hyper Tool Multi Language",
+      "None"
+    ],
+    "correctAnswer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "section": "HTML",
+    "question": "Which tag is used to create a hyperlink?",
+    "options": ["<a>", "<link>", "<href>", "<h1>"],
+    "correctAnswer": "<a>"
+  },
+  {
+    "id": 3,
+    "section": "HTML",
+    "question": "Which tag is used for inserting an image?",
+    "options": ["<img>", "<image>", "<src>", "<pic>"],
+    "correctAnswer": "<img>"
+  },
+
+  {
+    "id": 4,
+    "section": "CSS",
+    "question": "CSS is used for?",
+    "options": ["Styling", "Structure", "Database", "Logic"],
+    "correctAnswer": "Styling"
+  },
+  {
+    "id": 5,
+    "section": "CSS",
+    "question": "Which property is used to change text color?",
+    "options": ["color", "font-style", "text-color", "bgcolor"],
+    "correctAnswer": "color"
+  },
+  {
+    "id": 6,
+    "section": "CSS",
+    "question": "Which property controls spacing between elements?",
+    "options": ["margin", "padding", "border", "spacing"],
+    "correctAnswer": "margin"
+  },
+
+  {
+    "id": 7,
+    "section": "JavaScript",
+    "question": "JavaScript is a?",
+    "options": ["Programming Language", "Markup Language", "Database", "Style Sheet"],
+    "correctAnswer": "Programming Language"
+  },
+  {
+    "id": 8,
+    "section": "JavaScript",
+    "question": "Which keyword is used to declare a variable?",
+    "options": ["let", "int", "varname", "define"],
+    "correctAnswer": "let"
+  },
+  {
+    "id": 9,
+    "section": "JavaScript",
+    "question": "Which method is used to print in console?",
+    "options": ["console.log()", "print()", "echo()", "log.console()"],
+    "correctAnswer": "console.log()"
+  },
+
+  {
+    "id": 10,
+    "section": "Angular",
+    "question": "Angular is a?",
+    "options": ["Frontend Framework", "Backend Language", "Database", "Library"],
+    "correctAnswer": "Frontend Framework"
+  },
+  {
+    "id": 11,
+    "section": "Angular",
+    "question": "Which directive is used for looping?",
+    "options": ["*ngFor", "*ngIf", "*ngLoop", "*ngRepeat"],
+    "correctAnswer": "*ngFor"
+  },
+  {
+    "id": 12,
+    "section": "Angular",
+    "question": "Which module is required for forms?",
+    "options": ["FormsModule", "HttpClientModule", "CommonModule", "RouterModule"],
+    "correctAnswer": "FormsModule"
+  },
+
+  {
+    "id": 13,
+    "section": "TypeScript",
+    "question": "TypeScript is a superset of?",
+    "options": ["JavaScript", "Java", "C++", "Python"],
+    "correctAnswer": "JavaScript"
+  },
+  {
+    "id": 14,
+    "section": "TypeScript",
+    "question": "Which keyword defines a type?",
+    "options": ["interface", "class", "define", "typeOf"],
+    "correctAnswer": "interface"
+  },
+  {
+    "id": 15,
+    "section": "TypeScript",
+    "question": "Which symbol is used for type annotation?",
+    "options": [":", "=", "->", "::"],
+    "correctAnswer": ":"
+  }
+]

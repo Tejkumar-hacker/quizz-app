@@ -1,0 +1,20 @@
+<h2 class="title">Select a Topic</h2>
+
+<div *ngIf="sections$ | async as sections; else loading" class="grid">
+
+  <div
+    *ngFor="let s of sections"
+    class="card"
+    (click)="start(s)"
+  >
+    <div class="card-content">
+      <h3>{{ s }}</h3>
+      <p>Start Quiz →</p>
+    </div>
+  </div>
+
+</div>
+
+<ng-template #loading>
+  <p class="loading">Loading sections...</p>
+</ng-template>
