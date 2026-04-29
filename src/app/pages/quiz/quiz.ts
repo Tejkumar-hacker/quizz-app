@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Quiz as QuizService } from '../../services/quiz';
 import { Observable, map } from 'rxjs';
@@ -14,17 +14,16 @@ import { Observable, map } from 'rxjs';
 export class Quiz {
 
   questions$!: Observable<any[]>;
+  questions: any[] = []; // ✅ store locally
 
   currentIndex = 0;
-  selectedOption: string | null = null;
-  submitted = false;
   section = '';
   round = '1';
 
   answers: any[] = [];
 
-  // ✅ PROGRESS TRACKING
-  answeredCount = 0;
+  userAnswers: { [index: number]: string } = {};
+  submittedMap: { [index: number]: boolean } = {};
 
   constructor(
     private quizService: QuizService,
@@ -32,7 +31,6 @@ export class Quiz {
     private router: Router
   ) {}
 
-  // 🔀 SHUFFLE FUNCTION (for round 2)
   shuffleArray(arr: any[]) {
     return arr
       .map(v => ({ v, r: Math.random() }))
@@ -41,20 +39,15 @@ export class Quiz {
   }
 
   ngOnInit() {
-    // ✅ GET SECTION FROM URL
     this.section = this.route.snapshot.paramMap.get('section') || '';
-
-    // ✅ GET ROUND FROM QUERY PARAM
     this.round = this.route.snapshot.queryParamMap.get('round') || '1';
 
-    // ✅ FETCH + FILTER QUESTIONS
     this.questions$ = this.quizService.getQuestions().pipe(
       map((data: any[]) => {
         let filtered = data.filter(
           q => q.section.toLowerCase() === this.section.toLowerCase()
         );
 
-        // 🔥 ROUND 2 → shuffle questions + options
         if (this.round === '2') {
           filtered = this.shuffleArray(filtered).map(q => ({
             ...q,
@@ -62,63 +55,104 @@ export class Quiz {
           }));
         }
 
+        this.questions = filtered; // ✅ IMPORTANT FIX
         return filtered;
       })
     );
   }
 
-  // ✅ SELECT OPTION
   select(opt: string) {
-    if (this.submitted) return; // prevent change after submit
-    this.selectedOption = opt;
+    if (this.submittedMap[this.currentIndex]) return;
+    this.userAnswers[this.currentIndex] = opt;
   }
 
-  // ✅ SUBMIT ANSWER
   submit(q: any) {
-    if (!this.selectedOption || this.submitted) return;
+    const selected = this.userAnswers[this.currentIndex];
 
-    this.submitted = true;
+    if (!selected || this.submittedMap[this.currentIndex]) return;
 
-    this.answers.push({
+    this.submittedMap[this.currentIndex] = true;
+
+    this.answers[this.currentIndex] = {
       section: q.section,
       question: q.question,
       options: q.options,
-      selected: this.selectedOption,
+      selected: selected,
       correct: q.correctAnswer,
-      isCorrect: this.selectedOption === q.correctAnswer
-    });
-
-    // ✅ UPDATE PROGRESS
-    this.answeredCount++;
+      isCorrect: selected === q.correctAnswer
+    };
   }
 
-  // ✅ NEXT QUESTION
+  get answeredCount(): number {
+    return Object.keys(this.submittedMap).length;
+  }
+
   next(total: number) {
-    this.currentIndex++;
-    this.selectedOption = null;
-    this.submitted = false;
+    if (!this.submittedMap[this.currentIndex]) return;
 
-    // ✅ FINISH QUIZ
-    if (this.currentIndex >= total) {
+    if (this.currentIndex < total - 1) {
+      this.currentIndex++;
+    } else {
+      this.finishQuiz();
+    }
+  }
 
-      // 🔥 SAVE DATA (important for refresh)
-      localStorage.setItem('answers', JSON.stringify(this.answers));
-      localStorage.setItem('round', this.round);
+  previous() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+    }
+  }
 
-      // 🔥 STORE ROUND-WISE DATA
-      if (this.round === '1') {
-        localStorage.setItem('round1', JSON.stringify(this.answers));
-      } else {
-        localStorage.setItem('round2', JSON.stringify(this.answers));
+  finishQuiz() {
+    const finalAnswers = Object.values(this.answers);
+
+    localStorage.setItem('answers', JSON.stringify(finalAnswers));
+    localStorage.setItem('round', this.round);
+
+    this.router.navigate(['/result'], {
+      state: {
+        answers: finalAnswers,
+        round: this.round
       }
+    });
+  }
 
-      // ✅ NAVIGATE TO RESULT PAGE
-      this.router.navigate(['/result'], {
-        state: {
-          answers: this.answers,
-          round: this.round
-        }
-      });
+  // ✅ FIXED KEYBOARD HANDLER
+  @HostListener('window:keydown', ['$event'])
+  handleKeyboard(event: KeyboardEvent) {
+
+    const key = event.key.toLowerCase();
+
+    const q = this.questions[this.currentIndex];
+    if (!q) return;
+
+    // 🔢 SELECT OPTIONS (1–4)
+    if (key >= '1' && key <= '4') {
+      if (this.submittedMap[this.currentIndex]) return;
+
+      const index = Number(key) - 1;
+      if (q.options[index]) {
+        this.userAnswers[this.currentIndex] = q.options[index];
+      }
+      return;
+    }
+
+    // ⬅️ PREVIOUS
+    if (key === 'arrowleft') {
+      this.previous();
+      return;
+    }
+
+    // ➡️ NEXT (ArrowRight or N)
+    if (key === 'arrowright' || key === 'n') {
+      this.next(this.questions.length);
+      return;
+    }
+
+    // ✅ SUBMIT (Enter or S)
+    if (key === 'enter' || key === 's') {
+      this.submit(q);
+      return;
     }
   }
 }

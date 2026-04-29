@@ -12,7 +12,7 @@
     ></div>
   </div>
 
-  <!-- ✅ DEFINE q HERE -->
+  <!-- QUESTION -->
   <div *ngIf="questions[currentIndex] as q" class="question-card">
 
     <h3>{{ q.question }}</h3>
@@ -23,9 +23,9 @@
         *ngFor="let opt of q.options"
         (click)="select(opt)"
         class="option"
-        [class.selected]="opt === selectedOption"
-        [class.correct]="submitted && opt === q.correctAnswer"
-        [class.wrong]="submitted && opt === selectedOption && opt !== q.correctAnswer"
+        [class.selected]="opt === userAnswers[currentIndex]"
+        [class.correct]="submittedMap[currentIndex] && opt === q.correctAnswer"
+        [class.wrong]="submittedMap[currentIndex] && opt === userAnswers[currentIndex] && opt !== q.correctAnswer"
       >
         {{ opt }}
       </div>
@@ -33,13 +33,25 @@
 
     <!-- ACTIONS -->
     <div class="actions">
-      <button (click)="submit(q)" [disabled]="!selectedOption || submitted">
+
+      <button (click)="previous()" [disabled]="currentIndex === 0">
+        Previous
+      </button>
+
+      <button
+        (click)="submit(q)"
+        [disabled]="!userAnswers[currentIndex] || submittedMap[currentIndex]"
+      >
         Submit
       </button>
 
-      <button (click)="next(questions.length)" *ngIf="submitted">
-        Next
+      <button
+        (click)="next(questions.length)"
+        [disabled]="!submittedMap[currentIndex]"
+      >
+        {{ currentIndex === questions.length - 1 ? 'Finish' : 'Next' }}
       </button>
+
     </div>
 
   </div>
