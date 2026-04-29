@@ -9,21 +9,24 @@
       "Hyper Tool Multi Language",
       "None"
     ],
-    "correctAnswer": "Hyper Text Markup Language"
+    "correctAnswer": "Hyper Text Markup Language",
+    "explanation": "HTML is the standard markup language used to structure web pages."
   },
   {
     "id": 2,
     "section": "HTML",
     "question": "Which tag is used to create a hyperlink?",
     "options": ["<a>", "<link>", "<href>", "<h1>"],
-    "correctAnswer": "<a>"
+    "correctAnswer": "<a>",
+    "explanation": "The <a> tag is used to create clickable hyperlinks in HTML."
   },
   {
     "id": 3,
     "section": "HTML",
     "question": "Which tag is used for inserting an image?",
     "options": ["<img>", "<image>", "<src>", "<pic>"],
-    "correctAnswer": "<img>"
+    "correctAnswer": "<img>",
+    "explanation": "The <img> tag is used to embed images in a web page."
   },
 
   {
@@ -31,21 +34,24 @@
     "section": "CSS",
     "question": "CSS is used for?",
     "options": ["Styling", "Structure", "Database", "Logic"],
-    "correctAnswer": "Styling"
+    "correctAnswer": "Styling",
+    "explanation": "CSS is used to style and design the layout of web pages."
   },
   {
     "id": 5,
     "section": "CSS",
     "question": "Which property is used to change text color?",
     "options": ["color", "font-style", "text-color", "bgcolor"],
-    "correctAnswer": "color"
+    "correctAnswer": "color",
+    "explanation": "The color property in CSS is used to change the text color."
   },
   {
     "id": 6,
     "section": "CSS",
     "question": "Which property controls spacing between elements?",
     "options": ["margin", "padding", "border", "spacing"],
-    "correctAnswer": "margin"
+    "correctAnswer": "margin",
+    "explanation": "Margin controls the space outside elements between them."
   },
 
   {
@@ -53,21 +59,24 @@
     "section": "JavaScript",
     "question": "JavaScript is a?",
     "options": ["Programming Language", "Markup Language", "Database", "Style Sheet"],
-    "correctAnswer": "Programming Language"
+    "correctAnswer": "Programming Language",
+    "explanation": "JavaScript is a programming language used to add interactivity to web pages."
   },
   {
     "id": 8,
     "section": "JavaScript",
     "question": "Which keyword is used to declare a variable?",
     "options": ["let", "int", "varname", "define"],
-    "correctAnswer": "let"
+    "correctAnswer": "let",
+    "explanation": "The let keyword is used to declare block-scoped variables in JavaScript."
   },
   {
     "id": 9,
     "section": "JavaScript",
     "question": "Which method is used to print in console?",
     "options": ["console.log()", "print()", "echo()", "log.console()"],
-    "correctAnswer": "console.log()"
+    "correctAnswer": "console.log()",
+    "explanation": "console.log() is used to display output in the browser console."
   },
 
   {
@@ -75,21 +84,24 @@
     "section": "Angular",
     "question": "Angular is a?",
     "options": ["Frontend Framework", "Backend Language", "Database", "Library"],
-    "correctAnswer": "Frontend Framework"
+    "correctAnswer": "Frontend Framework",
+    "explanation": "Angular is a frontend framework used to build dynamic web applications."
   },
   {
     "id": 11,
     "section": "Angular",
     "question": "Which directive is used for looping?",
     "options": ["*ngFor", "*ngIf", "*ngLoop", "*ngRepeat"],
-    "correctAnswer": "*ngFor"
+    "correctAnswer": "*ngFor",
+    "explanation": "*ngFor is used to iterate over lists and render items in Angular templates."
   },
   {
     "id": 12,
     "section": "Angular",
     "question": "Which module is required for forms?",
     "options": ["FormsModule", "HttpClientModule", "CommonModule", "RouterModule"],
-    "correctAnswer": "FormsModule"
+    "correctAnswer": "FormsModule",
+    "explanation": "FormsModule enables template-driven forms in Angular."
   },
 
   {
@@ -97,20 +109,23 @@
     "section": "TypeScript",
     "question": "TypeScript is a superset of?",
     "options": ["JavaScript", "Java", "C++", "Python"],
-    "correctAnswer": "JavaScript"
+    "correctAnswer": "JavaScript",
+    "explanation": "TypeScript extends JavaScript by adding static typing."
   },
   {
     "id": 14,
     "section": "TypeScript",
     "question": "Which keyword defines a type?",
     "options": ["interface", "class", "define", "typeOf"],
-    "correctAnswer": "interface"
+    "correctAnswer": "interface",
+    "explanation": "The interface keyword is used to define custom types in TypeScript."
   },
   {
     "id": 15,
     "section": "TypeScript",
     "question": "Which symbol is used for type annotation?",
     "options": [":", "=", "->", "::"],
-    "correctAnswer": ":"
+    "correctAnswer": ":",
+    "explanation": "The colon (:) is used to specify types in TypeScript variables and parameters."
   }
 ]

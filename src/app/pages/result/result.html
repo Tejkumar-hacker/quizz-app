@@ -95,6 +95,7 @@
 
       <p class="question-text">{{ q.question }}</p>
 
+      <!-- OPTIONS -->
       <div class="options">
         <div
           *ngFor="let opt of q.options"
@@ -113,6 +114,11 @@
             ✖
           </span>
         </div>
+      </div>
+
+      <!-- ✅ SINGLE LINE EXPLANATION -->
+      <div class="explanation">
+        💡 Correct answer is "<b>{{ q.correct }}</b>" because it is the right concept for this question.
       </div>
 
     </div>

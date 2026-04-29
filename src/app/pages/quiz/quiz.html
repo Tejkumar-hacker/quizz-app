@@ -12,6 +12,22 @@
     ></div>
   </div>
 
+  <!-- 🔥 QUESTION PALETTE -->
+  <div class="palette">
+    <div
+      *ngFor="let q of questions; let i = index"
+      (click)="goToQuestion(i)"
+      class="palette-item"
+
+      [class.current]="i === currentIndex"
+      [class.visited]="visitedMap[i]"
+      [class.answered]="userAnswers[i] && !submittedMap[i]"
+      [class.submitted]="submittedMap[i]"
+    >
+      {{ i + 1 }}
+    </div>
+  </div>
+
   <!-- QUESTION -->
   <div *ngIf="questions[currentIndex] as q" class="question-card">
 
@@ -29,6 +45,19 @@
       >
         {{ opt }}
       </div>
+    </div>
+    
+    <!-- ADD THIS BELOW OPTIONS
+    <div class="timer" *ngIf="submittedMap[currentIndex] && countdown > 0">
+      ⏱ Auto next in {{ countdown }}s
+    </div> -->
+
+    <!-- KEYBOARD HINTS -->
+    <div class="keyboard-hints">
+      <span><b>1–4</b> Select</span>
+      <span><b>S / Enter</b> Submit</span>
+      <span><b>N / →</b> Next</span>
+      <span><b>←</b> Previous</span>
     </div>
 
     <!-- ACTIONS -->

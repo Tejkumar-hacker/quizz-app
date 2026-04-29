@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Quiz as QuizService } from '../../services/quiz';
 import { Observable, map } from 'rxjs';
@@ -11,10 +11,10 @@ import { Observable, map } from 'rxjs';
   templateUrl: './quiz.html',
   styleUrls: ['./quiz.css'],
 })
-export class Quiz {
+export class Quiz implements OnDestroy {
 
   questions$!: Observable<any[]>;
-  questions: any[] = []; // ✅ store locally
+  questions: any[] = [];
 
   currentIndex = 0;
   section = '';
@@ -24,6 +24,7 @@ export class Quiz {
 
   userAnswers: { [index: number]: string } = {};
   submittedMap: { [index: number]: boolean } = {};
+  visitedMap: { [index: number]: boolean } = {};
 
   constructor(
     private quizService: QuizService,
@@ -55,7 +56,9 @@ export class Quiz {
           }));
         }
 
-        this.questions = filtered; // ✅ IMPORTANT FIX
+        this.questions = filtered;
+        this.visitedMap[0] = true;
+
         return filtered;
       })
     );
@@ -79,7 +82,8 @@ export class Quiz {
       options: q.options,
       selected: selected,
       correct: q.correctAnswer,
-      isCorrect: selected === q.correctAnswer
+      isCorrect: selected === q.correctAnswer,
+      explanation: q.explanation // ✅ ADDED
     };
   }
 
@@ -92,7 +96,12 @@ export class Quiz {
 
     if (this.currentIndex < total - 1) {
       this.currentIndex++;
+      this.visitedMap[this.currentIndex] = true;
     } else {
+      if (this.answeredCount !== total) {
+        alert('⚠️ Please answer all questions before finishing.');
+        return;
+      }
       this.finishQuiz();
     }
   }
@@ -100,7 +109,13 @@ export class Quiz {
   previous() {
     if (this.currentIndex > 0) {
       this.currentIndex--;
+      this.visitedMap[this.currentIndex] = true;
     }
+  }
+
+  goToQuestion(index: number) {
+    this.currentIndex = index;
+    this.visitedMap[index] = true;
   }
 
   finishQuiz() {
@@ -117,19 +132,15 @@ export class Quiz {
     });
   }
 
-  // ✅ FIXED KEYBOARD HANDLER
   @HostListener('window:keydown', ['$event'])
   handleKeyboard(event: KeyboardEvent) {
 
     const key = event.key.toLowerCase();
-
     const q = this.questions[this.currentIndex];
     if (!q) return;
 
-    // 🔢 SELECT OPTIONS (1–4)
     if (key >= '1' && key <= '4') {
       if (this.submittedMap[this.currentIndex]) return;
-
       const index = Number(key) - 1;
       if (q.options[index]) {
         this.userAnswers[this.currentIndex] = q.options[index];
@@ -137,22 +148,21 @@ export class Quiz {
       return;
     }
 
-    // ⬅️ PREVIOUS
     if (key === 'arrowleft') {
       this.previous();
       return;
     }
 
-    // ➡️ NEXT (ArrowRight or N)
-    if (key === 'arrowright' || key === 'n') {
+    if ((key === 'arrowright' || key === 'n') && this.submittedMap[this.currentIndex]) {
       this.next(this.questions.length);
       return;
     }
 
-    // ✅ SUBMIT (Enter or S)
     if (key === 'enter' || key === 's') {
       this.submit(q);
       return;
     }
   }
+
+  ngOnDestroy() {}
 }
