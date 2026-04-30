@@ -22,7 +22,7 @@ export class Quiz implements OnDestroy {
 
   // 🔥 BATCH SUPPORT
   batch = 1;
-  batchSize = 25; // (change to 25 later)
+  batchSize = 2; // (change to 25 later)
 
   answers: any[] = [];
 

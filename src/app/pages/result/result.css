@@ -78,6 +78,14 @@ button:hover {
   color: #fff;
 }
 
+.section-title{
+  text-align: center;
+  margin: 20px 0;
+  text-decoration:solid underline;
+  font-size: 20px;
+  font-family: cursive;
+}
+
 /* GRID */
 .section-title {
   text-align: center;
@@ -85,13 +93,18 @@ button:hover {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  background: #fff;
+  width: 150px;
+  height: 125px;
+  background: #ffffff;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
@@ -102,6 +115,7 @@ button:hover {
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);  
 }
 
 /* MINI BAR */
@@ -229,4 +243,10 @@ button:hover {
   border-radius: 6px;
   font-size: 13px;
   color: #333;
+}
+.click {
+  text-align: center;
+  font-size: 20px;
+  color: #5272d4;
+  font-weight: bold;
 }
