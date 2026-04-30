@@ -10,6 +10,11 @@ This project is a fully functional quiz platform that helps developers **practic
 It includes structured questions, real-world scenarios, and interactive features for an engaging learning experience.
 
 ---
+## 🌐 Live Demo
+
+🔗 [Click here to view live app](https://quiz-app123-mock.netlify.app/)
+
+---
 
 Screenshots:
 
