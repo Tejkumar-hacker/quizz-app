@@ -14,22 +14,43 @@ export class Result {
   answers: any[] = [];
   sections: Record<string, any> = {};
   selectedSection: string | null = null;
+
   round = '1';
+
+  // 🔥 BATCH SUPPORT
+  batch = 1;
+  sectionName = '';
+  hasNextBatch = false;
 
   constructor(private router: Router) {}
 
   ngOnInit() {
+
     const nav = this.router.getCurrentNavigation();
 
-    if (nav?.extras?.state) {
-      this.answers = nav.extras.state['answers'] || [];
-      this.round = nav.extras.state['round'] || '1';
+    if (nav?.extras?.state?.['answers']?.length) {
 
+      this.answers = nav.extras.state['answers'];
+      this.round = nav.extras.state['round'] || '1';
+      this.batch = nav.extras.state['batch'] || 1;
+      this.sectionName = nav.extras.state['section'] || '';
+      this.hasNextBatch = nav.extras.state['hasNextBatch'] || false;
+
+      // ✅ SAVE (important for reload safety)
       localStorage.setItem('answers', JSON.stringify(this.answers));
       localStorage.setItem('round', this.round);
+      localStorage.setItem('batch', String(this.batch));
+      localStorage.setItem('section', this.sectionName);
+      localStorage.setItem('hasNextBatch', String(this.hasNextBatch));
+
     } else {
+
+      // ✅ fallback
       this.answers = JSON.parse(localStorage.getItem('answers') || '[]');
       this.round = localStorage.getItem('round') || '1';
+      this.batch = Number(localStorage.getItem('batch') || 1);
+      this.sectionName = localStorage.getItem('section') || '';
+      this.hasNextBatch = localStorage.getItem('hasNextBatch') === 'true';
     }
 
     this.calculateSections();
@@ -64,25 +85,33 @@ export class Result {
     this.selectedSection = null;
   }
 
-  startRound2() {
-    if (!this.answers.length) return;
-
-    const section = this.answers[0].section;
-
-    this.router.navigate(['/quiz', section], {
-      queryParams: { round: 2 }
+  // 🔥 NEXT BATCH → ALWAYS ROUND 1
+  nextBatch() {
+    this.router.navigate(['/quiz', this.sectionName], {
+      queryParams: {
+        round: 1,
+        batch: this.batch + 1
+      }
     });
   }
 
+  // 🔥 ROUND 2 → SAME BATCH
+  startRound2() {
+    this.router.navigate(['/quiz', this.sectionName], {
+      queryParams: {
+        round: 2,
+        batch: this.batch
+      }
+    });
+  }
+
+  // 🔥 RESTART → SAME ROUND + SAME BATCH
   resetRound() {
-    if (!this.answers.length) return;
-
-    const section = this.answers[0].section;
-
-    localStorage.removeItem('answers');
-
-    this.router.navigate(['/quiz', section], {
-      queryParams: { round: this.round }
+    this.router.navigate(['/quiz', this.sectionName], {
+      queryParams: {
+        round: this.round,
+        batch: this.batch
+      }
     });
   }
 

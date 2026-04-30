@@ -1,4 +1,9 @@
-<h2 class="title">🎯 Test Result (Round {{ round }})</h2>
+<h2 class="title">🎯 Test Result</h2>
+
+<!-- 🔥 BATCH + ROUND INFO -->
+<h4 style="text-align:center;">
+  Batch {{ batch }} - Round {{ round }}
+</h4>
 
 <div *ngIf="answers.length === 0" class="empty">
   No results found. Please take a test.
@@ -37,8 +42,22 @@
     <button class="home-btn" (click)="goHome()">🏠 Home</button>
   </div>
 
-  <button *ngIf="round === '1'" class="round2-btn fade-in" (click)="startRound2()">
+  <!-- 🚀 ROUND 2 (ONLY IF ROUND 1) -->
+  <button 
+    *ngIf="round === '1'" 
+    class="round2-btn fade-in" 
+    (click)="startRound2()"
+  >
     🚀 Start Round 2
+  </button>
+
+  <!-- ➡ NEXT BATCH -->
+  <button 
+    *ngIf="hasNextBatch" 
+    class="round2-btn fade-in" 
+    (click)="nextBatch()"
+  >
+    ➡ Next Batch ({{ batch + 1 }})
   </button>
 
   <!-- SECTION LIST -->
@@ -116,9 +135,9 @@
         </div>
       </div>
 
-      <!-- ✅ SINGLE LINE EXPLANATION -->
-      <div class="explanation">
-        💡 Correct answer is "<b>{{ q.correct }}</b>" because it is the right concept for this question.
+      <!-- 💡 EXPLANATION -->
+      <div class="explanation" *ngIf="q.explanation">
+        💡 {{ q.explanation }}
       </div>
 
     </div>

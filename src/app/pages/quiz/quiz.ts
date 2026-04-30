@@ -20,6 +20,10 @@ export class Quiz implements OnDestroy {
   section = '';
   round = '1';
 
+  // 🔥 BATCH SUPPORT
+  batch = 1;
+  batchSize = 25; // (change to 25 later)
+
   answers: any[] = [];
 
   userAnswers: { [index: number]: string } = {};
@@ -43,11 +47,20 @@ export class Quiz implements OnDestroy {
     this.section = this.route.snapshot.paramMap.get('section') || '';
     this.round = this.route.snapshot.queryParamMap.get('round') || '1';
 
+    // 🔥 READ BATCH
+    this.batch = Number(this.route.snapshot.queryParamMap.get('batch') || 1);
+
     this.questions$ = this.quizService.getQuestions().pipe(
       map((data: any[]) => {
+
         let filtered = data.filter(
           q => q.section.toLowerCase() === this.section.toLowerCase()
         );
+
+        // 🔥 APPLY BATCH
+        const start = (this.batch - 1) * this.batchSize;
+        const end = start + this.batchSize;
+        filtered = filtered.slice(start, end);
 
         if (this.round === '2') {
           filtered = this.shuffleArray(filtered).map(q => ({
@@ -83,7 +96,7 @@ export class Quiz implements OnDestroy {
       selected: selected,
       correct: q.correctAnswer,
       isCorrect: selected === q.correctAnswer,
-      explanation: q.explanation // ✅ ADDED
+      explanation: q.explanation
     };
   }
 
@@ -118,16 +131,26 @@ export class Quiz implements OnDestroy {
     this.visitedMap[index] = true;
   }
 
+  // ✅ FINAL FIXED METHOD
   finishQuiz() {
-    const finalAnswers = Object.values(this.answers);
+    const finalAnswers = this.answers.filter(a => a !== undefined);
 
+    const hasNextBatch = this.questions.length === this.batchSize;
+
+    // 🔥 SAVE BEFORE NAVIGATION (CRITICAL FIX)
     localStorage.setItem('answers', JSON.stringify(finalAnswers));
     localStorage.setItem('round', this.round);
+    localStorage.setItem('batch', String(this.batch));
+    localStorage.setItem('section', this.section);
+    localStorage.setItem('hasNextBatch', String(hasNextBatch));
 
     this.router.navigate(['/result'], {
       state: {
         answers: finalAnswers,
-        round: this.round
+        round: this.round,
+        batch: this.batch,
+        section: this.section,
+        hasNextBatch: hasNextBatch
       }
     });
   }
