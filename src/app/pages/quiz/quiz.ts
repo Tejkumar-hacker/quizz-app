@@ -20,9 +20,11 @@ export class Quiz implements OnDestroy {
   section = '';
   round = '1';
 
-  // 🔥 BATCH SUPPORT
   batch = 1;
-  batchSize = 25; // (change to 25 later)
+  batchSize = 25;
+
+  totalBatches = 0;
+  allQuestionsCount = 0;
 
   answers: any[] = [];
 
@@ -36,6 +38,7 @@ export class Quiz implements OnDestroy {
     private router: Router
   ) {}
 
+  // 🔀 Shuffle helper
   shuffleArray(arr: any[]) {
     return arr
       .map(v => ({ v, r: Math.random() }))
@@ -43,13 +46,26 @@ export class Quiz implements OnDestroy {
       .map(x => x.v);
   }
 
+  // 🔥 FIXED ngOnInit (SUBSCRIPTIONS)
   ngOnInit() {
-    this.section = this.route.snapshot.paramMap.get('section') || '';
-    this.round = this.route.snapshot.queryParamMap.get('round') || '1';
 
-    // 🔥 READ BATCH
-    this.batch = Number(this.route.snapshot.queryParamMap.get('batch') || 1);
+    // Listen to section changes
+    this.route.paramMap.subscribe(params => {
+      this.section = params.get('section') || '';
+    });
 
+    // 🔥 Listen to query param changes (CRITICAL)
+    this.route.queryParamMap.subscribe(query => {
+
+      this.round = query.get('round') || '1';
+      this.batch = Number(query.get('batch') || 1);
+
+      this.loadQuestions(); // reload questions on batch change
+    });
+  }
+
+  // 🔥 NEW METHOD (CORE FIX)
+  loadQuestions() {
     this.questions$ = this.quizService.getQuestions().pipe(
       map((data: any[]) => {
 
@@ -57,7 +73,11 @@ export class Quiz implements OnDestroy {
           q => q.section.toLowerCase() === this.section.toLowerCase()
         );
 
-        // 🔥 APPLY BATCH
+        // total batches
+        this.allQuestionsCount = filtered.length;
+        this.totalBatches = Math.ceil(filtered.length / this.batchSize);
+
+        // apply batch
         const start = (this.batch - 1) * this.batchSize;
         const end = start + this.batchSize;
         filtered = filtered.slice(start, end);
@@ -69,12 +89,29 @@ export class Quiz implements OnDestroy {
           }));
         }
 
+        // 🔥 RESET STATE (IMPORTANT)
+        this.currentIndex = 0;
+        this.userAnswers = {};
+        this.submittedMap = {};
+        this.visitedMap = { 0: true };
+        this.answers = [];
+
         this.questions = filtered;
-        this.visitedMap[0] = true;
 
         return filtered;
       })
     );
+  }
+
+  // 🔥 BATCH NAVIGATION
+  goToBatch(batch: number) {
+    if (batch < 1 || batch > this.totalBatches) return;
+
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: { batch: batch, round: this.round },
+      queryParamsHandling: 'merge'
+    });
   }
 
   select(opt: string) {
@@ -84,7 +121,6 @@ export class Quiz implements OnDestroy {
 
   submit(q: any) {
     const selected = this.userAnswers[this.currentIndex];
-
     if (!selected || this.submittedMap[this.currentIndex]) return;
 
     this.submittedMap[this.currentIndex] = true;
@@ -93,7 +129,7 @@ export class Quiz implements OnDestroy {
       section: q.section,
       question: q.question,
       options: q.options,
-      selected: selected,
+      selected,
       correct: q.correctAnswer,
       isCorrect: selected === q.correctAnswer,
       explanation: q.explanation
@@ -131,13 +167,10 @@ export class Quiz implements OnDestroy {
     this.visitedMap[index] = true;
   }
 
-  // ✅ FINAL FIXED METHOD
   finishQuiz() {
     const finalAnswers = this.answers.filter(a => a !== undefined);
+    const hasNextBatch = this.batch < this.totalBatches;
 
-    const hasNextBatch = this.questions.length === this.batchSize;
-
-    // 🔥 SAVE BEFORE NAVIGATION (CRITICAL FIX)
     localStorage.setItem('answers', JSON.stringify(finalAnswers));
     localStorage.setItem('round', this.round);
     localStorage.setItem('batch', String(this.batch));
@@ -150,14 +183,13 @@ export class Quiz implements OnDestroy {
         round: this.round,
         batch: this.batch,
         section: this.section,
-        hasNextBatch: hasNextBatch
+        hasNextBatch
       }
     });
   }
 
   @HostListener('window:keydown', ['$event'])
   handleKeyboard(event: KeyboardEvent) {
-
     const key = event.key.toLowerCase();
     const q = this.questions[this.currentIndex];
     if (!q) return;
