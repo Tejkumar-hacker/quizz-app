@@ -167,6 +167,10 @@ export class Quiz implements OnDestroy {
     this.visitedMap[index] = true;
   }
 
+  goToHome() {
+  this.router.navigate(['/']);
+}
+
   finishQuiz() {
     const finalAnswers = this.answers.filter(a => a !== undefined);
     const hasNextBatch = this.batch < this.totalBatches;
