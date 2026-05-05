@@ -6234,6 +6234,808 @@
     "options": ["@Component", "@Directive", "@Injectable", "@Pipe"],
     "correctAnswer": "@Injectable",
     "explanation": "@Injectable allows a class to be injected as a dependency."
-  }
+  },
+  {
+  "id": 761,
+  "section": "React",
+  "question": "What is React primarily used for",
+  "options": ["Database management", "Building user interfaces", "Server configuration", "Operating systems"],
+  "correctAnswer": "Building user interfaces",
+  "explanation": "React is mainly used to build interactive user interfaces for web applications."
+},
+{
+  "id": 762,
+  "section": "React",
+  "question": "React is developed and maintained by",
+  "options": ["Google", "Microsoft", "Meta", "Amazon"],
+  "correctAnswer": "Meta",
+  "explanation": "React is developed and maintained by Meta (formerly Facebook)."
+ 
+},
+{
+  "id": 763,
+  "section": "React",
+  "question": "React follows which architecture",
+  "options": ["MVC", "Component based", "Monolithic", "Layered"],
+  "correctAnswer": "Component based",
+  "explanation": "React follows a component-based architecture where UI is divided into reusable parts."
+},
+{
+  "id": 764,
+  "section": "React",
+  "question": "JSX stands for",
+  "options": ["Java Syntax Extension", "JavaScript XML", "Java Standard XML", "JSON XML"],
+  "correctAnswer": "JavaScript XML",
+  "explanation": "JSX stands for JavaScript XML, allowing HTML-like syntax in JavaScript."
+},
+{
+  "id": 765,
+  "section": "React",
+  "question": "JSX allows developers to write",
+  "options": ["SQL inside JavaScript", "HTML like syntax inside JavaScript", "CSS inside HTML", "Python inside JavaScript"],
+  "correctAnswer": "HTML like syntax inside JavaScript",
+  "explanation": "JSX allows writing HTML-like code inside JavaScript for UI rendering."
+},
+{
+  "id": 766,
+  "section": "React",
+  "question": "React applications are built using",
+  "options": ["Modules", "Components", "Classes only", "Functions only"],
+  "correctAnswer": "Components",
+  "explanation": "React applications are built using components, which are reusable UI blocks."
+},
+{
+  "id": 767,
+  "section": "React",
+  "question": "What is a component in React",
+  "options": ["A database table", "A reusable piece of UI", "A CSS file", "A server"],
+  "correctAnswer": "A reusable piece of UI",
+  "explanation":"A component is a reusable and independent piece of UI in React."
+
+},
+{
+  "id": 768,
+  "section": "React",
+  "question": "React uses which virtual concept to improve performance",
+  "options": ["Virtual DOM", "Virtual CPU", "Virtual RAM", "Virtual CSS"],
+  "correctAnswer": "Virtual DOM",
+  "explanation": "React uses Virtual DOM to efficiently update only changed parts of the UI."
+},
+{
+  "id": 769,
+  "section": "React",
+  "question": "JSX must return",
+  "options": ["Multiple root elements without wrapper", "A single parent element", "Only text", "Only numbers"],
+  "correctAnswer": "A single parent element",
+  "explanation": "JSX must return a single parent element to maintain structure."
+},
+{
+  "id": 770,
+  "section": "React",
+  "question": "Which keyword is used to create a class component",
+  "options": ["function", "class", "component", "define"],
+  "correctAnswer": "class",
+  "explanation": "The 'class' keyword is used to define class-based components in React."
+},
+{
+  "id": 771,
+  "section": "React",
+  "question": "Function components are written using",
+  "options": ["SQL", "JavaScript functions", "Python functions", "XML functions"],
+  "correctAnswer": "JavaScript functions",
+  "explanation": "Function components are simple JavaScript functions that return JSX."
+},
+{
+  "id": 772,
+  "section": "React",
+  "question": "Which tool is used to create a React app quickly",
+  "options": ["Create React App", "Node Maker", "React Builder", "App Starter"],
+  "correctAnswer": "Create React App",
+  "explanation": "Create React App is a tool provided by Facebook to quickly set up a new React project."
+},
+{
+  "id": 773,
+  "section": "React",
+  "question": "Create React App requires which runtime",
+  "options": ["Python", "Node.js", "Java", "PHP"],
+  "correctAnswer": "Node.js",
+  "explanation": "Create React App requires Node.js to be installed on the system."
+},
+{
+  "id": 774,
+  "section": "React",
+  "question": "Which command creates a new React app",
+  "options": ["npm start", "npx create-react-app appname", "npm build", "node app"],
+  "correctAnswer": "npx create-react-app appname",
+  "explanation": "The 'npx create-react-app appname' command is used to create a new React app."
+},
+{
+  "id": 775,
+  "section": "React",
+  "question": "Which folder contains React source code",
+  "options": ["public", "src", "node_modules", "build"],
+  "correctAnswer": "src",
+  "explanation": "The 'src' folder contains the source code for the React application."
+},
+{
+  "id": 776,
+  "section": "React",
+  "question": "JSX expressions are written inside",
+  "options": ["Curly braces", "Square brackets", "Parentheses", "Quotes"],
+  "correctAnswer": "Curly braces",
+  "explanation": "JSX expressions are written inside curly braces {}."
+},
+{
+  "id": 777,
+  "section": "React",
+  "question": "Which attribute replaces class in JSX",
+  "options": ["className", "classname", "cssClass", "styleClass"],
+  "correctAnswer": "className",
+  "explanation": "In JSX, the 'class' attribute is replaced by 'className' to avoid conflicts with the JavaScript class keyword."
+},
+{
+  "id": 778,
+  "section": "React",
+  "question": "React components must start with",
+  "options": ["Lowercase letter", "Uppercase letter", "Number", "Symbol"],
+  "correctAnswer": "Uppercase letter",
+  "explanation": "React components must start with an uppercase letter to distinguish them from regular HTML elements."
+},
+{
+  "id": 779,
+  "section": "React",
+  "question": "What is props in React",
+  "options": ["Internal state", "External data passed to components", "CSS styling", "API request"],
+  "correctAnswer": "External data passed to components",
+  "explanation": "Props (short for properties) are read-only attributes passed to React components."
+},
+{
+  "id": 780,
+  "section": "React",
+  "question": "Props are",
+  "options": ["Mutable", "Immutable", "Always numbers", "Always strings"],
+  "correctAnswer": "Immutable",
+  "explanation": "Props are immutable, meaning their values cannot be changed by the component that receives them."
+},{
+  "id": 781,
+  "section": "React",
+  "question": "Function components can receive props as",
+  "options": ["Parameters", "Variables", "Arrays only", "Objects only"],
+  "correctAnswer": "Parameters",
+  "explanation": "Function components can receive props as parameters."
+},
+{
+  "id": 782,
+  "section": "React",
+  "question": "Which method is used in class components to render UI",
+  "options": ["display", "render", "show", "output"],
+  "correctAnswer": "render",
+  "explanation": "The 'render' method is used in class components to define what should be displayed in the UI."
+},
+{
+  "id": 783,
+  "section": "React",
+  "question": "JSX gets compiled into",
+  "options": ["HTML", "JavaScript function calls", "CSS", "JSON"],
+  "correctAnswer": "JavaScript function calls",
+  "explanation": "JSX gets compiled into JavaScript function calls."
+},
+{
+  "id": 784,
+  "section": "React",
+  "question": "React apps run in",
+  "options": ["Browser", "Database", "Compiler", "OS kernel"],
+  "correctAnswer": "Browser",
+  "explanation": "React apps run in the browser."
+},
+{
+  "id": 785,
+  "section": "React",
+  "question": "What is the root element in React app",
+  "options": ["index.js", "App component", "HTML head", "CSS file"],
+  "correctAnswer": "App component",
+  "explanation": "The root element in a React app is the App component."
+},
+{
+  "id": 786,
+  "section": "React",
+  "question": "Which file is the entry point in React",
+  "options": ["index.js", "app.js", "main.html", "server.js"],
+  "correctAnswer": "index.js",
+  "explanation": "The 'index.js' file is the entry point for a React application."
+},
+{
+  "id": 787,
+  "section": "React",
+  "question": "React supports which type of data flow",
+  "options": ["Two way", "One way", "Circular", "Random"],
+  "correctAnswer": "One way",
+  "explanation": "React supports one-way data flow, where data flows from parent to child components."
+},
+{
+  "id": 788,
+  "section": "React",
+  "question": "JSX supports embedding of",
+  "options": ["SQL", "JavaScript expressions", "CSS only", "HTML only"],
+  "correctAnswer": "JavaScript expressions",
+  "explanation": "JSX supports embedding JavaScript expressions using curly braces {}."
+},
+{
+  "id": 789,
+  "section": "React",
+  "question": "Which keyword is used to import React",
+  "options": ["include", "import", "require always", "load"],
+  "correctAnswer": "import",
+  "explanation": "The 'import' keyword is used to import React and other modules."
+},
+{
+  "id": 790,
+  "section": "React",
+  "question": "What is the purpose of ReactDOM",
+  "options": ["Database connection", "Rendering components to DOM", "Styling", "Routing"],
+  "correctAnswer": "Rendering components to DOM",
+  "explanation": "ReactDOM is used to render React components to the DOM."
+},
+{
+  "id": 791,
+  "section": "React",
+  "question": "Create React App uses which package manager",
+  "options": ["npm or yarn", "pip", "maven", "composer"],
+  "correctAnswer": "npm or yarn",
+  "explanation": "Create React App uses npm or yarn as package managers."
+},
+{
+  "id": 792,
+  "section": "React",
+  "question": "Which command runs a React app",
+  "options": ["npm run start or npm start", "npm run build", "node run", "start app"],
+  "correctAnswer": "npm run start or npm start",
+  "explanation": "The 'npm run start' or 'npm start' command is used to run a React app."
+},
+{
+  "id": 793,
+  "section": "React",
+  "question": "Which folder contains static files",
+  "options": ["src", "public", "node", "build"],
+  "correctAnswer": "public",
+  "explanation": "The 'public' folder contains static files like HTML, images, and fonts."
+},
+{
+  "id": 794,
+  "section": "React",
+  "question": "Props are passed from",
+  "options": ["Child to parent", "Parent to child", "Server to DB", "CSS to JS"],
+  "correctAnswer": "Parent to child",
+  "explanation": "Props are passed from parent components to child components."
+},
+{
+  "id": 795,
+  "section": "React",
+  "question": "What happens if props change",
+  "options": ["Component re renders", "App stops", "Database updates", "Nothing"],
+  "correctAnswer": "Component re renders",
+  "explanation": "When props change, the component re-renders to reflect the updated values."
+},
+{
+  "id": 796,
+  "section": "React",
+  "question": "Function components use which syntax",
+  "options": ["Arrow functions or normal functions", "Only classes", "Only loops", "Only arrays"],
+  "correctAnswer": "Arrow functions or normal functions",
+  "explanation": "Function components use arrow functions or normal functions for their implementation."
+},
+{
+  "id": 797,
+  "section": "React",
+  "question": "Class components extend",
+  "options": ["React.Component", "React.Class", "ComponentBase", "AppBase"],
+  "correctAnswer": "React.Component",
+  "explanation": "Class components extend React.Component."
+},
+{
+  "id": 798,
+  "section": "React",
+  "question": "JSX must be wrapped inside",
+  "options": ["div or fragment", "span only", "body", "html"],
+  "correctAnswer": "div or fragment",
+  "explanation": "JSX must be wrapped inside a single parent element, such as a div or fragment."
+},
+{
+  "id": 799,
+  "section": "React",
+  "question": "React fragment allows",
+  "options": ["Multiple elements without extra node", "CSS styling", "Database access", "API calls"],
+  "correctAnswer": "Multiple elements without extra node",
+  "explanation": "React fragment allows multiple elements to be grouped without adding an extra node to the DOM."
+},
+{
+  "id": 800,
+  "section": "React",
+  "question": "Which hook is used in function components for state",
+  "options": ["useState", "setState", "getState", "stateHook"],
+  "correctAnswer": "useState",
+  "explanation": "The 'useState' hook is used in function components for managing state."
+},
+{
+  "id": 801,
+  "section": "React",
+  "question": "Props can be accessed in class components using",
+  "options": ["this.props", "props", "state.props", "getProps"],
+  "correctAnswer": "this.props",
+  "explanation": "In class components, props are accessed using this.props to reference passed data."
+},
+{
+  "id": 802,
+  "section": "React",
+  "question": "React components should be",
+  "options": ["Reusable", "Fixed", "Static", "Large"],
+  "correctAnswer": "Reusable",
+  "explanation": "React encourages building reusable components to improve maintainability and reduce duplication."
+},
+{
+  "id": 803,
+  "section": "React",
+  "question": "JSX allows conditional rendering using",
+  "options": ["if and ternary", "SQL", "CSS", "HTML only"],
+  "correctAnswer": "if and ternary",
+  "explanation": "JSX supports JavaScript logic like if statements and ternary operators for conditional rendering."
+},
+{
+  "id": 804,
+  "section": "React",
+  "question": "Create React App hides configuration using",
+  "options": ["Webpack internally", "SQL", "CSS", "Python"],
+  "correctAnswer": "Webpack internally",
+  "explanation": "Create React App abstracts complex configurations like Webpack so developers can focus on coding."
+},
+{
+  "id": 805,
+  "section": "React",
+  "question": "Which file defines HTML template",
+  "options": ["index.html", "app.html", "main.html", "template.js"],
+  "correctAnswer": "index.html",
+  "explanation": "The index.html file in the public folder acts as the main HTML template for React apps."
+},
+{
+  "id": 806,
+  "section": "React",
+  "question": "Props drilling means",
+  "options": ["Passing props through many levels", "Deleting props", "Styling props", "Creating props"],
+  "correctAnswer": "Passing props through many levels",
+  "explanation": "Props drilling refers to passing data through multiple nested components."
+},
+{
+  "id": 807,
+  "section": "React",
+  "question": "Functional components are simpler because",
+  "options": ["Less code and no this keyword", "More complex", "Slower", "Larger"],
+  "correctAnswer": "Less code and no this keyword",
+  "explanation": "Functional components are easier to write and understand since they avoid the use of this keyword."
+},
+{
+  "id": 808,
+  "section": "React",
+  "question": "React uses which language",
+  "options": ["JavaScript", "Python", "Java", "C++"],
+  "correctAnswer": "JavaScript",
+  "explanation": "React is a JavaScript library used to build user interfaces."
+},
+{
+  "id": 809,
+  "section": "React",
+  "question": "JSX tags must be",
+  "options": ["Closed properly", "Open only", "Random", "Ignored"],
+  "correctAnswer": "Closed properly",
+  "explanation": "JSX requires all tags to be properly closed, similar to XML."
+},
+{
+  "id": 810,
+  "section": "React",
+  "question": "Which is correct JSX syntax",
+  "options": ["div Hello div", "angle bracket div Hello slash div", "div Hello", "Hello div"],
+  "correctAnswer": "angle bracket div Hello slash div",
+  "explanation": "JSX uses HTML-like syntax with proper opening and closing tags."
+},
+{
+  "id": 811,
+  "section": "React",
+  "question": "React components can be nested",
+  "options": ["Yes", "No", "Only once", "Only twice"],
+  "correctAnswer": "Yes",
+  "explanation": "React allows components to be nested inside other components."
+},
+{
+  "id": 812,
+  "section": "React",
+  "question": "Props are read only",
+  "options": ["True", "False"],
+  "correctAnswer": "True",
+  "explanation": "Props are immutable and cannot be modified by components."
+},
+{
+  "id": 813,
+  "section": "React",
+  "question": "Which tool transpiles JSX",
+  "options": ["Babel", "Node", "npm", "Chrome"],
+  "correctAnswer": "Babel",
+  "explanation": "Babel converts JSX into standard JavaScript."
+},
+{
+  "id": 814,
+  "section": "React",
+  "question": "React improves performance using",
+  "options": ["Virtual DOM diffing", "Direct DOM", "SQL", "CSS"],
+  "correctAnswer": "Virtual DOM diffing",
+  "explanation": "React updates only changed parts using Virtual DOM diffing."
+},
+{
+  "id": 815,
+  "section": "React",
+  "question": "JSX supports loops using",
+  "options": ["map function", "for only", "while only", "none"],
+  "correctAnswer": "map function",
+  "explanation": "The map() function is commonly used to render lists in JSX."
+},
+{
+  "id": 816,
+  "section": "React",
+  "question": "Props can be any data type",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Props can be strings, numbers, objects, arrays, or functions."
+},
+{
+  "id": 817,
+  "section": "React",
+  "question": "React app can be built using command",
+  "options": ["npm run build", "npm create", "npm make", "npm init"],
+  "correctAnswer": "npm run build",
+  "explanation": "npm run build creates an optimized production build."
+},
+{
+  "id": 818,
+  "section": "React",
+  "question": "Class components have state",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Class components manage state using this.state."
+},
+{
+  "id": 819,
+  "section": "React",
+  "question": "Function components originally had no state",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Before hooks, function components could not manage state."
+},
+{
+  "id": 820,
+  "section": "React",
+  "question": "React uses camelCase for attributes",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "JSX uses camelCase like onClick instead of onclick."
+},{
+  "id": 821,
+  "section": "React",
+  "question": "onClick is an example of",
+  "options": ["Event handler", "CSS", "Database", "API"],
+  "correctAnswer": "Event handler",
+  "explanation": "onClick is used to handle click events in React."
+},
+{
+  "id": 822,
+  "section": "React",
+  "question": "Props help in",
+  "options": ["Reusability", "Deleting UI", "Styling only", "Routing"],
+  "correctAnswer": "Reusability",
+  "explanation": "Props allow components to be reused with different data."
+},
+{
+  "id": 823,
+  "section": "React",
+  "question": "React is a library or framework",
+  "options": ["Library", "Framework"],
+  "correctAnswer": "Library",
+  "explanation": "React is a JavaScript library for building UI."
+},
+{
+  "id": 824,
+  "section": "React",
+  "question": "JSX compiles before running",
+  "options": ["True", "False"],
+  "correctAnswer": "True",
+  "explanation": "JSX is compiled into JavaScript before execution."
+},
+{
+  "id": 825,
+  "section": "React",
+  "question": "Create React App installs dependencies automatically",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "CRA installs required dependencies during setup."
+},
+{
+  "id": 826,
+  "section": "React",
+  "question": "Which command installs packages",
+  "options": ["npm install", "npm start", "npm run", "node install"],
+  "correctAnswer": "npm install",
+  "explanation": "npm install is used to install dependencies."
+},
+{
+  "id": 827,
+  "section": "React",
+  "question": "Props are passed using",
+  "options": ["Attributes in components", "CSS", "Database", "HTML head"],
+  "correctAnswer": "Attributes in components",
+  "explanation": "Props are passed as attributes to components."
+},
+{
+  "id": 828,
+  "section": "React",
+  "question": "React apps are single page applications",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "React apps typically use SPA architecture."
+},
+{
+  "id": 829,
+  "section": "React",
+  "question": "Which symbol is used for embedding JS in JSX",
+  "options": ["Curly braces", "Brackets", "Parentheses", "Quotes"],
+  "correctAnswer": "Curly braces",
+  "explanation": "Curly braces {} allow embedding JS expressions."
+},
+{
+  "id": 830,
+  "section": "React",
+  "question": "React encourages",
+  "options": ["Component reuse", "Code duplication", "Large files", "No structure"],
+  "correctAnswer": "Component reuse",
+  "explanation": "Reusable components are a core concept in React."
+},
+{
+  "id": 831,
+  "section": "React",
+  "question": "App component is",
+  "options": ["Root component", "Child", "CSS", "Database"],
+  "correctAnswer": "Root component",
+  "explanation": "App is usually the top-level component."
+},
+{
+  "id": 832,
+  "section": "React",
+  "question": "React components return",
+  "options": ["JSX", "SQL", "JSON", "CSS"],
+  "correctAnswer": "JSX",
+  "explanation": "Components return JSX to describe UI."
+},
+{
+  "id": 833,
+  "section": "React",
+  "question": "Props are passed as",
+  "options": ["Key value pairs", "Arrays only", "Numbers only", "Strings only"],
+  "correctAnswer": "Key value pairs",
+  "explanation": "Props are passed in key-value format."
+},
+{
+  "id": 834,
+  "section": "React",
+  "question": "Which keyword defines function component",
+  "options": ["function", "class", "define", "create"],
+  "correctAnswer": "function",
+  "explanation": "Function components are defined using the function keyword."
+},
+{
+  "id": 835,
+  "section": "React",
+  "question": "Which file contains component logic",
+  "options": ["js file", "html file", "css file", "txt file"],
+  "correctAnswer": "js file",
+  "explanation": "React logic is written in JavaScript files."
+},
+{
+  "id": 836,
+  "section": "React",
+  "question": "React supports modular coding",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Components allow modular and maintainable code."
+},
+{
+  "id": 837,
+  "section": "React",
+  "question": "JSX allows mixing HTML and JS",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "JSX combines HTML-like syntax with JavaScript."
+},
+{
+  "id": 838,
+  "section": "React",
+  "question": "Which extension is used for React files",
+  "options": ["js or jsx", "html", "css", "py"],
+  "correctAnswer": "js or jsx",
+  "explanation": "React files typically use .js or .jsx extensions."
+},
+{
+  "id": 839,
+  "section": "React",
+  "question": "Props can be defaulted using",
+  "options": ["defaultProps", "setProps", "initProps", "baseProps"],
+  "correctAnswer": "defaultProps",
+  "explanation": "defaultProps provides default values for props."
+},
+{
+  "id": 840,
+  "section": "React",
+  "question": "Which is a valid prop passing",
+  "options": ["Component name equals value", "Component value", "Only numbers", "Only arrays"],
+  "correctAnswer": "Component name equals value",
+  "explanation": "Props are passed as attributes like name=value."
+},
+{
+  "id": 841,
+  "section": "React",
+  "question": "React requires a root DOM node",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "React renders inside a root DOM element."
+},
+{
+  "id": 842,
+  "section": "React",
+  "question": "Which package renders React",
+  "options": ["react-dom", "react-core", "react-ui", "react-view"],
+  "correctAnswer": "react-dom",
+  "explanation": "react-dom handles rendering to the browser."
+},
+{
+  "id": 843,
+  "section": "React",
+  "question": "JSX expressions must return",
+  "options": ["One element", "Many elements", "None", "Text only"],
+  "correctAnswer": "One element",
+  "explanation": "JSX must return a single root element."
+},
+{
+  "id": 844,
+  "section": "React",
+  "question": "React components are independent",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Each component works independently."
+},
+{
+  "id": 845,
+  "section": "React",
+  "question": "Props help in communication",
+  "options": ["Parent to child", "Child to parent", "Both", "None"],
+  "correctAnswer": "Parent to child",
+  "explanation": "Props pass data from parent to child components."
+},
+{
+  "id": 846,
+  "section": "React",
+  "question": "Which concept helps reuse UI",
+  "options": ["Components", "CSS", "HTML", "SQL"],
+  "correctAnswer": "Components",
+  "explanation": "Components enable UI reuse."
+},
+{
+  "id": 847,
+  "section": "React",
+  "question": "React apps can be scaled easily",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Component-based structure supports scalability."
+},
+{
+  "id": 848,
+  "section": "React",
+  "question": "JSX prevents injection attacks by default",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "JSX escapes values to prevent injection attacks."
+},
+{
+  "id": 849,
+  "section": "React",
+  "question": "Which command ejects config in CRA",
+  "options": ["npm run eject", "npm eject", "node eject", "react eject"],
+  "correctAnswer": "npm run eject",
+  "explanation": "This command exposes hidden configurations."
+},
+{
+  "id": 850,
+  "section": "React",
+  "question": "React components can return null",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Returning null renders nothing."
+},
+{
+  "id": 851,
+  "section": "React",
+  "question": "Props validation can be done using",
+  "options": ["PropTypes", "Types", "PropsCheck", "Validate"],
+  "correctAnswer": "PropTypes",
+  "explanation": "PropTypes helps validate props."
+},
+{
+  "id": 852,
+  "section": "React",
+  "question": "Which is not a React feature",
+  "options": ["Two way binding by default", "Virtual DOM", "Components", "JSX"],
+  "correctAnswer": "Two way binding by default",
+  "explanation": "React uses one-way data flow."
+},
+{
+  "id": 853,
+  "section": "React",
+  "question": "React updates only changed parts",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Virtual DOM ensures efficient updates."
+},
+{
+  "id": 854,
+  "section": "React",
+  "question": "Which function renders React root",
+  "options": ["createRoot", "renderRoot", "initRoot", "startRoot"],
+  "correctAnswer": "createRoot",
+  "explanation": "createRoot is used in modern React to render apps."
+},
+{
+  "id": 855,
+  "section": "React",
+  "question": "Props cannot modify state directly",
+  "options": ["True", "False"],
+  "correctAnswer": "True",
+  "explanation": "Props are read-only and cannot change state."
+},
+{
+  "id": 856,
+  "section": "React",
+  "question": "React uses declarative approach",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "React describes UI declaratively."
+},
+{
+  "id": 857,
+  "section": "React",
+  "question": "JSX needs a parent wrapper",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "JSX must have a single parent element."
+},
+{
+  "id": 858,
+  "section": "React",
+  "question": "React components can be exported",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Components are exported for reuse."
+},
+{
+  "id": 859,
+  "section": "React",
+  "question": "Props are passed from parent",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "Props flow from parent to child."
+},
+{
+  "id": 860,
+  "section": "React",
+  "question": "React helps build interactive UI",
+  "options": ["Yes", "No"],
+  "correctAnswer": "Yes",
+  "explanation": "React is designed for interactive interfaces."
+}
+
+
   
 ]
