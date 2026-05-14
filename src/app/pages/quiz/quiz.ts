@@ -20,7 +20,7 @@ export class Quiz implements OnDestroy {
   round = '1';
 
   batch = 1;
-  batchSize = 2;
+  batchSize = 60;
 
   totalBatches = 0;
   allQuestionsCount = 0;
