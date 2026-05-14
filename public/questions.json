@@ -11698,5 +11698,4724 @@
     ],
     "correctAnswer": "It is converted into JavaScript",
     "explanation": "The correct answer is It is converted into JavaScript."
+  },
+  {
+    "id": 901,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is the correct way to declare a variable in JavaScript that cannot be reassigned?",
+    "options": [
+      "let x = 10;",
+      "var x = 10;",
+      "const x = 10;",
+      "static x = 10;"
+    ],
+    "correctAnswer": "const x = 10;",
+    "explanation": "The correct answer is const x = 10;."
+  },
+  {
+    "id": 902,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(typeof null);",
+    "options": [
+      "&quot;null&quot;",
+      "&quot;object&quot;",
+      "&quot;undefined&quot;",
+      "&quot;number&quot;"
+    ],
+    "correctAnswer": "&quot;object&quot;",
+    "explanation": "The correct answer is &quot;object&quot;."
+  },
+  {
+    "id": 903,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is NOT a JavaScript data type?",
+    "options": [
+      "Symbol",
+      "BigInt",
+      "Float",
+      "Undefined"
+    ],
+    "correctAnswer": "Float",
+    "explanation": "The correct answer is Float."
+  },
+  {
+    "id": 904,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? for (var i = 0; i &lt; 3; i++) { setTimeout(() =&gt; console.log(i), 0); }",
+    "options": [
+      "0 1 2",
+      "3 3 3",
+      "0 0 0",
+      "1 2 3"
+    ],
+    "correctAnswer": "3 3 3",
+    "explanation": "The correct answer is 3 3 3."
+  },
+  {
+    "id": 905,
+    "section": "node.js &amp; js",
+    "question": "Which method is used to add an element to the end of an array?",
+    "options": [
+      "push()",
+      "pop()",
+      "shift()",
+      "unshift()"
+    ],
+    "correctAnswer": "push()",
+    "explanation": "The correct answer is push()."
+  },
+  {
+    "id": 906,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;this&#x27; keyword in JavaScript?",
+    "options": [
+      "Refers to the current function",
+      "Refers to the global object by default in non-strict mode",
+      "Refers to the parent object of the current execution context",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 907,
+    "section": "node.js &amp; js",
+    "question": "Write a function that returns the sum of all numbers in an array using reduce.",
+    "options": [
+      "arr.reduce((acc, val) =&gt; acc + val, 0)",
+      "arr.reduce((acc, val) =&gt; acc + val)",
+      "arr.reduce((acc, val) =&gt; { return acc + val; }, 0)",
+      "All of the above are correct"
+    ],
+    "correctAnswer": "All of the above are correct",
+    "explanation": "The correct answer is All of the above are correct."
+  },
+  {
+    "id": 908,
+    "section": "node.js &amp; js",
+    "question": "Which of the following correctly creates a shallow copy of an object?",
+    "options": [
+      "Object.assign({}, obj)",
+      "{ ...obj }",
+      "JSON.parse(JSON.stringify(obj))",
+      "Both A and B are correct"
+    ],
+    "correctAnswer": "Both A and B are correct",
+    "explanation": "The correct answer is Both A and B are correct."
+  },
+  {
+    "id": 909,
+    "section": "node.js &amp; js",
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A function that is immediately invoked",
+      "A function that has access to variables from its outer scope even after the outer function has returned",
+      "A function that is defined inside an object",
+      "A function that takes another function as an argument"
+    ],
+    "correctAnswer": "A function that has access to variables from its outer scope even after the outer function has returned",
+    "explanation": "The correct answer is A function that has access to variables from its outer scope even after the outer function has returned."
+  },
+  {
+    "id": 910,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(0.1 + 0.2 === 0.3);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "false",
+    "explanation": "The correct answer is false."
+  },
+  {
+    "id": 911,
+    "section": "node.js &amp; js",
+    "question": "Which array method creates a new array with all elements that pass a test?",
+    "options": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "forEach()"
+    ],
+    "correctAnswer": "filter()",
+    "explanation": "The correct answer is filter()."
+  },
+  {
+    "id": 912,
+    "section": "node.js &amp; js",
+    "question": "What does the &#x27;=== &#x27; operator do?",
+    "options": [
+      "Compares only values, not types",
+      "Compares both values and types without type coercion",
+      "Assigns a value to a variable",
+      "Compares references only"
+    ],
+    "correctAnswer": "Compares both values and types without type coercion",
+    "explanation": "The correct answer is Compares both values and types without type coercion."
+  },
+  {
+    "id": 913,
+    "section": "node.js &amp; js",
+    "question": "Write a promise that resolves after 1 second.",
+    "options": [
+      "new Promise((resolve) =&gt; setTimeout(resolve, 1000))",
+      "Promise.delay(1000)",
+      "setTimeout(() =&gt; Promise.resolve(), 1000)",
+      "Promise.resolve().setTimeout(1000)"
+    ],
+    "correctAnswer": "new Promise((resolve) =&gt; setTimeout(resolve, 1000))",
+    "explanation": "The correct answer is new Promise((resolve) =&gt; setTimeout(resolve, 1000))."
+  },
+  {
+    "id": 914,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log([] + []);",
+    "options": [
+      "[]",
+      "&quot;&quot;",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "&quot;&quot;",
+    "explanation": "The correct answer is &quot;&quot;."
+  },
+  {
+    "id": 915,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is NOT a valid way to define a function in JavaScript?",
+    "options": [
+      "function foo() {}",
+      "const foo = function() {};",
+      "const foo = () =&gt; {};",
+      "def foo(): {}"
+    ],
+    "correctAnswer": "def foo(): {}",
+    "explanation": "The correct answer is def foo(): {}."
+  },
+  {
+    "id": 916,
+    "section": "node.js &amp; js",
+    "question": "What is event delegation in JavaScript?",
+    "options": [
+      "Attaching an event listener to a parent element to handle events on child elements",
+      "Delegating events to a web worker",
+      "Passing event objects between functions",
+      "Automatically triggering events"
+    ],
+    "correctAnswer": "Attaching an event listener to a parent element to handle events on child elements",
+    "explanation": "The correct answer is Attaching an event listener to a parent element to handle events on child elements."
+  },
+  {
+    "id": 917,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? console.log(1 + &#x27;2&#x27; + 3);",
+    "options": [
+      "6",
+      "123",
+      "15",
+      "33"
+    ],
+    "correctAnswer": "123",
+    "explanation": "The correct answer is 123."
+  },
+  {
+    "id": 918,
+    "section": "node.js &amp; js",
+    "question": "Which method is used to remove the last element from an array and return it?",
+    "options": [
+      "pop()",
+      "push()",
+      "shift()",
+      "slice()"
+    ],
+    "correctAnswer": "pop()",
+    "explanation": "The correct answer is pop()."
+  },
+  {
+    "id": 919,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;async/await&#x27; syntax?",
+    "options": [
+      "To write asynchronous code in a synchronous style",
+      "To make functions run faster",
+      "To create web workers",
+      "To handle errors more easily"
+    ],
+    "correctAnswer": "To write asynchronous code in a synchronous style",
+    "explanation": "The correct answer is To write asynchronous code in a synchronous style."
+  },
+  {
+    "id": 920,
+    "section": "node.js &amp; js",
+    "question": "Write a function that uses destructuring to extract the &#x27;name&#x27; and &#x27;age&#x27; properties from an object.",
+    "options": [
+      "const { name, age } = person;",
+      "const name = person.name; const age = person.age;",
+      "const [name, age] = person;",
+      "Both A and B are correct but A is destructuring"
+    ],
+    "correctAnswer": "Both A and B are correct but A is destructuring",
+    "explanation": "The correct answer is Both A and B are correct but A is destructuring."
+  },
+  {
+    "id": 921,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(typeof NaN);",
+    "options": [
+      "&quot;NaN&quot;",
+      "&quot;number&quot;",
+      "&quot;undefined&quot;",
+      "&quot;object&quot;"
+    ],
+    "correctAnswer": "&quot;number&quot;",
+    "explanation": "The correct answer is &quot;number&quot;."
+  },
+  {
+    "id": 922,
+    "section": "node.js &amp; js",
+    "question": "Which of the following statements about the &#x27;map()&#x27; method is true?",
+    "options": [
+      "It modifies the original array",
+      "It returns a new array of the same length",
+      "It returns a new array with only elements that pass a test",
+      "It executes a function for each array element but returns undefined"
+    ],
+    "correctAnswer": "It returns a new array of the same length",
+    "explanation": "The correct answer is It returns a new array of the same length."
+  },
+  {
+    "id": 923,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;bind()&#x27; method?",
+    "options": [
+      "To create a new function with a fixed &#x27;this&#x27; value",
+      "To combine two functions",
+      "To attach an event listener",
+      "To bind a variable to a scope"
+    ],
+    "correctAnswer": "To create a new function with a fixed &#x27;this&#x27; value",
+    "explanation": "The correct answer is To create a new function with a fixed &#x27;this&#x27; value."
+  },
+  {
+    "id": 924,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? console.log([] == false);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 925,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is a way to prevent default behavior of an event?",
+    "options": [
+      "event.stopPropagation()",
+      "event.preventDefault()",
+      "return false",
+      "Both B and C are correct"
+    ],
+    "correctAnswer": "Both B and C are correct",
+    "explanation": "The correct answer is Both B and C are correct."
+  },
+  {
+    "id": 926,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(!!&quot;false&quot;);",
+    "options": [
+      "false",
+      "true",
+      "undefined",
+      "&quot;false&quot;"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 927,
+    "section": "node.js &amp; js",
+    "question": "Write a function that returns a new array containing only unique values from the input array.",
+    "options": [
+      "[...new Set(arr)]",
+      "arr.filter((v, i, a) =&gt; a.indexOf(v) === i)",
+      "Both A and B are correct",
+      "arr.unique()"
+    ],
+    "correctAnswer": "Both A and B are correct",
+    "explanation": "The correct answer is Both A and B are correct."
+  },
+  {
+    "id": 928,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between &#x27;let&#x27; and &#x27;var&#x27;?",
+    "options": [
+      "let is block-scoped, var is function-scoped",
+      "let cannot be redeclared in the same scope",
+      "let is not hoisted in the same way as var",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 929,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? const obj = { a: 1, b: 2 }; const { a, c } = obj; console.log(c);",
+    "options": [
+      "2",
+      "undefined",
+      "null",
+      "ReferenceError"
+    ],
+    "correctAnswer": "undefined",
+    "explanation": "The correct answer is undefined."
+  },
+  {
+    "id": 930,
+    "section": "node.js &amp; js",
+    "question": "Which method converts a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.decode()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "explanation": "The correct answer is JSON.parse()."
+  },
+  {
+    "id": 931,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;Set&#x27; object in JavaScript?",
+    "options": [
+      "To store unique values of any type",
+      "To store key-value pairs",
+      "To store ordered lists",
+      "To store binary data"
+    ],
+    "correctAnswer": "To store unique values of any type",
+    "explanation": "The correct answer is To store unique values of any type."
+  },
+  {
+    "id": 932,
+    "section": "node.js &amp; js",
+    "question": "Write a function that delays execution using setTimeout and returns a promise.",
+    "options": [
+      "function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }",
+      "function delay(ms) { setTimeout(() =&gt; {}, ms); }",
+      "function delay(ms) { return Promise.setTimeout(ms); }",
+      "function delay(ms) { return new Promise((resolve, reject) =&gt; { setTimeout(reject, ms); }); }"
+    ],
+    "correctAnswer": "function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }",
+    "explanation": "The correct answer is function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }."
+  },
+  {
+    "id": 933,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(3 &gt; 2 &gt; 1);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "false",
+    "explanation": "The correct answer is false."
+  },
+  {
+    "id": 934,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is a valid way to create a class in ES6?",
+    "options": [
+      "class MyClass { constructor() {} }",
+      "const MyClass = class { constructor() {} }",
+      "Both A and B are valid",
+      "function MyClass() { this.constructor = function() {}; }"
+    ],
+    "correctAnswer": "Both A and B are valid",
+    "explanation": "The correct answer is Both A and B are valid."
+  },
+  {
+    "id": 935,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;Symbol&#x27; data type?",
+    "options": [
+      "To create unique identifiers",
+      "To represent mathematical symbols",
+      "To create private properties",
+      "Both A and C are correct"
+    ],
+    "correctAnswer": "Both A and C are correct",
+    "explanation": "The correct answer is Both A and C are correct."
+  },
+  {
+    "id": 936,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? console.log(1 &lt; 2 &lt; 3);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "TypeError"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 937,
+    "section": "node.js &amp; js",
+    "question": "Which method is used to flatten an array to a specified depth?",
+    "options": [
+      "flat()",
+      "flatten()",
+      "reduce()",
+      "concat()"
+    ],
+    "correctAnswer": "flat()",
+    "explanation": "The correct answer is flat()."
+  },
+  {
+    "id": 938,
+    "section": "node.js &amp; js",
+    "question": "What is a &#x27;callback hell&#x27; in JavaScript?",
+    "options": [
+      "An infinite loop of callbacks",
+      "Nested callbacks that become hard to read and maintain",
+      "A debugging tool for callbacks",
+      "A design pattern for error handling"
+    ],
+    "correctAnswer": "Nested callbacks that become hard to read and maintain",
+    "explanation": "The correct answer is Nested callbacks that become hard to read and maintain."
+  },
+  {
+    "id": 939,
+    "section": "node.js &amp; js",
+    "question": "Write a function that checks if a variable is an array.",
+    "options": [
+      "Array.isArray(variable)",
+      "variable instanceof Array",
+      "Both A and B are correct",
+      "typeof variable === &#x27;array&#x27;"
+    ],
+    "correctAnswer": "Both A and B are correct",
+    "explanation": "The correct answer is Both A and B are correct."
+  },
+  {
+    "id": 940,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(&#x27;5&#x27; - 3);",
+    "options": [
+      "2",
+      "53",
+      "NaN",
+      "TypeError"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The correct answer is 2."
+  },
+  {
+    "id": 941,
+    "section": "node.js &amp; js",
+    "question": "Which of the following statements about arrow functions is true?",
+    "options": [
+      "They have their own &#x27;this&#x27; context",
+      "They cannot be used as constructors",
+      "They cannot use the &#x27;arguments&#x27; object",
+      "Both B and C are correct"
+    ],
+    "correctAnswer": "Both B and C are correct",
+    "explanation": "The correct answer is Both B and C are correct."
+  },
+  {
+    "id": 942,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;spread&#x27; operator (...) in JavaScript?",
+    "options": [
+      "To spread elements of an iterable into individual elements",
+      "To create a shallow copy of an array or object",
+      "To pass array elements as arguments to a function",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 943,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? console.log(!![]);",
+    "options": [
+      "true",
+      "false",
+      "[]",
+      "undefined"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 944,
+    "section": "node.js &amp; js",
+    "question": "Which method is used to combine two or more arrays?",
+    "options": [
+      "concat()",
+      "merge()",
+      "join()",
+      "combine()"
+    ],
+    "correctAnswer": "concat()",
+    "explanation": "The correct answer is concat()."
+  },
+  {
+    "id": 945,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(typeof (function() {}));",
+    "options": [
+      "&quot;function&quot;",
+      "&quot;object&quot;",
+      "&quot;undefined&quot;",
+      "&quot;array&quot;"
+    ],
+    "correctAnswer": "&quot;function&quot;",
+    "explanation": "The correct answer is &quot;function&quot;."
+  },
+  {
+    "id": 946,
+    "section": "node.js &amp; js",
+    "question": "Write a function that throttles another function to execute at most once every specified milliseconds.",
+    "options": [
+      "function throttle(func, limit) { let inThrottle; return function() { if (!inThrottle) { func.apply(this, arguments); inThrottle = true; setTimeout(() =&gt; inThrottle = false, limit); } } }",
+      "function throttle(func, limit) { return function() { setTimeout(() =&gt; func.apply(this, arguments), limit); } }",
+      "function throttle(func, limit) { let lastCall = 0; return function() { const now = Date.now(); if (now - lastCall &gt;= limit) { lastCall = now; func.apply(this, arguments); } } }",
+      "Both A and C are valid throttle implementations"
+    ],
+    "correctAnswer": "Both A and C are valid throttle implementations",
+    "explanation": "The correct answer is Both A and C are valid throttle implementations."
+  },
+  {
+    "id": 947,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;WeakMap&#x27; object?",
+    "options": [
+      "A Map with weak references to keys, allowing garbage collection",
+      "A Map that only stores weak values",
+      "A Map that is not enumerable",
+      "Both A and C are correct"
+    ],
+    "correctAnswer": "Both A and C are correct",
+    "explanation": "The correct answer is Both A and C are correct."
+  },
+  {
+    "id": 948,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? console.log([] + {});",
+    "options": [
+      "[object Object]",
+      "{}[]",
+      "[]",
+      "undefined"
+    ],
+    "correctAnswer": "[object Object]",
+    "explanation": "The correct answer is [object Object]."
+  },
+  {
+    "id": 949,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is a valid way to create a deep clone of an object (excluding special cases like Date, RegExp)?",
+    "options": [
+      "JSON.parse(JSON.stringify(obj))",
+      "structuredClone(obj)",
+      "_.cloneDeep(obj) (Lodash)",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 950,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(Number(&quot;123abc&quot;));",
+    "options": [
+      "123",
+      "NaN",
+      "undefined",
+      "0"
+    ],
+    "correctAnswer": "NaN",
+    "explanation": "The correct answer is NaN."
+  },
+  {
+    "id": 951,
+    "section": "node.js &amp; js",
+    "question": "What is the output of: console.log(typeof null)?",
+    "options": [
+      "null",
+      "undefined",
+      "object",
+      "string"
+    ],
+    "correctAnswer": "object",
+    "explanation": "The correct answer is object."
+  },
+  {
+    "id": 952,
+    "section": "node.js &amp; js",
+    "question": "Which of the following correctly explains the difference between &#x27;var&#x27;, &#x27;let&#x27;, and &#x27;const&#x27; in JavaScript?",
+    "options": [
+      "&#x27;var&#x27; is block-scoped; &#x27;let&#x27; and &#x27;const&#x27; are function-scoped",
+      "&#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting",
+      "&#x27;const&#x27; variables can be reassigned; &#x27;let&#x27; variables cannot",
+      "&#x27;let&#x27; and &#x27;var&#x27; behave identically; only &#x27;const&#x27; differs"
+    ],
+    "correctAnswer": "&#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting",
+    "explanation": "The correct answer is &#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting."
+  },
+  {
+    "id": 953,
+    "section": "node.js &amp; js",
+    "question": "What does the following code output? console.log(0.1 + 0.2 === 0.3);",
+    "options": [
+      "true",
+      "false",
+      "undefined",
+      "NaN"
+    ],
+    "correctAnswer": "false",
+    "explanation": "The correct answer is false."
+  },
+  {
+    "id": 954,
+    "section": "node.js &amp; js",
+    "question": "Which operator returns the data type of a variable as a string?",
+    "options": [
+      "instanceof",
+      "typeof",
+      "datatype()",
+      "type"
+    ],
+    "correctAnswer": "typeof",
+    "explanation": "The correct answer is typeof."
+  },
+  {
+    "id": 955,
+    "section": "node.js &amp; js",
+    "question": "What is the result of: console.log(5 == &#x27;5&#x27;) and console.log(5 === &#x27;5&#x27;) respectively?",
+    "options": [
+      "false, false",
+      "true, true",
+      "true, false",
+      "false, true"
+    ],
+    "correctAnswer": "true, false",
+    "explanation": "The correct answer is true, false."
+  },
+  {
+    "id": 956,
+    "section": "node.js &amp; js",
+    "question": "What will this code output? let x = 10; if (x &gt; 5) { let x = 20; console.log(x); } console.log(x);",
+    "options": [
+      "20, 20",
+      "10, 10",
+      "20, 10",
+      "10, 20"
+    ],
+    "correctAnswer": "20, 10",
+    "explanation": "The correct answer is 20, 10."
+  },
+  {
+    "id": 957,
+    "section": "node.js &amp; js",
+    "question": "What does the nullish coalescing operator (??) do?",
+    "options": [
+      "Returns the left operand if it is falsy, otherwise the right",
+      "Returns the right operand only if the left is null or undefined",
+      "Acts as a shorthand for the ternary operator in all cases",
+      "Converts null to 0 and undefined to empty string"
+    ],
+    "correctAnswer": "Returns the right operand only if the left is null or undefined",
+    "explanation": "The correct answer is Returns the right operand only if the left is null or undefined."
+  },
+  {
+    "id": 958,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this code? console.log(1 + &#x27;2&#x27; + 3);",
+    "options": [
+      "6",
+      "123",
+      "&#x27;123&#x27;",
+      "15"
+    ],
+    "correctAnswer": "123",
+    "explanation": "The correct answer is 123."
+  },
+  {
+    "id": 959,
+    "section": "node.js &amp; js",
+    "question": "Which control flow statement is used to exit a switch case block and prevent fall-through?",
+    "options": [
+      "exit",
+      "return",
+      "break",
+      "continue"
+    ],
+    "correctAnswer": "break",
+    "explanation": "The correct answer is break."
+  },
+  {
+    "id": 960,
+    "section": "node.js &amp; js",
+    "question": "What will this loop print? for (let i = 0; i &lt; 3; i++) { if (i === 1) continue; console.log(i); }",
+    "options": [
+      "0, 1, 2",
+      "0, 2",
+      "1",
+      "0, 1"
+    ],
+    "correctAnswer": "0, 2",
+    "explanation": "The correct answer is 0, 2."
+  },
+  {
+    "id": 961,
+    "section": "node.js &amp; js",
+    "question": "What is the result of the following code? const obj = { a: 1, b: 2 }; const { a, c = 5 } = obj; console.log(a, c);",
+    "options": [
+      "1 undefined",
+      "1 5",
+      "undefined 5",
+      "Error"
+    ],
+    "correctAnswer": "1 5",
+    "explanation": "The correct answer is 1 5."
+  },
+  {
+    "id": 962,
+    "section": "node.js &amp; js",
+    "question": "Which method creates a new object with the specified prototype object?",
+    "options": [
+      "Object.assign()",
+      "Object.create()",
+      "Object.new()",
+      "Object.prototype()"
+    ],
+    "correctAnswer": "Object.create()",
+    "explanation": "The correct answer is Object.create()."
+  },
+  {
+    "id": 963,
+    "section": "node.js &amp; js",
+    "question": "What does Object.freeze() do to an object?",
+    "options": [
+      "Creates a deep clone of the object",
+      "Prevents new properties from being added and existing properties from being modified or deleted",
+      "Prevents only deletion of properties, but allows modification",
+      "Converts the object to a read-only string"
+    ],
+    "correctAnswer": "Prevents new properties from being added and existing properties from being modified or deleted",
+    "explanation": "The correct answer is Prevents new properties from being added and existing properties from being modified or deleted."
+  },
+  {
+    "id": 964,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this code? const arr = [1, 2, 3]; const [first, ...rest] = arr; console.log(rest);",
+    "options": [
+      "[1]",
+      "[2, 3]",
+      "[1, 2]",
+      "[3]"
+    ],
+    "correctAnswer": "[2, 3]",
+    "explanation": "The correct answer is [2, 3]."
+  },
+  {
+    "id": 965,
+    "section": "node.js &amp; js",
+    "question": "Which Array method returns a new array with only the elements that pass a test?",
+    "options": [
+      "map()",
+      "reduce()",
+      "filter()",
+      "find()"
+    ],
+    "correctAnswer": "filter()",
+    "explanation": "The correct answer is filter()."
+  },
+  {
+    "id": 966,
+    "section": "node.js &amp; js",
+    "question": "What does the following code return? [1, 2, 3].reduce((acc, val) =&gt; acc + val, 0);",
+    "options": [
+      "[1, 2, 3]",
+      "6",
+      "0",
+      "undefined"
+    ],
+    "correctAnswer": "6",
+    "explanation": "The correct answer is 6."
+  },
+  {
+    "id": 967,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between Array.prototype.map() and Array.prototype.forEach()?",
+    "options": [
+      "forEach modifies the original array; map does not",
+      "map returns a new array; forEach returns undefined",
+      "map can only be used with numbers; forEach works with any type",
+      "They are functionally identical"
+    ],
+    "correctAnswer": "map returns a new array; forEach returns undefined",
+    "explanation": "The correct answer is map returns a new array; forEach returns undefined."
+  },
+  {
+    "id": 968,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this code? console.log([1, 2, 3].map(x =&gt; x * 2).filter(x =&gt; x &gt; 4));",
+    "options": [
+      "[2, 4, 6]",
+      "[6]",
+      "[4, 6]",
+      "[5, 6]"
+    ],
+    "correctAnswer": "[6]",
+    "explanation": "The correct answer is [6]."
+  },
+  {
+    "id": 969,
+    "section": "node.js &amp; js",
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A function that can only be called once",
+      "A function that has access to variables in its outer lexical scope even after the outer function has returned",
+      "A function with no parameters",
+      "A method used to close a browser window"
+    ],
+    "correctAnswer": "A function that has access to variables in its outer lexical scope even after the outer function has returned",
+    "explanation": "The correct answer is A function that has access to variables in its outer lexical scope even after the outer function has returned."
+  },
+  {
+    "id": 970,
+    "section": "node.js &amp; js",
+    "question": "What will the following code output? function outer() { let count = 0; return function() { count++; return count; }; } const inc = outer(); console.log(inc()); console.log(inc());",
+    "options": [
+      "1, 1",
+      "0, 1",
+      "1, 2",
+      "undefined, undefined"
+    ],
+    "correctAnswer": "1, 2",
+    "explanation": "The correct answer is 1, 2."
+  },
+  {
+    "id": 971,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between function declarations and function expressions in terms of hoisting?",
+    "options": [
+      "Both are fully hoisted",
+      "Neither is hoisted",
+      "Function declarations are fully hoisted; function expressions are not initialized until runtime",
+      "Function expressions are fully hoisted; function declarations are not"
+    ],
+    "correctAnswer": "Function declarations are fully hoisted; function expressions are not initialized until runtime",
+    "explanation": "The correct answer is Function declarations are fully hoisted; function expressions are not initialized until runtime."
+  },
+  {
+    "id": 972,
+    "section": "node.js &amp; js",
+    "question": "What does the &#x27;this&#x27; keyword refer to inside an arrow function?",
+    "options": [
+      "The arrow function itself",
+      "The global object always",
+      "The lexically enclosing context where the arrow function was defined",
+      "undefined in strict mode, global in non-strict mode"
+    ],
+    "correctAnswer": "The lexically enclosing context where the arrow function was defined",
+    "explanation": "The correct answer is The lexically enclosing context where the arrow function was defined."
+  },
+  {
+    "id": 973,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this code? const greet = (name = &#x27;World&#x27;) =&gt; `Hello, ${name}!`; console.log(greet());",
+    "options": [
+      "Hello, undefined!",
+      "Hello, !",
+      "Hello, World!",
+      "Error"
+    ],
+    "correctAnswer": "Hello, World!",
+    "explanation": "The correct answer is Hello, World!."
+  },
+  {
+    "id": 974,
+    "section": "node.js &amp; js",
+    "question": "Which of the following is the correct way to call a function with a specific &#x27;this&#x27; value and pass arguments one by one?",
+    "options": [
+      "fn.bind(thisArg, arg1, arg2)",
+      "fn.call(thisArg, arg1, arg2)",
+      "fn.apply(thisArg, arg1, arg2)",
+      "fn.run(thisArg, arg1, arg2)"
+    ],
+    "correctAnswer": "fn.call(thisArg, arg1, arg2)",
+    "explanation": "The correct answer is fn.call(thisArg, arg1, arg2)."
+  },
+  {
+    "id": 975,
+    "section": "node.js &amp; js",
+    "question": "What is a pure function?",
+    "options": [
+      "A function written in strict mode only",
+      "A function that returns a value and has no side effects, always producing the same output for the same inputs",
+      "A function that only accepts primitive types",
+      "A function declared with the &#x27;pure&#x27; keyword"
+    ],
+    "correctAnswer": "A function that returns a value and has no side effects, always producing the same output for the same inputs",
+    "explanation": "The correct answer is A function that returns a value and has no side effects, always producing the same output for the same inputs."
+  },
+  {
+    "id": 976,
+    "section": "node.js &amp; js",
+    "question": "In Node.js, what is the purpose of the &#x27;process.argv&#x27; array?",
+    "options": [
+      "It lists all currently running processes",
+      "It contains the command-line arguments passed when the Node.js process was launched",
+      "It stores environment variables for the current process",
+      "It represents the arguments of the last function call"
+    ],
+    "correctAnswer": "It contains the command-line arguments passed when the Node.js process was launched",
+    "explanation": "The correct answer is It contains the command-line arguments passed when the Node.js process was launched."
+  },
+  {
+    "id": 977,
+    "section": "node.js &amp; js",
+    "question": "What is the Node.js module system&#x27;s primary mechanism for sharing code between files?",
+    "options": [
+      "Using the global window object",
+      "Using &#x27;import&#x27; and &#x27;export&#x27; with script tags",
+      "Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export",
+      "Using the &#x27;include()&#x27; function"
+    ],
+    "correctAnswer": "Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export",
+    "explanation": "The correct answer is Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export."
+  },
+  {
+    "id": 978,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between the CommonJS &#x27;require&#x27; system and ES Modules &#x27;import&#x27; in Node.js?",
+    "options": [
+      "require is synchronous; ES module imports are asynchronous and statically analyzed",
+      "require is only for built-in modules; import is for npm packages",
+      "They are identical; &#x27;import&#x27; is just newer syntax",
+      "require works only on Windows; import works on all platforms"
+    ],
+    "correctAnswer": "require is synchronous; ES module imports are asynchronous and statically analyzed",
+    "explanation": "The correct answer is require is synchronous; ES module imports are asynchronous and statically analyzed."
+  },
+  {
+    "id": 979,
+    "section": "node.js &amp; js",
+    "question": "When reading a file using Node.js&#x27;s &#x27;fs&#x27; module, what is the key difference between fs.readFile() and fs.readFileSync()?",
+    "options": [
+      "readFile reads the entire file; readFileSync reads line by line",
+      "readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop",
+      "readFileSync is faster for large files; readFile is faster for small files",
+      "readFile returns a Buffer; readFileSync returns a string"
+    ],
+    "correctAnswer": "readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop",
+    "explanation": "The correct answer is readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop."
+  },
+  {
+    "id": 980,
+    "section": "node.js &amp; js",
+    "question": "What does the following Node.js code do? const fs = require(&#x27;fs&#x27;); fs.appendFile(&#x27;log.txt&#x27;, &#x27;New entry\\n&#x27;, (err) =&gt; { if (err) throw err; });",
+    "options": [
+      "Creates a new file called log.txt and overwrites it",
+      "Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist",
+      "Reads the contents of log.txt and logs them",
+      "Deletes log.txt and recreates it"
+    ],
+    "correctAnswer": "Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist",
+    "explanation": "The correct answer is Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist."
+  },
+  {
+    "id": 981,
+    "section": "node.js &amp; js",
+    "question": "Which Node.js built-in module is used to work with file and directory paths in a cross-platform way?",
+    "options": [
+      "fs",
+      "os",
+      "path",
+      "url"
+    ],
+    "correctAnswer": "path",
+    "explanation": "The correct answer is path."
+  },
+  {
+    "id": 982,
+    "section": "node.js &amp; js",
+    "question": "In Node.js debugging with the &#x27;--inspect&#x27; flag, which tool is commonly used to connect to the debugger?",
+    "options": [
+      "Node&#x27;s built-in debug console only",
+      "Chrome DevTools via chrome://inspect",
+      "The npm debug package exclusively",
+      "Postman"
+    ],
+    "correctAnswer": "Chrome DevTools via chrome://inspect",
+    "explanation": "The correct answer is Chrome DevTools via chrome://inspect."
+  },
+  {
+    "id": 983,
+    "section": "node.js &amp; js",
+    "question": "What is the Event Loop in Node.js?",
+    "options": [
+      "A for loop that processes all network requests",
+      "A mechanism that allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel and processing callbacks when complete",
+      "The main thread that handles all CPU-intensive tasks",
+      "A Node.js-specific implementation of the while loop"
+    ],
+    "correctAnswer": "A mechanism that allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel and processing callbacks when complete",
+    "explanation": "The correct answer is A mechanism that allows Node.js to perform non-blocking I/O operations by offloading operations to the system kernel and processing callbacks when complete."
+  },
+  {
+    "id": 984,
+    "section": "node.js &amp; js",
+    "question": "What is &#x27;callback hell&#x27; and what is the primary way to avoid it in modern Node.js?",
+    "options": [
+      "Using too many callbacks in one file; avoided by reducing function count",
+      "Deeply nested callbacks that are hard to read; avoided by using Promises or async/await",
+      "Callbacks that are never called; avoided by using try-catch",
+      "Synchronous callbacks; avoided by using setTimeout"
+    ],
+    "correctAnswer": "Deeply nested callbacks that are hard to read; avoided by using Promises or async/await",
+    "explanation": "The correct answer is Deeply nested callbacks that are hard to read; avoided by using Promises or async/await."
+  },
+  {
+    "id": 985,
+    "section": "node.js &amp; js",
+    "question": "What does &#x27;async/await&#x27; in Node.js ultimately rely on under the hood?",
+    "options": [
+      "Callbacks",
+      "Generators",
+      "Promises",
+      "Event emitters"
+    ],
+    "correctAnswer": "Promises",
+    "explanation": "The correct answer is Promises."
+  },
+  {
+    "id": 986,
+    "section": "node.js &amp; js",
+    "question": "What will the following code log? async function fetchData() { return 42; } console.log(fetchData());",
+    "options": [
+      "42",
+      "undefined",
+      "Promise { 42 }",
+      "Error: fetchData is not a Promise"
+    ],
+    "correctAnswer": "Promise { 42 }",
+    "explanation": "The correct answer is Promise { 42 }."
+  },
+  {
+    "id": 987,
+    "section": "node.js &amp; js",
+    "question": "Which npm package is commonly used in Node.js to make HTTP requests to external APIs?",
+    "options": [
+      "fs",
+      "http",
+      "node-fetch or axios",
+      "express"
+    ],
+    "correctAnswer": "node-fetch or axios",
+    "explanation": "The correct answer is node-fetch or axios."
+  },
+  {
+    "id": 988,
+    "section": "node.js &amp; js",
+    "question": "In an Express.js web server, what does the following code create? const app = express(); app.get(&#x27;/&#x27;, (req, res) =&gt; { res.send(&#x27;Hello&#x27;); });",
+    "options": [
+      "A POST route at the root URL",
+      "A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;",
+      "A middleware function for all routes",
+      "A database connection"
+    ],
+    "correctAnswer": "A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;",
+    "explanation": "The correct answer is A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;."
+  },
+  {
+    "id": 989,
+    "section": "node.js &amp; js",
+    "question": "In Node.js, what is the &#x27;http&#x27; module used for?",
+    "options": [
+      "Sending emails via HTTP",
+      "Creating HTTP servers and making HTTP requests natively without external packages",
+      "Parsing HTTP headers only",
+      "Managing HTTPS certificates"
+    ],
+    "correctAnswer": "Creating HTTP servers and making HTTP requests natively without external packages",
+    "explanation": "The correct answer is Creating HTTP servers and making HTTP requests natively without external packages."
+  },
+  {
+    "id": 990,
+    "section": "node.js &amp; js",
+    "question": "What does the following code accomplish in a Node.js weather app context? const url = `https://api.weather.com/v1?q=${encodeURIComponent(city)}&amp;appid=${apiKey}`;",
+    "options": [
+      "Creates a URL with a raw city string and hardcoded key",
+      "Encodes the city name to be URL-safe and embeds it with an API key in the query string",
+      "Only works if the city has no special characters",
+      "Sends a GET request immediately"
+    ],
+    "correctAnswer": "Encodes the city name to be URL-safe and embeds it with an API key in the query string",
+    "explanation": "The correct answer is Encodes the city name to be URL-safe and embeds it with an API key in the query string."
+  },
+  {
+    "id": 991,
+    "section": "node.js &amp; js",
+    "question": "When deploying a Node.js app to Heroku, what file tells Heroku how to start the application?",
+    "options": [
+      "package.json (main field)",
+      "Procfile",
+      "server.config.js",
+      ".env"
+    ],
+    "correctAnswer": "Procfile",
+    "explanation": "The correct answer is Procfile."
+  },
+  {
+    "id": 992,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;PORT&#x27; environment variable when deploying a Node.js app?",
+    "options": [
+      "To set the MongoDB port",
+      "To allow the hosting platform to assign a dynamic port, which the app should listen on",
+      "To define the SSH port for deployment",
+      "To specify which npm registry to use"
+    ],
+    "correctAnswer": "To allow the hosting platform to assign a dynamic port, which the app should listen on",
+    "explanation": "The correct answer is To allow the hosting platform to assign a dynamic port, which the app should listen on."
+  },
+  {
+    "id": 993,
+    "section": "node.js &amp; js",
+    "question": "What does &#x27;process.env&#x27; provide in a Node.js application?",
+    "options": [
+      "A list of all running Node.js processes",
+      "Access to environment variables set in the operating system or .env file",
+      "The current working directory of the process",
+      "Metadata about the installed Node.js version"
+    ],
+    "correctAnswer": "Access to environment variables set in the operating system or .env file",
+    "explanation": "The correct answer is Access to environment variables set in the operating system or .env file."
+  },
+  {
+    "id": 994,
+    "section": "node.js &amp; js",
+    "question": "In Mongoose, what is the purpose of defining a Schema?",
+    "options": [
+      "To create the MongoDB database itself",
+      "To define the structure, types, and validation rules for documents in a collection",
+      "To write raw SQL queries",
+      "To configure the MongoDB connection string"
+    ],
+    "correctAnswer": "To define the structure, types, and validation rules for documents in a collection",
+    "explanation": "The correct answer is To define the structure, types, and validation rules for documents in a collection."
+  },
+  {
+    "id": 995,
+    "section": "node.js &amp; js",
+    "question": "What does the following Mongoose code do? const User = mongoose.model(&#x27;User&#x27;, userSchema); const user = new User({ name: &#x27;Alice&#x27; }); user.save();",
+    "options": [
+      "Updates an existing user named Alice",
+      "Creates a new User document in MongoDB and saves it",
+      "Deletes a user named Alice from the database",
+      "Queries for a user named Alice"
+    ],
+    "correctAnswer": "Creates a new User document in MongoDB and saves it",
+    "explanation": "The correct answer is Creates a new User document in MongoDB and saves it."
+  },
+  {
+    "id": 996,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between a Promise&#x27;s .then() and async/await syntax for handling asynchronous operations?",
+    "options": [
+      ".then() is synchronous; async/await is asynchronous",
+      "async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code",
+      ".then() can only handle one Promise; async/await handles multiple",
+      "They are not interchangeable"
+    ],
+    "correctAnswer": "async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code",
+    "explanation": "The correct answer is async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code."
+  },
+  {
+    "id": 997,
+    "section": "node.js &amp; js",
+    "question": "In a REST API built with Express and Mongoose, what HTTP method and status code should be used when successfully creating a new resource?",
+    "options": [
+      "GET with 200",
+      "POST with 201",
+      "PUT with 200",
+      "POST with 200"
+    ],
+    "correctAnswer": "POST with 201",
+    "explanation": "The correct answer is POST with 201."
+  },
+  {
+    "id": 998,
+    "section": "node.js &amp; js",
+    "question": "What is the role of middleware in Express.js?",
+    "options": [
+      "Functions that serve static HTML files",
+      "Functions that have access to req, res, and next, and can execute code, modify req/res, or end the request-response cycle",
+      "The layer between MongoDB and the Express router",
+      "A built-in Express function for JWT authentication"
+    ],
+    "correctAnswer": "Functions that have access to req, res, and next, and can execute code, modify req/res, or end the request-response cycle",
+    "explanation": "The correct answer is Functions that have access to req, res, and next, and can execute code, modify req/res, or end the request-response cycle."
+  },
+  {
+    "id": 999,
+    "section": "node.js &amp; js",
+    "question": "What does app.use(express.json()) do in an Express application?",
+    "options": [
+      "Enables JSON responses for all routes",
+      "Parses incoming requests with JSON payloads and makes data available in req.body",
+      "Converts all route handler return values to JSON",
+      "Validates that all incoming data is valid JSON"
+    ],
+    "correctAnswer": "Parses incoming requests with JSON payloads and makes data available in req.body",
+    "explanation": "The correct answer is Parses incoming requests with JSON payloads and makes data available in req.body."
+  },
+  {
+    "id": 1000,
+    "section": "node.js &amp; js",
+    "question": "How is authentication typically implemented in a Node.js REST API to protect routes?",
+    "options": [
+      "Using sessions only with express-session",
+      "By checking a password on every request in the route handler",
+      "Using JSON Web Tokens (JWT) where a token is verified via middleware before reaching protected routes",
+      "Node.js has built-in authentication that is enabled via a flag"
+    ],
+    "correctAnswer": "Using JSON Web Tokens (JWT) where a token is verified via middleware before reaching protected routes",
+    "explanation": "The correct answer is Using JSON Web Tokens (JWT) where a token is verified via middleware before reaching protected routes."
+  },
+  {
+    "id": 1001,
+    "section": "node.js &amp; js",
+    "question": "In a Mongoose Task model for a multi-user app, what would the following schema field accomplish? owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: &#x27;User&#x27; }",
+    "options": [
+      "Stores the user&#x27;s email as a reference",
+      "Creates a foreign key-like reference to a User document by its MongoDB ObjectId",
+      "Automatically populates the user&#x27;s data whenever a task is retrieved",
+      "Limits one task per user"
+    ],
+    "correctAnswer": "Creates a foreign key-like reference to a User document by its MongoDB ObjectId",
+    "explanation": "The correct answer is Creates a foreign key-like reference to a User document by its MongoDB ObjectId."
+  },
+  {
+    "id": 1002,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of Mongoose&#x27;s .populate() method?",
+    "options": [
+      "To add default values to a schema",
+      "To replace a referenced ObjectId with the actual document data from the referenced collection",
+      "To insert multiple documents at once",
+      "To validate all fields in a document before saving"
+    ],
+    "correctAnswer": "To replace a referenced ObjectId with the actual document data from the referenced collection",
+    "explanation": "The correct answer is To replace a referenced ObjectId with the actual document data from the referenced collection."
+  },
+  {
+    "id": 1003,
+    "section": "node.js &amp; js",
+    "question": "In Express.js, how do you implement pagination for a GET /tasks endpoint using query parameters?",
+    "options": [
+      "Using req.body.page and req.body.limit",
+      "Using req.params.page and req.params.limit",
+      "Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()",
+      "Pagination is handled automatically by Mongoose"
+    ],
+    "correctAnswer": "Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()",
+    "explanation": "The correct answer is Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()."
+  },
+  {
+    "id": 1004,
+    "section": "node.js &amp; js",
+    "question": "What npm package is commonly used to hash passwords securely before storing them in a database?",
+    "options": [
+      "crypto",
+      "md5",
+      "bcryptjs",
+      "jsonwebtoken"
+    ],
+    "correctAnswer": "bcryptjs",
+    "explanation": "The correct answer is bcryptjs."
+  },
+  {
+    "id": 1005,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of &#x27;multer&#x27; in a Node.js application?",
+    "options": [
+      "To handle multipart/form-data, primarily used for file uploads",
+      "To multiply values in a MongoDB query",
+      "To manage multiple MongoDB connections",
+      "To compress response bodies"
+    ],
+    "correctAnswer": "To handle multipart/form-data, primarily used for file uploads",
+    "explanation": "The correct answer is To handle multipart/form-data, primarily used for file uploads."
+  },
+  {
+    "id": 1006,
+    "section": "node.js &amp; js",
+    "question": "What does the following Mongoose middleware do? userSchema.pre(&#x27;save&#x27;, async function(next) { if (this.isModified(&#x27;password&#x27;)) { this.password = await bcrypt.hash(this.password, 8); } next(); });",
+    "options": [
+      "Hashes the password after every save",
+      "Automatically hashes the password only when it has been modified, before saving to the database",
+      "Validates the password format before saving",
+      "Sends a hashed password in the response"
+    ],
+    "correctAnswer": "Automatically hashes the password only when it has been modified, before saving to the database",
+    "explanation": "The correct answer is Automatically hashes the password only when it has been modified, before saving to the database."
+  },
+  {
+    "id": 1007,
+    "section": "node.js &amp; js",
+    "question": "Which package is commonly used to send transactional emails from a Node.js application?",
+    "options": [
+      "nodemailer or SendGrid",
+      "mailparser",
+      "emailjs",
+      "smtp-handler"
+    ],
+    "correctAnswer": "nodemailer or SendGrid",
+    "explanation": "The correct answer is nodemailer or SendGrid."
+  },
+  {
+    "id": 1008,
+    "section": "node.js &amp; js",
+    "question": "In the context of Node.js testing with Jest, what does the describe() block do?",
+    "options": [
+      "Executes an asynchronous test",
+      "Groups related tests together for organization",
+      "Defines a test assertion",
+      "Mocks a module"
+    ],
+    "correctAnswer": "Groups related tests together for organization",
+    "explanation": "The correct answer is Groups related tests together for organization."
+  },
+  {
+    "id": 1009,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of jest.fn() when testing Node.js code?",
+    "options": [
+      "To run tests in a separate process",
+      "To create a mock function that can track calls, arguments, and return values",
+      "To assert that a function throws an error",
+      "To import the Jest testing framework"
+    ],
+    "correctAnswer": "To create a mock function that can track calls, arguments, and return values",
+    "explanation": "The correct answer is To create a mock function that can track calls, arguments, and return values."
+  },
+  {
+    "id": 1010,
+    "section": "node.js &amp; js",
+    "question": "What npm package is commonly used alongside Jest to test Express HTTP endpoints without starting a live server?",
+    "options": [
+      "axios",
+      "supertest",
+      "http-mock",
+      "nock"
+    ],
+    "correctAnswer": "supertest",
+    "explanation": "The correct answer is supertest."
+  },
+  {
+    "id": 1011,
+    "section": "node.js &amp; js",
+    "question": "What is the core difference between unit tests and integration tests in a Node.js context?",
+    "options": [
+      "Unit tests test the entire application; integration tests test individual functions",
+      "Unit tests test individual functions in isolation; integration tests test how multiple parts of the system work together",
+      "Integration tests are faster than unit tests",
+      "Unit tests require a running server; integration tests do not"
+    ],
+    "correctAnswer": "Unit tests test individual functions in isolation; integration tests test how multiple parts of the system work together",
+    "explanation": "The correct answer is Unit tests test individual functions in isolation; integration tests test how multiple parts of the system work together."
+  },
+  {
+    "id": 1012,
+    "section": "node.js &amp; js",
+    "question": "In Socket.io, what is the difference between socket.emit() and io.emit()?",
+    "options": [
+      "socket.emit sends to all clients; io.emit sends to one",
+      "socket.emit sends a message to that specific client only; io.emit broadcasts to all connected clients",
+      "io.emit is used on the client side; socket.emit on the server side",
+      "They are identical"
+    ],
+    "correctAnswer": "socket.emit sends a message to that specific client only; io.emit broadcasts to all connected clients",
+    "explanation": "The correct answer is socket.emit sends a message to that specific client only; io.emit broadcasts to all connected clients."
+  },
+  {
+    "id": 1013,
+    "section": "node.js &amp; js",
+    "question": "What event does Socket.io fire when a new client connects to the server?",
+    "options": [
+      "&#x27;message&#x27;",
+      "&#x27;connect&#x27;",
+      "&#x27;connection&#x27;",
+      "&#x27;open&#x27;"
+    ],
+    "correctAnswer": "&#x27;connection&#x27;",
+    "explanation": "The correct answer is &#x27;connection&#x27;."
+  },
+  {
+    "id": 1014,
+    "section": "node.js &amp; js",
+    "question": "In a Socket.io chat app, what does socket.to(room).emit(&#x27;event&#x27;, data) do?",
+    "options": [
+      "Sends the event to all clients including the sender in the specified room",
+      "Sends the event to all clients in the specified room except the sender",
+      "Sends the event only to the sender",
+      "Broadcasts globally to all rooms"
+    ],
+    "correctAnswer": "Sends the event to all clients in the specified room except the sender",
+    "explanation": "The correct answer is Sends the event to all clients in the specified room except the sender."
+  },
+  {
+    "id": 1015,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of Express Router in a large Node.js application?",
+    "options": [
+      "To manage database connections",
+      "To modularize route definitions, grouping related routes into separate files",
+      "To replace the need for middleware",
+      "To automatically generate API documentation"
+    ],
+    "correctAnswer": "To modularize route definitions, grouping related routes into separate files",
+    "explanation": "The correct answer is To modularize route definitions, grouping related routes into separate files."
+  },
+  {
+    "id": 1016,
+    "section": "node.js &amp; js",
+    "question": "What does app.use(&#x27;/api/users&#x27;, userRouter) do in Express?",
+    "options": [
+      "Creates a new user automatically at the /api/users endpoint",
+      "Mounts the userRouter middleware at the /api/users path prefix",
+      "Restricts all routes to the /api/users path",
+      "Proxies all requests to an external users API"
+    ],
+    "correctAnswer": "Mounts the userRouter middleware at the /api/users path prefix",
+    "explanation": "The correct answer is Mounts the userRouter middleware at the /api/users path prefix."
+  },
+  {
+    "id": 1017,
+    "section": "node.js &amp; js",
+    "question": "In the Express generator, what is the default template engine used?",
+    "options": [
+      "EJS",
+      "Handlebars",
+      "Jade/Pug",
+      "Mustache"
+    ],
+    "correctAnswer": "Jade/Pug",
+    "explanation": "The correct answer is Jade/Pug."
+  },
+  {
+    "id": 1018,
+    "section": "node.js &amp; js",
+    "question": "What is req.params used for in an Express route defined as GET /users/:id?",
+    "options": [
+      "To access query string parameters like ?sort=asc",
+      "To access the named route segments, e.g. req.params.id would contain the user&#x27;s id",
+      "To access data sent in the request body",
+      "To access HTTP request headers"
+    ],
+    "correctAnswer": "To access the named route segments, e.g. req.params.id would contain the user&#x27;s id",
+    "explanation": "The correct answer is To access the named route segments, e.g. req.params.id would contain the user&#x27;s id."
+  },
+  {
+    "id": 1019,
+    "section": "node.js &amp; js",
+    "question": "What is the Passport.js library used for in an Express application?",
+    "options": [
+      "Database schema validation",
+      "Authentication middleware that supports various strategies like local, OAuth, and JWT",
+      "Password hashing and salting",
+      "Session management only"
+    ],
+    "correctAnswer": "Authentication middleware that supports various strategies like local, OAuth, and JWT",
+    "explanation": "The correct answer is Authentication middleware that supports various strategies like local, OAuth, and JWT."
+  },
+  {
+    "id": 1020,
+    "section": "node.js &amp; js",
+    "question": "In a MongoDB-connected Express app, what is the recommended way to handle a failed database connection?",
+    "options": [
+      "Ignore the error and let the app run without a database",
+      "Log the error and exit the process or implement retry logic",
+      "Restart the server automatically with process.restart()",
+      "Switch to a local file-based storage automatically"
+    ],
+    "correctAnswer": "Log the error and exit the process or implement retry logic",
+    "explanation": "The correct answer is Log the error and exit the process or implement retry logic."
+  },
+  {
+    "id": 1021,
+    "section": "node.js &amp; js",
+    "question": "What does the following JavaScript code output? Promise.resolve(1) .then(x =&gt; x + 1) .then(x =&gt; { throw new Error(&#x27;err&#x27;) }) .catch(err =&gt; console.log(&#x27;caught&#x27;));",
+    "options": [
+      "2, then throws uncaught error",
+      "caught",
+      "1",
+      "Error: err"
+    ],
+    "correctAnswer": "caught",
+    "explanation": "The correct answer is caught."
+  },
+  {
+    "id": 1022,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this code? const arr = [1, [2, [3, [4]]]]; console.log(arr.flat(Infinity));",
+    "options": [
+      "[1, [2, [3, [4]]]]",
+      "[1, 2, [3, [4]]]",
+      "[1, 2, 3, 4]",
+      "Error: flat() does not accept Infinity"
+    ],
+    "correctAnswer": "[1, 2, 3, 4]",
+    "explanation": "The correct answer is [1, 2, 3, 4]."
+  },
+  {
+    "id": 1023,
+    "section": "node.js &amp; js",
+    "question": "What does the optional chaining operator (?.) do in JavaScript?",
+    "options": [
+      "Returns the default value if the left side is false",
+      "Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error",
+      "Chains multiple Promises together",
+      "Checks if a variable is defined"
+    ],
+    "correctAnswer": "Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error",
+    "explanation": "The correct answer is Safely accesses nested properties, returning undefined if any intermediate value is null or undefined instead of throwing an error."
+  },
+  {
+    "id": 1024,
+    "section": "node.js &amp; js",
+    "question": "What is the output of the following? const a = [1, 2, 3]; const b = a; b.push(4); console.log(a.length);",
+    "options": [
+      "3",
+      "4",
+      "undefined",
+      "Error"
+    ],
+    "correctAnswer": "4",
+    "explanation": "The correct answer is 4."
+  },
+  {
+    "id": 1025,
+    "section": "node.js &amp; js",
+    "question": "What does JSON.parse(JSON.stringify(obj)) accomplish?",
+    "options": [
+      "A shallow clone of the object",
+      "A deep clone of the object, but it fails with functions, undefined, and circular references",
+      "Converts the object to a string permanently",
+      "Validates that an object is valid JSON"
+    ],
+    "correctAnswer": "A deep clone of the object, but it fails with functions, undefined, and circular references",
+    "explanation": "The correct answer is A deep clone of the object, but it fails with functions, undefined, and circular references."
+  },
+  {
+    "id": 1026,
+    "section": "node.js &amp; js",
+    "question": "What is the result of this code? console.log(typeof NaN);",
+    "options": [
+      "NaN",
+      "undefined",
+      "number",
+      "string"
+    ],
+    "correctAnswer": "number",
+    "explanation": "The correct answer is number."
+  },
+  {
+    "id": 1027,
+    "section": "node.js &amp; js",
+    "question": "In JavaScript, what is the purpose of Symbol()?",
+    "options": [
+      "To create a special numeric type",
+      "To create a unique and immutable primitive value, often used as object property keys to avoid naming collisions",
+      "To define private class methods",
+      "To create a reference to a DOM element"
+    ],
+    "correctAnswer": "To create a unique and immutable primitive value, often used as object property keys to avoid naming collisions",
+    "explanation": "The correct answer is To create a unique and immutable primitive value, often used as object property keys to avoid naming collisions."
+  },
+  {
+    "id": 1028,
+    "section": "node.js &amp; js",
+    "question": "What does this code log? const obj = { a: 1 }; Object.defineProperty(obj, &#x27;b&#x27;, { value: 2, writable: false, enumerable: false }); console.log(Object.keys(obj));",
+    "options": [
+      "[&#x27;a&#x27;, &#x27;b&#x27;]",
+      "[&#x27;a&#x27;]",
+      "[&#x27;b&#x27;]",
+      "[]"
+    ],
+    "correctAnswer": "[&#x27;a&#x27;]",
+    "explanation": "The correct answer is [&#x27;a&#x27;]."
+  },
+  {
+    "id": 1029,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of the &#x27;yargs&#x27; package in a Node.js CLI application?",
+    "options": [
+      "To parse and handle command-line arguments in a structured way",
+      "To compress files from the command line",
+      "To execute shell commands from Node.js",
+      "To manage environment variables in .env files"
+    ],
+    "correctAnswer": "To parse and handle command-line arguments in a structured way",
+    "explanation": "The correct answer is To parse and handle command-line arguments in a structured way."
+  },
+  {
+    "id": 1030,
+    "section": "node.js &amp; js",
+    "question": "What does the EventEmitter class in Node.js allow you to do?",
+    "options": [
+      "Send HTTP events to the browser",
+      "Create objects that can emit named events and register listeners that are called when those events occur",
+      "Emit browser DOM events from Node.js",
+      "Create WebSocket connections"
+    ],
+    "correctAnswer": "Create objects that can emit named events and register listeners that are called when those events occur",
+    "explanation": "The correct answer is Create objects that can emit named events and register listeners that are called when those events occur."
+  },
+  {
+    "id": 1031,
+    "section": "node.js &amp; js",
+    "question": "In Node.js, what is a stream and why is it beneficial for reading large files?",
+    "options": [
+      "A stream is a synchronous file reader; it&#x27;s faster because it avoids callbacks",
+      "A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once",
+      "A stream is a network connection protocol built into Node.js",
+      "Streams are only useful for video data"
+    ],
+    "correctAnswer": "A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once",
+    "explanation": "The correct answer is A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once."
+  },
+  {
+    "id": 1032,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of package-lock.json in a Node.js project?",
+    "options": [
+      "To lock the Node.js version for the project",
+      "To record the exact versions of all installed dependencies, ensuring reproducible installs across environments",
+      "To prevent other developers from installing new packages",
+      "To store private API keys securely"
+    ],
+    "correctAnswer": "To record the exact versions of all installed dependencies, ensuring reproducible installs across environments",
+    "explanation": "The correct answer is To record the exact versions of all installed dependencies, ensuring reproducible installs across environments."
+  },
+  {
+    "id": 1033,
+    "section": "node.js &amp; js",
+    "question": "What does the following Express code do? app.use((err, req, res, next) =&gt; { console.error(err.stack); res.status(500).send(&#x27;Something broke!&#x27;); });",
+    "options": [
+      "Creates a standard route handler for all GET requests",
+      "Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)",
+      "Handles 404 not found errors",
+      "Validates request bodies for all routes"
+    ],
+    "correctAnswer": "Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)",
+    "explanation": "The correct answer is Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)."
+  },
+  {
+    "id": 1034,
+    "section": "node.js &amp; js",
+    "question": "In Mongoose, what is the difference between .find() and .findOne()?",
+    "options": [
+      ".find() returns the first match; .findOne() returns all matches",
+      ".findOne() returns the first matching document or null; .find() returns an array of all matching documents",
+      "They are identical",
+      ".findOne() is for SQL databases; .find() is for MongoDB"
+    ],
+    "correctAnswer": ".findOne() returns the first matching document or null; .find() returns an array of all matching documents",
+    "explanation": "The correct answer is .findOne() returns the first matching document or null; .find() returns an array of all matching documents."
+  },
+  {
+    "id": 1035,
+    "section": "node.js &amp; js",
+    "question": "What is the HTTP method used to partially update a resource in a RESTful API?",
+    "options": [
+      "PUT",
+      "POST",
+      "PATCH",
+      "UPDATE"
+    ],
+    "correctAnswer": "PATCH",
+    "explanation": "The correct answer is PATCH."
+  },
+  {
+    "id": 1036,
+    "section": "node.js &amp; js",
+    "question": "In Mongoose, how would you query for all tasks where &#x27;completed&#x27; is true, sorted by &#x27;createdAt&#x27; descending?",
+    "options": [
+      "Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)",
+      "Task.get({ completed: true }).orderBy(&#x27;createdAt&#x27;, &#x27;desc&#x27;)",
+      "Task.filter({ completed: true }).sort({ createdAt: -1 })",
+      "Task.query({ completed: true, sort: &#x27;-createdAt&#x27; })"
+    ],
+    "correctAnswer": "Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)",
+    "explanation": "The correct answer is Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)."
+  },
+  {
+    "id": 1037,
+    "section": "node.js &amp; js",
+    "question": "What does the following Node.js code accomplish? const path = require(&#x27;path&#x27;); const publicPath = path.join(__dirname, &#x27;../public&#x27;); app.use(express.static(publicPath));",
+    "options": [
+      "Serves files from the &#x27;public&#x27; folder as static assets",
+      "Creates a new directory called &#x27;public&#x27;",
+      "Compiles static assets at build time",
+      "Restricts access to files in the public directory"
+    ],
+    "correctAnswer": "Serves files from the &#x27;public&#x27; folder as static assets",
+    "explanation": "The correct answer is Serves files from the &#x27;public&#x27; folder as static assets."
+  },
+  {
+    "id": 1038,
+    "section": "node.js &amp; js",
+    "question": "What is the purpose of CORS (Cross-Origin Resource Sharing) in an Express API?",
+    "options": [
+      "To compress API responses",
+      "To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access",
+      "To enable HTTPS on the Express server",
+      "To manage database connections across multiple origins"
+    ],
+    "correctAnswer": "To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access",
+    "explanation": "The correct answer is To control which origins are allowed to make requests to the API, preventing unauthorized cross-origin access."
+  },
+  {
+    "id": 1039,
+    "section": "node.js &amp; js",
+    "question": "In a Node.js Task app with authentication, what is the purpose of storing user-specific tokens in a &#x27;tokens&#x27; array on the User model?",
+    "options": [
+      "To allow a user to be logged in on multiple devices simultaneously",
+      "To store the user&#x27;s password history",
+      "To limit the number of tasks a user can create",
+      "To cache API responses for the user"
+    ],
+    "correctAnswer": "To allow a user to be logged in on multiple devices simultaneously",
+    "explanation": "The correct answer is To allow a user to be logged in on multiple devices simultaneously."
+  },
+  {
+    "id": 1040,
+    "section": "node.js &amp; js",
+    "question": "What does the following code output? const p = new Promise((resolve, reject) =&gt; { reject(&#x27;error&#x27;); resolve(&#x27;success&#x27;); }); p.catch(e =&gt; console.log(e));",
+    "options": [
+      "success",
+      "error",
+      "Both &#x27;error&#x27; and &#x27;success&#x27;",
+      "undefined"
+    ],
+    "correctAnswer": "error",
+    "explanation": "The correct answer is error."
+  },
+  {
+    "id": 1041,
+    "section": "node.js &amp; js",
+    "question": "In Express.js, what happens when you call next() inside a middleware function?",
+    "options": [
+      "The response is sent back to the client",
+      "The next matching route handler or middleware in the stack is called",
+      "The server moves to the next HTTP request",
+      "The current middleware is re-executed"
+    ],
+    "correctAnswer": "The next matching route handler or middleware in the stack is called",
+    "explanation": "The correct answer is The next matching route handler or middleware in the stack is called."
+  },
+  {
+    "id": 1042,
+    "section": "node.js &amp; js",
+    "question": "What is the output of this JavaScript code? const map = new Map(); map.set(&#x27;a&#x27;, 1); map.set(&#x27;b&#x27;, 2); console.log(map.size);",
+    "options": [
+      "undefined",
+      "2",
+      "1",
+      "{ a: 1, b: 2 }"
+    ],
+    "correctAnswer": "2",
+    "explanation": "The correct answer is 2."
+  },
+  {
+    "id": 1043,
+    "section": "node.js &amp; js",
+    "question": "What does Promise.all() do when one of the Promises rejects?",
+    "options": [
+      "It ignores the rejection and waits for all others to settle",
+      "It immediately rejects with the reason of the first rejection",
+      "It resolves with an array containing the error for the failed promise",
+      "It retries the failed promise up to 3 times"
+    ],
+    "correctAnswer": "It immediately rejects with the reason of the first rejection",
+    "explanation": "The correct answer is It immediately rejects with the reason of the first rejection."
+  },
+  {
+    "id": 1044,
+    "section": "node.js &amp; js",
+    "question": "In Node.js, what is the purpose of the &#x27;dotenv&#x27; package?",
+    "options": [
+      "To create .dot files for Git configuration",
+      "To load environment variables from a .env file into process.env during development",
+      "To validate environment variables at startup",
+      "To encrypt sensitive configuration values"
+    ],
+    "correctAnswer": "To load environment variables from a .env file into process.env during development",
+    "explanation": "The correct answer is To load environment variables from a .env file into process.env during development."
+  },
+  {
+    "id": 1045,
+    "section": "node.js &amp; js",
+    "question": "What is middleware order significance in Express.js?",
+    "options": [
+      "Order does not matter; Express automatically determines the correct sequence",
+      "Middleware is executed in the order it is defined; incorrect ordering can cause routes to be unreachable or middleware to be skipped",
+      "Only error-handling middleware is order-sensitive",
+      "Middleware order matters only for authentication"
+    ],
+    "correctAnswer": "Middleware is executed in the order it is defined; incorrect ordering can cause routes to be unreachable or middleware to be skipped",
+    "explanation": "The correct answer is Middleware is executed in the order it is defined; incorrect ordering can cause routes to be unreachable or middleware to be skipped."
+  },
+  {
+    "id": 1046,
+    "section": "node.js &amp; js",
+    "question": "What is the difference between MongoDB&#x27;s insertOne() and Mongoose&#x27;s .save() method?",
+    "options": [
+      "They are identical",
+      "insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks",
+      ".save() only updates existing documents; insertOne() only creates new ones",
+      "insertOne() runs middleware; .save() does not"
+    ],
+    "correctAnswer": "insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks",
+    "explanation": "The correct answer is insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks."
+  },
+  {
+    "id": 1047,
+    "section": "node.js &amp; js",
+    "question": "What does this JavaScript code log? function foo() { console.log(this); } const bar = foo.bind({ name: &#x27;Test&#x27; }); bar();",
+    "options": [
+      "undefined",
+      "{ name: &#x27;Test&#x27; }",
+      "The global object",
+      "foo function object"
+    ],
+    "correctAnswer": "{ name: &#x27;Test&#x27; }",
+    "explanation": "The correct answer is { name: &#x27;Test&#x27; }."
+  },
+  {
+    "id": 1048,
+    "section": "node.js &amp; js",
+    "question": "In Node.js, what is the difference between require(&#x27;module&#x27;) and require(&#x27;./module&#x27;)?",
+    "options": [
+      "They are identical",
+      "require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file",
+      "require(&#x27;./module&#x27;) is asynchronous; require(&#x27;module&#x27;) is synchronous",
+      "require(&#x27;module&#x27;) only works for built-in modules; npm packages use import"
+    ],
+    "correctAnswer": "require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file",
+    "explanation": "The correct answer is require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file."
+  },
+  {
+    "id": 1049,
+    "section": "node.js &amp; js",
+    "question": "What will this Node.js code output, assuming it runs successfully? setTimeout(() =&gt; console.log(&#x27;timeout&#x27;), 0); Promise.resolve().then(() =&gt; console.log(&#x27;promise&#x27;)); console.log(&#x27;sync&#x27;);",
+    "options": [
+      "timeout, promise, sync",
+      "sync, timeout, promise",
+      "sync, promise, timeout",
+      "promise, sync, timeout"
+    ],
+    "correctAnswer": "sync, promise, timeout",
+    "explanation": "The correct answer is sync, promise, timeout."
+  },
+  {
+    "id": 1050,
+    "section": "node.js &amp; js",
+    "question": "In Express, what does res.json() do differently from res.send() when passed an object?",
+    "options": [
+      "res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type",
+      "They behave identically for objects",
+      "res.send() is faster; res.json() is for large payloads",
+      "res.json() compresses the response; res.send() does not"
+    ],
+    "correctAnswer": "res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type",
+    "explanation": "The correct answer is res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type."
+  },
+  {
+    "id": 1051,
+    "section": "node.js &amp; js",
+    "question": "What is a race condition in the context of async Node.js code?",
+    "options": [
+      "When two setTimeout calls fire at the same time",
+      "When the outcome of a program depends on the unpredictable timing of multiple asynchronous operations",
+      "When a Promise rejects before it resolves",
+      "When Node.js runs out of memory processing concurrent requests"
+    ],
+    "correctAnswer": "When the outcome of a program depends on the unpredictable timing of multiple asynchronous operations",
+    "explanation": "The correct answer is When the outcome of a program depends on the unpredictable timing of multiple asynchronous operations."
+  },
+  {
+    "id": 1052,
+    "section": "node.js &amp; js",
+    "question": "In an Express app using Passport.js local strategy, what is the role of the &#x27;verify callback&#x27;?",
+    "options": [
+      "To hash the user&#x27;s password before login",
+      "To find the user in the database and verify credentials, then call done() with the user or false",
+      "To serialize the user into the session",
+      "To define which routes require authentication"
+    ],
+    "correctAnswer": "To find the user in the database and verify credentials, then call done() with the user or false",
+    "explanation": "The correct answer is To find the user in the database and verify credentials, then call done() with the user or false."
+  },
+  {
+    "id": 1053,
+    "section": "node.js &amp; js",
+    "question": "What is the correct way to handle async errors in an Express route so they reach the error-handling middleware?",
+    "options": [
+      "Wrap the logic in a try-catch and call next(err) in the catch block",
+      "Throw the error directly inside the async function",
+      "Use process.on(&#x27;uncaughtException&#x27;) inside the route",
+      "Express automatically catches async errors in route handlers"
+    ],
+    "correctAnswer": "Wrap the logic in a try-catch and call next(err) in the catch block",
+    "explanation": "The correct answer is Wrap the logic in a try-catch and call next(err) in the catch block."
+  },
+  {
+    "id": 1054,
+    "section": "Task-1",
+    "question": "Which keyword is used to stop loop execution in JavaScript?",
+    "options": [
+      "stop",
+      "break",
+      "exit",
+      "continue"
+    ],
+    "correctAnswer": "break",
+    "explanation": "The correct answer is break."
+  },
+  {
+    "id": 1055,
+    "section": "Task-1",
+    "question": "What is the purpose of the JavaScript Promise object?",
+    "options": [
+      "Styling pages",
+      "Managing asynchronous operations",
+      "Creating arrays",
+      "Accessing databases"
+    ],
+    "correctAnswer": "Managing asynchronous operations",
+    "explanation": "The correct answer is Managing asynchronous operations."
+  },
+  {
+    "id": 1056,
+    "section": "Task-1",
+    "question": "Which HTML5 API is used to store data in the browser with no expiration time?",
+    "options": [
+      "sessionStorage",
+      "cookies",
+      "localStorage",
+      "cacheStorage"
+    ],
+    "correctAnswer": "localStorage",
+    "explanation": "The correct answer is localStorage."
+  },
+  {
+    "id": 1057,
+    "section": "Task-1",
+    "question": "Which HTML5 semantic element is most appropriate for independent self-contained content?",
+    "options": [
+      "div",
+      "article",
+      "span",
+      "header"
+    ],
+    "correctAnswer": "article",
+    "explanation": "The correct answer is article."
+  },
+  {
+    "id": 1058,
+    "section": "Task-1",
+    "question": "What is the default type of the button element in HTML5?",
+    "options": [
+      "submit",
+      "reset",
+      "button",
+      "click"
+    ],
+    "correctAnswer": "submit",
+    "explanation": "The correct answer is submit."
+  },
+  {
+    "id": 1059,
+    "section": "Task-1",
+    "question": "Which attribute is used in HTML5 forms to specify that a field must be filled out?",
+    "options": [
+      "validate",
+      "mandatory",
+      "required",
+      "placeholder"
+    ],
+    "correctAnswer": "required",
+    "explanation": "The correct answer is required."
+  },
+  {
+    "id": 1060,
+    "section": "Task-1",
+    "question": "Which HTML tag is used to define metadata about a webpage?",
+    "options": [
+      "body",
+      "meta",
+      "section",
+      "footer"
+    ],
+    "correctAnswer": "meta",
+    "explanation": "The correct answer is meta."
+  },
+  {
+    "id": 1061,
+    "section": "Task-1",
+    "question": "Which HTML5 input type allows users to select a date?",
+    "options": [
+      "calendar",
+      "datetime",
+      "date",
+      "timepicker"
+    ],
+    "correctAnswer": "date",
+    "explanation": "The correct answer is date."
+  },
+  {
+    "id": 1062,
+    "section": "Task-1",
+    "question": "Which CSS property is used to control the stacking order of positioned elements?",
+    "options": [
+      "overflow",
+      "z-index",
+      "align-items",
+      "opacity"
+    ],
+    "correctAnswer": "z-index",
+    "explanation": "The correct answer is z-index."
+  },
+  {
+    "id": 1063,
+    "section": "Task-1",
+    "question": "What is the default position value in CSS?",
+    "options": [
+      "relative",
+      "static",
+      "absolute",
+      "fixed"
+    ],
+    "correctAnswer": "static",
+    "explanation": "The correct answer is static."
+  },
+  {
+    "id": 1064,
+    "section": "Task-1",
+    "question": "Which CSS unit is relative to the root element&#x27;s font size?",
+    "options": [
+      "em",
+      "px",
+      "rem",
+      "vh"
+    ],
+    "correctAnswer": "rem",
+    "explanation": "The correct answer is rem."
+  },
+  {
+    "id": 1065,
+    "section": "Task-1",
+    "question": "Which CSS property is used to create flexible layouts?",
+    "options": [
+      "grid-template",
+      "display:flex",
+      "position:absolute",
+      "float:left"
+    ],
+    "correctAnswer": "display:flex",
+    "explanation": "The correct answer is display:flex."
+  },
+  {
+    "id": 1066,
+    "section": "Task-1",
+    "question": "Which pseudo-class applies styles when a user hovers over an element?",
+    "options": [
+      "active",
+      "focus",
+      "visited",
+      "hover"
+    ],
+    "correctAnswer": "hover",
+    "explanation": "The correct answer is hover."
+  },
+  {
+    "id": 1067,
+    "section": "Task-1",
+    "question": "Which CSS property prevents content overflow from being visible?",
+    "options": [
+      "display",
+      "hidden",
+      "overflow",
+      "visibility"
+    ],
+    "correctAnswer": "overflow",
+    "explanation": "The correct answer is overflow."
+  },
+  {
+    "id": 1068,
+    "section": "Task-1",
+    "question": "In JavaScript, which method is used to execute a function after a delay?",
+    "options": [
+      "setTimeout()",
+      "delay()",
+      "setInterval()",
+      "executeLater()"
+    ],
+    "correctAnswer": "setTimeout()",
+    "explanation": "The correct answer is setTimeout()."
+  },
+  {
+    "id": 1069,
+    "section": "Task-1",
+    "question": "What will typeof NaN return in JavaScript?",
+    "options": [
+      "undefined",
+      "number",
+      "object",
+      "string"
+    ],
+    "correctAnswer": "number",
+    "explanation": "The correct answer is number."
+  },
+  {
+    "id": 1070,
+    "section": "Task-1",
+    "question": "Which JavaScript array method creates a new array with transformed elements?",
+    "options": [
+      "filter()",
+      "reduce()",
+      "map()",
+      "forEach()"
+    ],
+    "correctAnswer": "map()",
+    "explanation": "The correct answer is map()."
+  },
+  {
+    "id": 1071,
+    "section": "Task-1",
+    "question": "Which method converts a JavaScript object into a JSON string?",
+    "options": [
+      "JSON.parse()",
+      "JSON.convert()",
+      "JSON.stringify()",
+      "JSON.toObject()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "explanation": "The correct answer is JSON.stringify()."
+  },
+  {
+    "id": 1072,
+    "section": "Task-1",
+    "question": "Which operator is used for optional chaining in JavaScript?",
+    "options": [
+      "??",
+      "&amp;&amp;",
+      "?.",
+      "::"
+    ],
+    "correctAnswer": "?.",
+    "explanation": "The correct answer is ?.."
+  },
+  {
+    "id": 1073,
+    "section": "Task-1",
+    "question": "What will be the result of &quot;5&quot; + 2 in JavaScript?",
+    "options": [
+      "7",
+      "52",
+      "Error",
+      "undefined"
+    ],
+    "correctAnswer": "52",
+    "explanation": "The correct answer is 52."
+  },
+  {
+    "id": 1074,
+    "section": "Task-1",
+    "question": "Which TypeScript feature allows defining custom data structures?",
+    "options": [
+      "namespace",
+      "interface",
+      "module",
+      "decorator"
+    ],
+    "correctAnswer": "interface",
+    "explanation": "The correct answer is interface."
+  },
+  {
+    "id": 1075,
+    "section": "Task-1",
+    "question": "Which TypeScript type represents any possible value?",
+    "options": [
+      "unknown",
+      "never",
+      "any",
+      "void"
+    ],
+    "correctAnswer": "any",
+    "explanation": "The correct answer is any."
+  },
+  {
+    "id": 1076,
+    "section": "Task-1",
+    "question": "Which TypeScript keyword prevents variable reassignment?",
+    "options": [
+      "var",
+      "let",
+      "static",
+      "const"
+    ],
+    "correctAnswer": "const",
+    "explanation": "The correct answer is const."
+  },
+  {
+    "id": 1077,
+    "section": "Task-1",
+    "question": "Which TypeScript type is used for functions that do not return a value?",
+    "options": [
+      "null",
+      "never",
+      "any",
+      "void"
+    ],
+    "correctAnswer": "void",
+    "explanation": "The correct answer is void."
+  },
+  {
+    "id": 1078,
+    "section": "Task-1",
+    "question": "Which TypeScript feature helps ensure stricter type safety than any?",
+    "options": [
+      "unknown",
+      "object",
+      "mixed",
+      "dynamic"
+    ],
+    "correctAnswer": "unknown",
+    "explanation": "The correct answer is unknown."
+  },
+  {
+    "id": 1079,
+    "section": "Task-1",
+    "question": "Which Angular decorator is used to define a service?",
+    "options": [
+      "@Directive",
+      "@Injectable",
+      "@NgModule",
+      "@Pipe"
+    ],
+    "correctAnswer": "@Injectable",
+    "explanation": "The correct answer is @Injectable."
+  },
+  {
+    "id": 1080,
+    "section": "Task-1",
+    "question": "Which Angular directive is used for iterating over collections?",
+    "options": [
+      "ngIf",
+      "ngModel",
+      "ngFor",
+      "ngSwitch"
+    ],
+    "correctAnswer": "ngFor",
+    "explanation": "The correct answer is ngFor."
+  },
+  {
+    "id": 1081,
+    "section": "Task-1",
+    "question": "Which Angular lifecycle hook is called before a component is destroyed?",
+    "options": [
+      "ngAfterViewInit",
+      "ngOnDestroy",
+      "ngDoCheck",
+      "ngOnChanges"
+    ],
+    "correctAnswer": "ngOnDestroy",
+    "explanation": "The correct answer is ngOnDestroy."
+  },
+  {
+    "id": 1082,
+    "section": "Task-1",
+    "question": "Which Angular module is required for template-driven forms?",
+    "options": [
+      "BrowserModule",
+      "FormsModule",
+      "CommonModule",
+      "RouterModule"
+    ],
+    "correctAnswer": "FormsModule",
+    "explanation": "The correct answer is FormsModule."
+  },
+  {
+    "id": 1083,
+    "section": "Task-1",
+    "question": "Which Angular feature enables navigation between views?",
+    "options": [
+      "Services",
+      "Pipes",
+      "Routing",
+      "Guards"
+    ],
+    "correctAnswer": "Routing",
+    "explanation": "The correct answer is Routing."
+  },
+  {
+    "id": 1084,
+    "section": "Task-1",
+    "question": "What is the purpose of Angular guards?",
+    "options": [
+      "Styling components",
+      "Securing routes",
+      "Managing state",
+      "Handling forms"
+    ],
+    "correctAnswer": "Securing routes",
+    "explanation": "The correct answer is Securing routes."
+  },
+  {
+    "id": 1085,
+    "section": "Task-1",
+    "question": "Which Angular pipe transforms JSON objects into readable strings?",
+    "options": [
+      "uppercase",
+      "lowercase",
+      "async",
+      "json"
+    ],
+    "correctAnswer": "json",
+    "explanation": "The correct answer is json."
+  },
+  {
+    "id": 1086,
+    "section": "Task-1",
+    "question": "In ReactJS, which hook is commonly used for memoization?",
+    "options": [
+      "useMemo",
+      "useEffect",
+      "useRef",
+      "useState"
+    ],
+    "correctAnswer": "useMemo",
+    "explanation": "The correct answer is useMemo."
+  },
+  {
+    "id": 1087,
+    "section": "Task-1",
+    "question": "Which React hook provides direct access to a DOM element?",
+    "options": [
+      "useReducer",
+      "useEffect",
+      "useRef",
+      "useContext"
+    ],
+    "correctAnswer": "useRef",
+    "explanation": "The correct answer is useRef."
+  },
+  {
+    "id": 1088,
+    "section": "Task-1",
+    "question": "What is the primary purpose of React keys in lists?",
+    "options": [
+      "Styling",
+      "Event handling",
+      "Efficient rendering",
+      "Data fetching"
+    ],
+    "correctAnswer": "Efficient rendering",
+    "explanation": "The correct answer is Efficient rendering."
+  },
+  {
+    "id": 1089,
+    "section": "Task-1",
+    "question": "What does React.Fragment help avoid?",
+    "options": [
+      "State updates",
+      "API calls",
+      "Extra DOM nodes",
+      "Hooks usage"
+    ],
+    "correctAnswer": "Extra DOM nodes",
+    "explanation": "The correct answer is Extra DOM nodes."
+  },
+  {
+    "id": 1090,
+    "section": "Task-1",
+    "question": "Which hook is used for managing complex state logic in React?",
+    "options": [
+      "useReducer",
+      "useMemo",
+      "useCallback",
+      "useRef"
+    ],
+    "correctAnswer": "useReducer",
+    "explanation": "The correct answer is useReducer."
+  },
+  {
+    "id": 1091,
+    "section": "Task-1",
+    "question": "Which React feature improves application performance by loading components lazily?",
+    "options": [
+      "Suspense",
+      "Context API",
+      "StrictMode",
+      "Portals"
+    ],
+    "correctAnswer": "Suspense",
+    "explanation": "The correct answer is Suspense."
+  },
+  {
+    "id": 1092,
+    "section": "Task-1",
+    "question": "Which method is used to pass data from parent to child components in React?",
+    "options": [
+      "state",
+      "props",
+      "hooks",
+      "reducers"
+    ],
+    "correctAnswer": "props",
+    "explanation": "The correct answer is props."
+  },
+  {
+    "id": 1093,
+    "section": "Task-1",
+    "question": "What is the purpose of useEffect dependency array?",
+    "options": [
+      "Styling components",
+      "Triggering renders manually",
+      "Controlling effect execution",
+      "Managing routing"
+    ],
+    "correctAnswer": "Controlling effect execution",
+    "explanation": "The correct answer is Controlling effect execution."
+  },
+  {
+    "id": 1094,
+    "section": "Task-1",
+    "question": "Which Node.js module is used to work with file paths?",
+    "options": [
+      "fs",
+      "path",
+      "url",
+      "crypto"
+    ],
+    "correctAnswer": "path",
+    "explanation": "The correct answer is path."
+  },
+  {
+    "id": 1095,
+    "section": "Task-1",
+    "question": "Which method is used to read files asynchronously in Node.js?",
+    "options": [
+      "fs.readFile()",
+      "fs.read()",
+      "fs.getFile()",
+      "fs.open()"
+    ],
+    "correctAnswer": "fs.readFile()",
+    "explanation": "The correct answer is fs.readFile()."
+  },
+  {
+    "id": 1096,
+    "section": "Task-1",
+    "question": "What is the purpose of package.json in Node.js?",
+    "options": [
+      "Store HTML",
+      "Configure database",
+      "Manage project metadata and dependencies",
+      "Run CSS files"
+    ],
+    "correctAnswer": "Manage project metadata and dependencies",
+    "explanation": "The correct answer is Manage project metadata and dependencies."
+  },
+  {
+    "id": 1097,
+    "section": "Task-1",
+    "question": "Which Node.js object handles incoming HTTP requests and responses?",
+    "options": [
+      "server",
+      "process",
+      "http",
+      "stream"
+    ],
+    "correctAnswer": "http",
+    "explanation": "The correct answer is http."
+  },
+  {
+    "id": 1098,
+    "section": "Task-1",
+    "question": "Which function is used to export modules in Node.js?",
+    "options": [
+      "module.export",
+      "module.exports",
+      "export.default",
+      "require.export"
+    ],
+    "correctAnswer": "module.exports",
+    "explanation": "The correct answer is module.exports."
+  },
+  {
+    "id": 1099,
+    "section": "Task-1",
+    "question": "What is middleware in Express.js?",
+    "options": [
+      "Database driver",
+      "CSS framework",
+      "Function executed between request and response",
+      "React component"
+    ],
+    "correctAnswer": "Function executed between request and response",
+    "explanation": "The correct answer is Function executed between request and response."
+  },
+  {
+    "id": 1100,
+    "section": "Task-1",
+    "question": "Which Express.js method handles GET requests?",
+    "options": [
+      "app.fetch()",
+      "app.post()",
+      "app.get()",
+      "app.use()"
+    ],
+    "correctAnswer": "app.get()",
+    "explanation": "The correct answer is app.get()."
+  },
+  {
+    "id": 1101,
+    "section": "Task-1",
+    "question": "Which Node.js feature enables handling many connections efficiently?",
+    "options": [
+      "Multi-threading",
+      "Event-driven architecture",
+      "Synchronous execution",
+      "Static typing"
+    ],
+    "correctAnswer": "Event-driven architecture",
+    "explanation": "The correct answer is Event-driven architecture."
+  },
+  {
+    "id": 1102,
+    "section": "Task-1",
+    "question": "Which method imports modules in CommonJS?",
+    "options": [
+      "import",
+      "include",
+      "require()",
+      "using"
+    ],
+    "correctAnswer": "require()",
+    "explanation": "The correct answer is require()."
+  },
+  {
+    "id": 1103,
+    "section": "Task-1",
+    "question": "What does npm stand for?",
+    "options": [
+      "Node Package Manager",
+      "New Project Module",
+      "Network Package Manager",
+      "Node Program Method"
+    ],
+    "correctAnswer": "Node Package Manager",
+    "explanation": "The correct answer is Node Package Manager."
+  },
+  {
+    "id": 1104,
+    "section": "Task-1",
+    "question": "Which JavaScript method filters elements based on a condition?",
+    "options": [
+      "map()",
+      "filter()",
+      "reduce()",
+      "concat()"
+    ],
+    "correctAnswer": "filter()",
+    "explanation": "The correct answer is filter()."
+  },
+  {
+    "id": 1105,
+    "section": "Task-1",
+    "question": "Which CSS property is commonly used with Flexbox to align items vertically?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-wrap",
+      "flex-grow"
+    ],
+    "correctAnswer": "align-items",
+    "explanation": "The correct answer is align-items."
+  },
+  {
+    "id": 1106,
+    "section": "Task-1",
+    "question": "Which HTML5 element is used to draw graphics via JavaScript?",
+    "options": [
+      "svg",
+      "graphics",
+      "canvas",
+      "draw"
+    ],
+    "correctAnswer": "canvas",
+    "explanation": "The correct answer is canvas."
+  },
+  {
+    "id": 1107,
+    "section": "Task-1",
+    "question": "Which React hook helps avoid unnecessary function recreation?",
+    "options": [
+      "useMemo",
+      "useState",
+      "useCallback",
+      "useEffect"
+    ],
+    "correctAnswer": "useCallback",
+    "explanation": "The correct answer is useCallback."
+  },
+  {
+    "id": 1108,
+    "section": "Task-1",
+    "question": "Which Angular concept enables reusable business logic?",
+    "options": [
+      "Services",
+      "Components",
+      "Pipes",
+      "Templates"
+    ],
+    "correctAnswer": "Services",
+    "explanation": "The correct answer is Services."
+  },
+  {
+    "id": 1109,
+    "section": "Task-1",
+    "question": "Which Node.js module provides cryptographic functionality?",
+    "options": [
+      "hash",
+      "secure",
+      "crypto",
+      "encrypt"
+    ],
+    "correctAnswer": "crypto",
+    "explanation": "The correct answer is crypto."
+  },
+  {
+    "id": 1110,
+    "section": "Task-1",
+    "question": "Which JavaScript keyword creates block-scoped variables?",
+    "options": [
+      "var",
+      "let",
+      "static",
+      "define"
+    ],
+    "correctAnswer": "let",
+    "explanation": "The correct answer is let."
+  },
+  {
+    "id": 1111,
+    "section": "Task-1",
+    "question": "Which TypeScript utility improves code readability by defining aliases?",
+    "options": [
+      "interface",
+      "enum",
+      "type",
+      "namespace"
+    ],
+    "correctAnswer": "type",
+    "explanation": "The correct answer is type."
+  },
+  {
+    "id": 1112,
+    "section": "Task-1",
+    "question": "Which React feature allows sharing data without prop drilling?",
+    "options": [
+      "Redux",
+      "useRef",
+      "Context API",
+      "Fragments"
+    ],
+    "correctAnswer": "Context API",
+    "explanation": "The correct answer is Context API."
+  },
+  {
+    "id": 1113,
+    "section": "Task-1",
+    "question": "Which Angular command generates a new component?",
+    "options": [
+      "ng create component",
+      "ng add component",
+      "ng generate component",
+      "ng make component"
+    ],
+    "correctAnswer": "ng generate component",
+    "explanation": "The correct answer is ng generate component."
+  },
+  {
+    "id": 1114,
+    "section": "Task-2",
+    "question": "Which keyword is used to declare a block-scoped variable in JavaScript?",
+    "options": [
+      "var",
+      "let",
+      "define",
+      "static"
+    ],
+    "correctAnswer": "let",
+    "explanation": "The correct answer is let."
+  },
+  {
+    "id": 1115,
+    "section": "Task-2",
+    "question": "What will be the output of the following code? let x = &quot;5&quot;;let y = 2;console.log(x + y);",
+    "options": [
+      "7",
+      "52",
+      "Error",
+      "undefined"
+    ],
+    "correctAnswer": "52",
+    "explanation": "The correct answer is 52."
+  },
+  {
+    "id": 1116,
+    "section": "Task-2",
+    "question": "Which control structure is best suited for checking multiple conditions against one variable?",
+    "options": [
+      "if",
+      "while",
+      "switch",
+      "for"
+    ],
+    "correctAnswer": "switch",
+    "explanation": "The correct answer is switch."
+  },
+  {
+    "id": 1117,
+    "section": "Task-2",
+    "question": "What is the correct syntax for a function expression?",
+    "options": [
+      "function = myFunc() {}",
+      "let myFunc = function() {};",
+      "function:myFunc() {}",
+      "create function myFunc() {}"
+    ],
+    "correctAnswer": "let myFunc = function() {};",
+    "explanation": "The correct answer is let myFunc = function() {};."
+  },
+  {
+    "id": 1118,
+    "section": "Task-2",
+    "question": "Which statement about JavaScript scope is correct?",
+    "options": [
+      "Variables declared with var are block scoped",
+      "Variables declared with let are function scoped",
+      "Variables declared with const are block scoped",
+      "JavaScript has no scope rules"
+    ],
+    "correctAnswer": "Variables declared with const are block scoped",
+    "explanation": "The correct answer is Variables declared with const are block scoped."
+  },
+  {
+    "id": 1119,
+    "section": "Task-2",
+    "question": "Which event occurs when a user clicks on an HTML element?",
+    "options": [
+      "onchange",
+      "onmouseover",
+      "onclick",
+      "onload"
+    ],
+    "correctAnswer": "onclick",
+    "explanation": "The correct answer is onclick."
+  },
+  {
+    "id": 1120,
+    "section": "Task-2",
+    "question": "Which method is used to select an element by its ID in the DOM?",
+    "options": [
+      "getElementById()",
+      "querySelectorAll()",
+      "getElements()",
+      "selectById()"
+    ],
+    "correctAnswer": "getElementById()",
+    "explanation": "The correct answer is getElementById()."
+  },
+  {
+    "id": 1121,
+    "section": "Task-2",
+    "question": "What will the following code output? const person = { name: &quot;John&quot;};person.age = 25;console.log(person.age);",
+    "options": [
+      "undefined",
+      "Error",
+      "25",
+      "null"
+    ],
+    "correctAnswer": "25",
+    "explanation": "The correct answer is 25."
+  },
+  {
+    "id": 1122,
+    "section": "Task-2",
+    "question": "Which array method adds an element to the end of an array?",
+    "options": [
+      "shift()",
+      "pop()",
+      "push()",
+      "unshift()"
+    ],
+    "correctAnswer": "push()",
+    "explanation": "The correct answer is push()."
+  },
+  {
+    "id": 1123,
+    "section": "Task-2",
+    "question": "Which loop is commonly used to iterate through array elements?",
+    "options": [
+      "while",
+      "do...while",
+      "for",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 1124,
+    "section": "Task-2",
+    "question": "What is the purpose of the catch block in JavaScript?",
+    "options": [
+      "To stop code execution",
+      "To handle errors",
+      "To declare variables",
+      "To create loops"
+    ],
+    "correctAnswer": "To handle errors",
+    "explanation": "The correct answer is To handle errors."
+  },
+  {
+    "id": 1125,
+    "section": "Task-2",
+    "question": "What will finally do in a try/catch/finally statement?",
+    "options": [
+      "Execute only if no error occurs",
+      "Execute only if an error occurs",
+      "Always execute",
+      "Skip execution after catch"
+    ],
+    "correctAnswer": "Always execute",
+    "explanation": "The correct answer is Always execute."
+  },
+  {
+    "id": 1126,
+    "section": "Task-2",
+    "question": "Which method creates a new array by applying a function to each element?",
+    "options": [
+      "filter()",
+      "reduce()",
+      "map()",
+      "sort()"
+    ],
+    "correctAnswer": "map()",
+    "explanation": "The correct answer is map()."
+  },
+  {
+    "id": 1127,
+    "section": "Task-2",
+    "question": "What is the output of this code? const nums = [1, 2, 3];const result = nums.reduce((a, b) =&gt; a + b);console.log(result);",
+    "options": [
+      "6",
+      "123",
+      "5",
+      "Error"
+    ],
+    "correctAnswer": "6",
+    "explanation": "The correct answer is 6."
+  },
+  {
+    "id": 1128,
+    "section": "Task-2",
+    "question": "Which ES6 feature allows embedding expressions inside strings?",
+    "options": [
+      "Arrow functions",
+      "Destructuring",
+      "Template literals",
+      "Spread operator"
+    ],
+    "correctAnswer": "Template literals",
+    "explanation": "The correct answer is Template literals."
+  },
+  {
+    "id": 1129,
+    "section": "Task-2",
+    "question": "What is the correct syntax for an arrow function?",
+    "options": [
+      "(x) =&gt; x * 2",
+      "function =&gt; (x * 2)",
+      "(x) -&gt; x * 2",
+      "arrow(x) = x * 2"
+    ],
+    "correctAnswer": "(x) =&gt; x * 2",
+    "explanation": "The correct answer is (x) =&gt; x * 2."
+  },
+  {
+    "id": 1130,
+    "section": "Task-2",
+    "question": "What does the spread operator (...) do?",
+    "options": [
+      "Combines or expands elements",
+      "Creates comments",
+      "Defines loops",
+      "Declares constants"
+    ],
+    "correctAnswer": "Combines or expands elements",
+    "explanation": "The correct answer is Combines or expands elements."
+  },
+  {
+    "id": 1131,
+    "section": "Task-2",
+    "question": "Which statement correctly uses array destructuring?",
+    "options": [
+      "let a, b = [1,2];",
+      "let [a, b] = [1,2];",
+      "[a,b] := [1,2];",
+      "array(a,b) = [1,2];"
+    ],
+    "correctAnswer": "let [a, b] = [1,2];",
+    "explanation": "The correct answer is let [a, b] = [1,2];."
+  },
+  {
+    "id": 1132,
+    "section": "Task-2",
+    "question": "What is a Promise in JavaScript?",
+    "options": [
+      "A loop structure",
+      "An object representing asynchronous completion or failure",
+      "A data type",
+      "A DOM method"
+    ],
+    "correctAnswer": "An object representing asynchronous completion or failure",
+    "explanation": "The correct answer is An object representing asynchronous completion or failure."
+  },
+  {
+    "id": 1133,
+    "section": "Task-2",
+    "question": "Which keyword pauses execution inside an async function?",
+    "options": [
+      "pause",
+      "stop",
+      "await",
+      "defer"
+    ],
+    "correctAnswer": "await",
+    "explanation": "The correct answer is await."
+  },
+  {
+    "id": 1134,
+    "section": "Task-2",
+    "question": "What is a closure in JavaScript?",
+    "options": [
+      "A method to close browser windows",
+      "A function having access to outer scope variables",
+      "A loop inside a function",
+      "A DOM event"
+    ],
+    "correctAnswer": "A function having access to outer scope variables",
+    "explanation": "The correct answer is A function having access to outer scope variables."
+  },
+  {
+    "id": 1135,
+    "section": "Task-2",
+    "question": "What is the main purpose of an IIFE?",
+    "options": [
+      "To delay execution",
+      "To execute a function immediately after creation",
+      "To create arrays",
+      "To import modules"
+    ],
+    "correctAnswer": "To execute a function immediately after creation",
+    "explanation": "The correct answer is To execute a function immediately after creation."
+  },
+  {
+    "id": 1136,
+    "section": "Task-2",
+    "question": "Which statement is used to export functionality from an ES6 module?",
+    "options": [
+      "include",
+      "require",
+      "export",
+      "attach"
+    ],
+    "correctAnswer": "export",
+    "explanation": "The correct answer is export."
+  },
+  {
+    "id": 1137,
+    "section": "Task-2",
+    "question": "Which command installs TypeScript globally using npm?",
+    "options": [
+      "npm install typescript",
+      "npm install -g typescript",
+      "install typescript global",
+      "ts install"
+    ],
+    "correctAnswer": "npm install -g typescript",
+    "explanation": "The correct answer is npm install -g typescript."
+  },
+  {
+    "id": 1138,
+    "section": "Task-2",
+    "question": "Which TypeScript type is used for textual data?",
+    "options": [
+      "text",
+      "string",
+      "char",
+      "varchar"
+    ],
+    "correctAnswer": "string",
+    "explanation": "The correct answer is string."
+  },
+  {
+    "id": 1139,
+    "section": "Task-2",
+    "question": "What is the output type of this TypeScript variable? let isActive: boolean = true;",
+    "options": [
+      "string",
+      "number",
+      "boolean",
+      "any"
+    ],
+    "correctAnswer": "boolean",
+    "explanation": "The correct answer is boolean."
+  },
+  {
+    "id": 1140,
+    "section": "Task-2",
+    "question": "Which TypeScript structure defines the shape of an object?",
+    "options": [
+      "enum",
+      "tuple",
+      "interface",
+      "array"
+    ],
+    "correctAnswer": "interface",
+    "explanation": "The correct answer is interface."
+  },
+  {
+    "id": 1141,
+    "section": "Task-2",
+    "question": "Which TypeScript feature allows storing multiple data types in fixed positions?",
+    "options": [
+      "enum",
+      "tuple",
+      "interface",
+      "object"
+    ],
+    "correctAnswer": "tuple",
+    "explanation": "The correct answer is tuple."
+  },
+  {
+    "id": 1142,
+    "section": "Task-2",
+    "question": "What is the purpose of the unknown type in TypeScript?",
+    "options": [
+      "To disable type checking completely",
+      "To represent values with unknown types safely",
+      "To declare arrays",
+      "To replace interfaces"
+    ],
+    "correctAnswer": "To represent values with unknown types safely",
+    "explanation": "The correct answer is To represent values with unknown types safely."
+  },
+  {
+    "id": 1143,
+    "section": "Task-2",
+    "question": "Which function return type indicates that no value is returned?",
+    "options": [
+      "null",
+      "any",
+      "void",
+      "never"
+    ],
+    "correctAnswer": "void",
+    "explanation": "The correct answer is void."
+  },
+  {
+    "id": 1144,
+    "section": "Task-3",
+    "question": "What is the primary purpose of Angular 18?",
+    "options": [
+      "Database management",
+      "Building client-side web applications",
+      "Server-side rendering only",
+      "Operating system development"
+    ],
+    "correctAnswer": "Building client-side web applications",
+    "explanation": "The correct answer is Building client-side web applications."
+  },
+  {
+    "id": 1145,
+    "section": "Task-3",
+    "question": "Which command is used to install Angular CLI globally?",
+    "options": [
+      "npm install angular",
+      "npm install -g @angular/cli",
+      "ng install cli",
+      "angular-cli install"
+    ],
+    "correctAnswer": "npm install -g @angular/cli",
+    "explanation": "The correct answer is npm install -g @angular/cli."
+  },
+  {
+    "id": 1146,
+    "section": "Task-3",
+    "question": "Which file contains the root module in an Angular application?",
+    "options": [
+      "app.component.ts",
+      "angular.json",
+      "app.module.ts",
+      "main.component.ts"
+    ],
+    "correctAnswer": "app.module.ts",
+    "explanation": "The correct answer is app.module.ts."
+  },
+  {
+    "id": 1147,
+    "section": "Task-3",
+    "question": "Which decorator is used to define an Angular component?",
+    "options": [
+      "@Injectable",
+      "@NgModule",
+      "@Directive",
+      "@Component"
+    ],
+    "correctAnswer": "@Component",
+    "explanation": "The correct answer is @Component."
+  },
+  {
+    "id": 1148,
+    "section": "Task-3",
+    "question": "Which lifecycle hook is called after Angular initializes component data-bound properties?",
+    "options": [
+      "ngOnDestroy",
+      "ngAfterViewInit",
+      "ngOnInit",
+      "ngDoCheck"
+    ],
+    "correctAnswer": "ngOnInit",
+    "explanation": "The correct answer is ngOnInit."
+  },
+  {
+    "id": 1149,
+    "section": "Task-3",
+    "question": "Which type of binding allows data to flow from component to template?",
+    "options": [
+      "Event binding",
+      "Two-way binding",
+      "Property binding",
+      "Interpolation"
+    ],
+    "correctAnswer": "Interpolation",
+    "explanation": "The correct answer is Interpolation."
+  },
+  {
+    "id": 1150,
+    "section": "Task-3",
+    "question": "Which syntax is used for two-way data binding in Angular?",
+    "options": [
+      "{{ }}",
+      "[ ]",
+      "( )",
+      "[( )]"
+    ],
+    "correctAnswer": "[( )]",
+    "explanation": "The correct answer is [( )]."
+  },
+  {
+    "id": 1151,
+    "section": "Task-3",
+    "question": "What is dependency injection in Angular?",
+    "options": [
+      "Injecting CSS into components",
+      "Passing services to components automatically",
+      "Importing modules dynamically",
+      "Creating APIs automatically"
+    ],
+    "correctAnswer": "Passing services to components automatically",
+    "explanation": "The correct answer is Passing services to components automatically."
+  },
+  {
+    "id": 1152,
+    "section": "Task-3",
+    "question": "Which decorator is commonly used for Angular services?",
+    "options": [
+      "@Service",
+      "@NgModule",
+      "@Injectable",
+      "@Provider"
+    ],
+    "correctAnswer": "@Injectable",
+    "explanation": "The correct answer is @Injectable."
+  },
+  {
+    "id": 1153,
+    "section": "Task-3",
+    "question": "Which directive conditionally adds or removes elements from the DOM?",
+    "options": [
+      "ngFor",
+      "ngSwitch",
+      "ngClass",
+      "ngIf"
+    ],
+    "correctAnswer": "ngIf",
+    "explanation": "The correct answer is ngIf."
+  },
+  {
+    "id": 1154,
+    "section": "Task-3",
+    "question": "Which directive is used to loop through collections?",
+    "options": [
+      "ngRepeat",
+      "ngFor",
+      "ngLoop",
+      "ngEach"
+    ],
+    "correctAnswer": "ngFor",
+    "explanation": "The correct answer is ngFor."
+  },
+  {
+    "id": 1155,
+    "section": "Task-3",
+    "question": "Which directive dynamically applies CSS classes?",
+    "options": [
+      "ngStyle",
+      "ngClass",
+      "ngIf",
+      "ngSwitch"
+    ],
+    "correctAnswer": "ngClass",
+    "explanation": "The correct answer is ngClass."
+  },
+  {
+    "id": 1156,
+    "section": "Task-3",
+    "question": "What is the purpose of Angular Pipes?",
+    "options": [
+      "Styling components",
+      "Transforming displayed data",
+      "Routing requests",
+      "Creating modules"
+    ],
+    "correctAnswer": "Transforming displayed data",
+    "explanation": "The correct answer is Transforming displayed data."
+  },
+  {
+    "id": 1157,
+    "section": "Task-3",
+    "question": "Which built-in pipe formats dates?",
+    "options": [
+      "lowercase",
+      "async",
+      "date",
+      "percent"
+    ],
+    "correctAnswer": "date",
+    "explanation": "The correct answer is date."
+  },
+  {
+    "id": 1158,
+    "section": "Task-3",
+    "question": "Which pipe converts text to lowercase?",
+    "options": [
+      "lowercase",
+      "smallcase",
+      "lower",
+      "toLower"
+    ],
+    "correctAnswer": "lowercase",
+    "explanation": "The correct answer is lowercase."
+  },
+  {
+    "id": 1159,
+    "section": "Task-3",
+    "question": "Which command generates a new Angular component?",
+    "options": [
+      "ng component create",
+      "ng g c",
+      "ng new component",
+      "ng add component"
+    ],
+    "correctAnswer": "ng g c",
+    "explanation": "The correct answer is ng g c."
+  },
+  {
+    "id": 1160,
+    "section": "Task-3",
+    "question": "Which module enables routing in Angular applications?",
+    "options": [
+      "HttpClientModule",
+      "FormsModule",
+      "RouterModule",
+      "BrowserModule"
+    ],
+    "correctAnswer": "RouterModule",
+    "explanation": "The correct answer is RouterModule."
+  },
+  {
+    "id": 1161,
+    "section": "Task-3",
+    "question": "Which directive is used for navigation between routes?",
+    "options": [
+      "routerLink",
+      "routeTo",
+      "navigate",
+      "hrefLink"
+    ],
+    "correctAnswer": "routerLink",
+    "explanation": "The correct answer is routerLink."
+  },
+  {
+    "id": 1162,
+    "section": "Task-3",
+    "question": "What is lazy loading in Angular?",
+    "options": [
+      "Delaying API calls",
+      "Loading modules only when needed",
+      "Delaying component rendering forever",
+      "Loading all modules at startup"
+    ],
+    "correctAnswer": "Loading modules only when needed",
+    "explanation": "The correct answer is Loading modules only when needed."
+  },
+  {
+    "id": 1163,
+    "section": "Task-3",
+    "question": "Which guard prevents unauthorized route access?",
+    "options": [
+      "CanActivate",
+      "CanLoadOnly",
+      "CanStart",
+      "RouteGuard"
+    ],
+    "correctAnswer": "CanActivate",
+    "explanation": "The correct answer is CanActivate."
+  },
+  {
+    "id": 1164,
+    "section": "Task-3",
+    "question": "Which module is required for template-driven forms?",
+    "options": [
+      "ReactiveFormsModule",
+      "BrowserModule",
+      "FormsModule",
+      "CommonModule"
+    ],
+    "correctAnswer": "FormsModule",
+    "explanation": "The correct answer is FormsModule."
+  },
+  {
+    "id": 1165,
+    "section": "Task-3",
+    "question": "Which directive is commonly used with template-driven forms?",
+    "options": [
+      "formControl",
+      "ngModel",
+      "formBuilder",
+      "formArray"
+    ],
+    "correctAnswer": "ngModel",
+    "explanation": "The correct answer is ngModel."
+  },
+  {
+    "id": 1166,
+    "section": "Task-3",
+    "question": "Which validator ensures a required field is not empty?",
+    "options": [
+      "Validators.email",
+      "Validators.required",
+      "Validators.pattern",
+      "Validators.min"
+    ],
+    "correctAnswer": "Validators.required",
+    "explanation": "The correct answer is Validators.required."
+  },
+  {
+    "id": 1167,
+    "section": "Task-3",
+    "question": "Which module is needed for reactive forms?",
+    "options": [
+      "FormsModule",
+      "BrowserAnimationsModule",
+      "ReactiveFormsModule",
+      "RouterModule"
+    ],
+    "correctAnswer": "ReactiveFormsModule",
+    "explanation": "The correct answer is ReactiveFormsModule."
+  },
+  {
+    "id": 1168,
+    "section": "Task-3",
+    "question": "Which class represents a group of form controls in reactive forms?",
+    "options": [
+      "FormElement",
+      "FormBuilder",
+      "FormGroup",
+      "FormControlName"
+    ],
+    "correctAnswer": "FormGroup",
+    "explanation": "The correct answer is FormGroup."
+  },
+  {
+    "id": 1169,
+    "section": "Task-3",
+    "question": "Which class represents an individual form field in reactive forms?",
+    "options": [
+      "FormControl",
+      "FormGroup",
+      "FormField",
+      "ControlValue"
+    ],
+    "correctAnswer": "FormControl",
+    "explanation": "The correct answer is FormControl."
+  },
+  {
+    "id": 1170,
+    "section": "Task-3",
+    "question": "Which Angular module is used for making HTTP requests?",
+    "options": [
+      "HttpModule",
+      "HttpClientModule",
+      "ApiModule",
+      "RequestModule"
+    ],
+    "correctAnswer": "HttpClientModule",
+    "explanation": "The correct answer is HttpClientModule."
+  },
+  {
+    "id": 1171,
+    "section": "Task-3",
+    "question": "Which method is used to retrieve data from a server?",
+    "options": [
+      "post()",
+      "put()",
+      "get()",
+      "delete()"
+    ],
+    "correctAnswer": "get()",
+    "explanation": "The correct answer is get()."
+  },
+  {
+    "id": 1172,
+    "section": "Task-3",
+    "question": "Which RxJS feature is heavily used with Angular HTTP requests?",
+    "options": [
+      "Promises only",
+      "Observables",
+      "Arrays",
+      "Iterators"
+    ],
+    "correctAnswer": "Observables",
+    "explanation": "The correct answer is Observables."
+  },
+  {
+    "id": 1173,
+    "section": "Task-3",
+    "question": "Which operator transforms emitted values from an Observable?",
+    "options": [
+      "mergeMap",
+      "map",
+      "filter",
+      "switch"
+    ],
+    "correctAnswer": "map",
+    "explanation": "The correct answer is map."
+  },
+  {
+    "id": 1174,
+    "section": "Task-3",
+    "question": "Which operator filters values emitted by an Observable?",
+    "options": [
+      "map",
+      "reduce",
+      "filter",
+      "concat"
+    ],
+    "correctAnswer": "filter",
+    "explanation": "The correct answer is filter."
+  },
+  {
+    "id": 1175,
+    "section": "Task-3",
+    "question": "Which RxJS operator is commonly used for handling nested HTTP calls?",
+    "options": [
+      "mergeMap",
+      "filter",
+      "every",
+      "find"
+    ],
+    "correctAnswer": "mergeMap",
+    "explanation": "The correct answer is mergeMap."
+  },
+  {
+    "id": 1176,
+    "section": "Task-3",
+    "question": "What is Angular change detection responsible for?",
+    "options": [
+      "API creation",
+      "Monitoring data changes and updating the view",
+      "Database synchronization",
+      "Routing pages"
+    ],
+    "correctAnswer": "Monitoring data changes and updating the view",
+    "explanation": "The correct answer is Monitoring data changes and updating the view."
+  },
+  {
+    "id": 1177,
+    "section": "Task-3",
+    "question": "Which change detection strategy improves performance by reducing checks?",
+    "options": [
+      "Default",
+      "Optimized",
+      "OnPush",
+      "Reactive"
+    ],
+    "correctAnswer": "OnPush",
+    "explanation": "The correct answer is OnPush."
+  },
+  {
+    "id": 1178,
+    "section": "Task-3",
+    "question": "Which testing utility configures Angular testing modules?",
+    "options": [
+      "TestSetup",
+      "AngularTest",
+      "TestBed",
+      "UnitModule"
+    ],
+    "correctAnswer": "TestBed",
+    "explanation": "The correct answer is TestBed."
+  },
+  {
+    "id": 1179,
+    "section": "Task-3",
+    "question": "Which framework is commonly used for Angular unit testing?",
+    "options": [
+      "Django",
+      "Jasmine",
+      "Laravel",
+      "Flask"
+    ],
+    "correctAnswer": "Jasmine",
+    "explanation": "The correct answer is Jasmine."
+  },
+  {
+    "id": 1180,
+    "section": "Task-3",
+    "question": "What is the purpose of Karma in Angular testing?",
+    "options": [
+      "Styling",
+      "State management",
+      "Test runner",
+      "HTTP handling"
+    ],
+    "correctAnswer": "Test runner",
+    "explanation": "The correct answer is Test runner."
+  },
+  {
+    "id": 1181,
+    "section": "Task-3",
+    "question": "Which NgRx element describes an event in the application?",
+    "options": [
+      "Selector",
+      "Reducer",
+      "Action",
+      "Effect"
+    ],
+    "correctAnswer": "Action",
+    "explanation": "The correct answer is Action."
+  },
+  {
+    "id": 1182,
+    "section": "Task-3",
+    "question": "What is the role of reducers in NgRx?",
+    "options": [
+      "Handling templates",
+      "Updating state based on actions",
+      "Managing HTTP requests",
+      "Creating services"
+    ],
+    "correctAnswer": "Updating state based on actions",
+    "explanation": "The correct answer is Updating state based on actions."
+  },
+  {
+    "id": 1183,
+    "section": "Task-3",
+    "question": "Which store method dispatches an action?",
+    "options": [
+      "emit()",
+      "dispatch()",
+      "send()",
+      "update()"
+    ],
+    "correctAnswer": "dispatch()",
+    "explanation": "The correct answer is dispatch()."
+  },
+  {
+    "id": 1184,
+    "section": "Task-3",
+    "question": "What is the primary purpose of NgRx Store?",
+    "options": [
+      "CSS management",
+      "State management",
+      "Authentication only",
+      "Form handling"
+    ],
+    "correctAnswer": "State management",
+    "explanation": "The correct answer is State management."
+  },
+  {
+    "id": 1185,
+    "section": "Task-3",
+    "question": "Which NgRx feature handles side effects such as API calls?",
+    "options": [
+      "Reducers",
+      "Selectors",
+      "Effects",
+      "Actions"
+    ],
+    "correctAnswer": "Effects",
+    "explanation": "The correct answer is Effects."
+  },
+  {
+    "id": 1186,
+    "section": "Task-3",
+    "question": "Which decorator is commonly used to define NgRx effects?",
+    "options": [
+      "@Effect",
+      "@NgEffect",
+      "@Injectable",
+      "@Selector"
+    ],
+    "correctAnswer": "@Effect",
+    "explanation": "The correct answer is @Effect."
+  },
+  {
+    "id": 1187,
+    "section": "Task-3",
+    "question": "Which operator is commonly used inside effects for handling asynchronous requests?",
+    "options": [
+      "mergeMap",
+      "concat",
+      "tapOnly",
+      "reduce"
+    ],
+    "correctAnswer": "mergeMap",
+    "explanation": "The correct answer is mergeMap."
+  },
+  {
+    "id": 1188,
+    "section": "Task-3",
+    "question": "What is the purpose of selectors in NgRx?",
+    "options": [
+      "Styling components",
+      "Selecting slices of state efficiently",
+      "Creating routes",
+      "Performing HTTP calls"
+    ],
+    "correctAnswer": "Selecting slices of state efficiently",
+    "explanation": "The correct answer is Selecting slices of state efficiently."
+  },
+  {
+    "id": 1189,
+    "section": "Task-3",
+    "question": "What are memoized selectors?",
+    "options": [
+      "Selectors that cache computed results",
+      "Selectors that delete state",
+      "Selectors that trigger actions",
+      "Selectors that create reducers"
+    ],
+    "correctAnswer": "Selectors that cache computed results",
+    "explanation": "The correct answer is Selectors that cache computed results."
+  },
+  {
+    "id": 1190,
+    "section": "Task-3",
+    "question": "Which NgRx package helps manage collections of entities efficiently?",
+    "options": [
+      "@ngrx/router-store",
+      "@ngrx/entity",
+      "@ngrx/forms",
+      "@ngrx/router"
+    ],
+    "correctAnswer": "@ngrx/entity",
+    "explanation": "The correct answer is @ngrx/entity."
+  },
+  {
+    "id": 1191,
+    "section": "Task-3",
+    "question": "Which method adds one entity using NgRx Entity adapter?",
+    "options": [
+      "insertOne",
+      "addOne",
+      "pushEntity",
+      "createOne"
+    ],
+    "correctAnswer": "addOne",
+    "explanation": "The correct answer is addOne."
+  },
+  {
+    "id": 1192,
+    "section": "Task-3",
+    "question": "Which file usually contains route definitions?",
+    "options": [
+      "app.component.ts",
+      "main.ts",
+      "app-routing.module.ts",
+      "styles.css"
+    ],
+    "correctAnswer": "app-routing.module.ts",
+    "explanation": "The correct answer is app-routing.module.ts."
+  },
+  {
+    "id": 1193,
+    "section": "Task-3",
+    "question": "Which lifecycle hook is triggered before a component is destroyed?",
+    "options": [
+      "ngAfterViewInit",
+      "ngDoCheck",
+      "ngOnDestroy",
+      "ngOnChanges"
+    ],
+    "correctAnswer": "ngOnDestroy",
+    "explanation": "The correct answer is ngOnDestroy."
+  },
+  {
+    "id": 1194,
+    "section": "Task-3",
+    "question": "Which Angular pipe is useful for displaying currency values?",
+    "options": [
+      "money",
+      "price",
+      "currency",
+      "cash"
+    ],
+    "correctAnswer": "currency",
+    "explanation": "The correct answer is currency."
+  },
+  {
+    "id": 1195,
+    "section": "Task-3",
+    "question": "Which syntax is used for event binding?",
+    "options": [
+      "[event]",
+      "(event)",
+      "{{event}}",
+      "[(event)]"
+    ],
+    "correctAnswer": "(event)",
+    "explanation": "The correct answer is (event)."
+  },
+  {
+    "id": 1196,
+    "section": "Task-3",
+    "question": "Which validator checks whether input matches a regex pattern?",
+    "options": [
+      "Validators.required",
+      "Validators.email",
+      "Validators.pattern",
+      "Validators.regex"
+    ],
+    "correctAnswer": "Validators.pattern",
+    "explanation": "The correct answer is Validators.pattern."
+  },
+  {
+    "id": 1197,
+    "section": "Task-3",
+    "question": "What is the benefit of lazy-loaded modules?",
+    "options": [
+      "Increased initial bundle size",
+      "Faster initial application load",
+      "Reduced routing support",
+      "Automatic database integration"
+    ],
+    "correctAnswer": "Increased initial bundle size",
+    "explanation": "The correct answer is Increased initial bundle size."
+  },
+  {
+    "id": 1198,
+    "section": "Task-3",
+    "question": "Which HTTP method updates existing server data?",
+    "options": [
+      "GET",
+      "DELETE",
+      "PUT",
+      "FETCH"
+    ],
+    "correctAnswer": "PUT",
+    "explanation": "The correct answer is PUT."
+  },
+  {
+    "id": 1199,
+    "section": "Task-3",
+    "question": "Which operator is commonly used to handle HTTP errors in RxJS?",
+    "options": [
+      "catchError",
+      "mergeMap",
+      "mapError",
+      "retryWhenOnly"
+    ],
+    "correctAnswer": "catchError",
+    "explanation": "The correct answer is catchError."
+  },
+  {
+    "id": 1200,
+    "section": "Task-3",
+    "question": "What is the purpose of Angular services?",
+    "options": [
+      "Managing reusable business logic",
+      "Creating HTML templates",
+      "Styling components",
+      "Compiling TypeScript"
+    ],
+    "correctAnswer": "Managing reusable business logic",
+    "explanation": "The correct answer is Managing reusable business logic."
+  },
+  {
+    "id": 1201,
+    "section": "Task-3",
+    "question": "Which NgRx concept ensures a unidirectional data flow?",
+    "options": [
+      "Direct DOM manipulation",
+      "Actions and reducers",
+      "Template references",
+      "Pipes and directives"
+    ],
+    "correctAnswer": "Actions and reducers",
+    "explanation": "The correct answer is Actions and reducers."
+  },
+  {
+    "id": 1202,
+    "section": "Task-3",
+    "question": "Which Angular testing method creates a component fixture?",
+    "options": [
+      "TestBed.inject()",
+      "createComponent()",
+      "fixtureCreate()",
+      "buildFixture()"
+    ],
+    "correctAnswer": "createComponent()",
+    "explanation": "The correct answer is createComponent()."
+  },
+  {
+    "id": 1203,
+    "section": "Task-3",
+    "question": "Which practice improves NgRx application performance?",
+    "options": [
+      "Mutating state directly",
+      "Using memoized selectors",
+      "Storing everything in one component",
+      "Avoiding reducers"
+    ],
+    "correctAnswer": "Using memoized selectors",
+    "explanation": "The correct answer is Using memoized selectors."
+  },
+  {
+    "id": 1204,
+    "section": "Task-4",
+    "question": "Which tag is the root element of an HTML document?",
+    "options": [
+      "body",
+      "html",
+      "head",
+      "title"
+    ],
+    "correctAnswer": "html",
+    "explanation": "The correct answer is html."
+  },
+  {
+    "id": 1205,
+    "section": "Task-4",
+    "question": "Which section contains metadata in an HTML document?",
+    "options": [
+      "body",
+      "footer",
+      "head",
+      "article"
+    ],
+    "correctAnswer": "head",
+    "explanation": "The correct answer is head."
+  },
+  {
+    "id": 1206,
+    "section": "Task-4",
+    "question": "Which tag is used to display webpage content?",
+    "options": [
+      "meta",
+      "body",
+      "nav",
+      "section"
+    ],
+    "correctAnswer": "body",
+    "explanation": "The correct answer is body."
+  },
+  {
+    "id": 1207,
+    "section": "Task-4",
+    "question": "Which HTML tag provides metadata about a webpage?",
+    "options": [
+      "meta",
+      "div",
+      "style",
+      "span"
+    ],
+    "correctAnswer": "meta",
+    "explanation": "The correct answer is meta."
+  },
+  {
+    "id": 1208,
+    "section": "Task-4",
+    "question": "HTML5 is mainly used for:",
+    "options": [
+      "Database management",
+      "Webpage structure",
+      "Server configuration",
+      "Networking"
+    ],
+    "correctAnswer": "Webpage structure",
+    "explanation": "The correct answer is Webpage structure."
+  },
+  {
+    "id": 1209,
+    "section": "Task-4",
+    "question": "Which CSS syntax is correct?",
+    "options": [
+      "color = red",
+      "color:red",
+      "p = color:red",
+      "p { color:red; }"
+    ],
+    "correctAnswer": "p { color:red; }",
+    "explanation": "The correct answer is p { color:red; }."
+  },
+  {
+    "id": 1210,
+    "section": "Task-4",
+    "question": "In CSS, a selector is used to:",
+    "options": [
+      "Store data",
+      "Select HTML elements",
+      "Create animations",
+      "Add comments"
+    ],
+    "correctAnswer": "Select HTML elements",
+    "explanation": "The correct answer is Select HTML elements."
+  },
+  {
+    "id": 1211,
+    "section": "Task-4",
+    "question": "Which part of CSS defines the appearance?",
+    "options": [
+      "Selector",
+      "Property",
+      "Tag",
+      "Class name"
+    ],
+    "correctAnswer": "Property",
+    "explanation": "The correct answer is Property."
+  },
+  {
+    "id": 1212,
+    "section": "Task-4",
+    "question": "Which CSS property changes text color?",
+    "options": [
+      "background",
+      "font-size",
+      "color",
+      "text-style"
+    ],
+    "correctAnswer": "color",
+    "explanation": "The correct answer is color."
+  },
+  {
+    "id": 1213,
+    "section": "Task-4",
+    "question": "Which CSS style has the highest priority?",
+    "options": [
+      "External CSS",
+      "Internal CSS",
+      "Inline CSS",
+      "Browser default"
+    ],
+    "correctAnswer": "Inline CSS",
+    "explanation": "The correct answer is Inline CSS."
+  },
+  {
+    "id": 1214,
+    "section": "Task-4",
+    "question": "Which tag is used for internal CSS?",
+    "options": [
+      "script",
+      "style",
+      "css",
+      "link"
+    ],
+    "correctAnswer": "style",
+    "explanation": "The correct answer is style."
+  },
+  {
+    "id": 1215,
+    "section": "Task-4",
+    "question": "Which tag links an external CSS file?",
+    "options": [
+      "style",
+      "meta",
+      "link",
+      "css"
+    ],
+    "correctAnswer": "link",
+    "explanation": "The correct answer is link."
+  },
+  {
+    "id": 1216,
+    "section": "Task-4",
+    "question": "Which CSS property changes font size?",
+    "options": [
+      "text-size",
+      "font-weight",
+      "font-size",
+      "size"
+    ],
+    "correctAnswer": "font-size",
+    "explanation": "The correct answer is font-size."
+  },
+  {
+    "id": 1217,
+    "section": "Task-4",
+    "question": "Which CSS property makes text bold?",
+    "options": [
+      "font-style",
+      "text-transform",
+      "font-weight",
+      "font-family"
+    ],
+    "correctAnswer": "font-weight",
+    "explanation": "The correct answer is font-weight."
+  },
+  {
+    "id": 1218,
+    "section": "Task-4",
+    "question": "Which CSS property changes the font type?",
+    "options": [
+      "font-family",
+      "font-size",
+      "font-style",
+      "text-font"
+    ],
+    "correctAnswer": "font-family",
+    "explanation": "The correct answer is font-family."
+  },
+  {
+    "id": 1219,
+    "section": "Task-4",
+    "question": "Which HTML5 semantic element represents page navigation?",
+    "options": [
+      "nav",
+      "article",
+      "footer",
+      "aside"
+    ],
+    "correctAnswer": "nav",
+    "explanation": "The correct answer is nav."
+  },
+  {
+    "id": 1220,
+    "section": "Task-4",
+    "question": "Which semantic element usually contains copyright information?",
+    "options": [
+      "header",
+      "section",
+      "footer",
+      "article"
+    ],
+    "correctAnswer": "footer",
+    "explanation": "The correct answer is footer."
+  },
+  {
+    "id": 1221,
+    "section": "Task-4",
+    "question": "Which semantic element represents independent content?",
+    "options": [
+      "article",
+      "nav",
+      "header",
+      "span"
+    ],
+    "correctAnswer": "article",
+    "explanation": "The correct answer is article."
+  },
+  {
+    "id": 1222,
+    "section": "Task-4",
+    "question": "Which semantic tag groups related content?",
+    "options": [
+      "section",
+      "meta",
+      "head",
+      "style"
+    ],
+    "correctAnswer": "section",
+    "explanation": "The correct answer is section."
+  },
+  {
+    "id": 1223,
+    "section": "Task-4",
+    "question": "Which tag usually contains introductory content?",
+    "options": [
+      "footer",
+      "header",
+      "article",
+      "nav"
+    ],
+    "correctAnswer": "header",
+    "explanation": "The correct answer is header."
+  },
+  {
+    "id": 1224,
+    "section": "Task-4",
+    "question": "Which input type is used for email addresses?",
+    "options": [
+      "text",
+      "mail",
+      "email",
+      "address"
+    ],
+    "correctAnswer": "email",
+    "explanation": "The correct answer is email."
+  },
+  {
+    "id": 1225,
+    "section": "Task-4",
+    "question": "Which input type allows date selection?",
+    "options": [
+      "calendar",
+      "date",
+      "datetime",
+      "time"
+    ],
+    "correctAnswer": "date",
+    "explanation": "The correct answer is date."
+  },
+  {
+    "id": 1226,
+    "section": "Task-4",
+    "question": "Which input type is best for telephone numbers?",
+    "options": [
+      "phone",
+      "number",
+      "tel",
+      "contact"
+    ],
+    "correctAnswer": "tel",
+    "explanation": "The correct answer is tel."
+  },
+  {
+    "id": 1227,
+    "section": "Task-4",
+    "question": "HTML5 form validation can be done using:",
+    "options": [
+      "required attribute",
+      "CSS only",
+      "SQL",
+      "PHP only"
+    ],
+    "correctAnswer": "required attribute",
+    "explanation": "The correct answer is required attribute."
+  },
+  {
+    "id": 1228,
+    "section": "Task-4",
+    "question": "Which attribute ensures a field must be filled?",
+    "options": [
+      "validate",
+      "placeholder",
+      "required",
+      "checked"
+    ],
+    "correctAnswer": "required",
+    "explanation": "The correct answer is required."
+  },
+  {
+    "id": 1229,
+    "section": "Task-4",
+    "question": "Which CSS model controls spacing and borders?",
+    "options": [
+      "Grid model",
+      "Box model",
+      "Layout model",
+      "Position model"
+    ],
+    "correctAnswer": "Box model",
+    "explanation": "The correct answer is Box model."
+  },
+  {
+    "id": 1230,
+    "section": "Task-4",
+    "question": "Which part of the box model surrounds content?",
+    "options": [
+      "Margin",
+      "Border",
+      "Padding",
+      "All of these"
+    ],
+    "correctAnswer": "All of these",
+    "explanation": "The correct answer is All of these."
+  },
+  {
+    "id": 1231,
+    "section": "Task-4",
+    "question": "Which CSS property controls space outside the border?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "border-space"
+    ],
+    "correctAnswer": "margin",
+    "explanation": "The correct answer is margin."
+  },
+  {
+    "id": 1232,
+    "section": "Task-4",
+    "question": "Which property controls space inside the border?",
+    "options": [
+      "margin",
+      "padding",
+      "spacing",
+      "content"
+    ],
+    "correctAnswer": "padding",
+    "explanation": "The correct answer is padding."
+  },
+  {
+    "id": 1233,
+    "section": "Task-4",
+    "question": "Flexbox is mainly used for:",
+    "options": [
+      "Database design",
+      "Responsive layouts",
+      "Form validation",
+      "Audio playback"
+    ],
+    "correctAnswer": "Responsive layouts",
+    "explanation": "The correct answer is Responsive layouts."
+  },
+  {
+    "id": 1234,
+    "section": "Task-4",
+    "question": "Which property enables Flexbox?",
+    "options": [
+      "display: flex",
+      "flex: true",
+      "layout: flex",
+      "display: block"
+    ],
+    "correctAnswer": "display: flex",
+    "explanation": "The correct answer is display: flex."
+  },
+  {
+    "id": 1235,
+    "section": "Task-4",
+    "question": "Which Flexbox property aligns items horizontally?",
+    "options": [
+      "justify-content",
+      "align-items",
+      "flex-wrap",
+      "order"
+    ],
+    "correctAnswer": "justify-content",
+    "explanation": "The correct answer is justify-content."
+  },
+  {
+    "id": 1236,
+    "section": "Task-4",
+    "question": "Which Flexbox property aligns items vertically?",
+    "options": [
+      "flex-direction",
+      "align-items",
+      "justify-content",
+      "align-content"
+    ],
+    "correctAnswer": "align-items",
+    "explanation": "The correct answer is align-items."
+  },
+  {
+    "id": 1237,
+    "section": "Task-4",
+    "question": "Which Flexbox property changes item order?",
+    "options": [
+      "position",
+      "order",
+      "flex-align",
+      "arrange"
+    ],
+    "correctAnswer": "order",
+    "explanation": "The correct answer is order."
+  },
+  {
+    "id": 1238,
+    "section": "Task-4",
+    "question": "CSS Grid is mainly used for:",
+    "options": [
+      "Text formatting",
+      "Two-dimensional layouts",
+      "Animations",
+      "Validation"
+    ],
+    "correctAnswer": "Two-dimensional layouts",
+    "explanation": "The correct answer is Two-dimensional layouts."
+  },
+  {
+    "id": 1239,
+    "section": "Task-4",
+    "question": "Which property creates grid columns?",
+    "options": [
+      "grid-template-columns",
+      "grid-columns",
+      "column-layout",
+      "template-grid"
+    ],
+    "correctAnswer": "grid-template-columns",
+    "explanation": "The correct answer is grid-template-columns."
+  },
+  {
+    "id": 1240,
+    "section": "Task-4",
+    "question": "Which property creates grid rows?",
+    "options": [
+      "row-template",
+      "grid-template-rows",
+      "grid-row-layout",
+      "rows-template"
+    ],
+    "correctAnswer": "row-template",
+    "explanation": "The correct answer is row-template."
+  },
+  {
+    "id": 1241,
+    "section": "Task-4",
+    "question": "Which property defines space between grid items?",
+    "options": [
+      "grid-space",
+      "gap",
+      "spacing",
+      "padding"
+    ],
+    "correctAnswer": "gap",
+    "explanation": "The correct answer is gap."
+  },
+  {
+    "id": 1242,
+    "section": "Task-4",
+    "question": "Which CSS feature creates smooth visual changes?",
+    "options": [
+      "Animation",
+      "Transition",
+      "Grid",
+      "Float"
+    ],
+    "correctAnswer": "Transition",
+    "explanation": "The correct answer is Transition."
+  },
+  {
+    "id": 1243,
+    "section": "Task-4",
+    "question": "Which property specifies transition duration?",
+    "options": [
+      "animation-time",
+      "transition-duration",
+      "duration",
+      "timing"
+    ],
+    "correctAnswer": "transition-duration",
+    "explanation": "The correct answer is transition-duration."
+  },
+  {
+    "id": 1244,
+    "section": "Task-4",
+    "question": "Which CSS rule defines animation stages?",
+    "options": [
+      "media",
+      "font-face",
+      "keyframes",
+      "transition"
+    ],
+    "correctAnswer": "keyframes",
+    "explanation": "The correct answer is keyframes."
+  },
+  {
+    "id": 1245,
+    "section": "Task-4",
+    "question": "Which property controls animation repetition?",
+    "options": [
+      "animation-repeat",
+      "animation-loop",
+      "animation-iteration-count",
+      "animation-count"
+    ],
+    "correctAnswer": "animation-iteration-count",
+    "explanation": "The correct answer is animation-iteration-count."
+  },
+  {
+    "id": 1246,
+    "section": "Task-4",
+    "question": "Which property sets animation speed?",
+    "options": [
+      "animation-timing-function",
+      "animation-delay",
+      "animation-name",
+      "animation-direction"
+    ],
+    "correctAnswer": "animation-timing-function",
+    "explanation": "The correct answer is animation-timing-function."
+  },
+  {
+    "id": 1247,
+    "section": "Task-4",
+    "question": "Which CSS property delays animation start?",
+    "options": [
+      "animation-time",
+      "animation-delay",
+      "animation-duration",
+      "animation-start"
+    ],
+    "correctAnswer": "animation-delay",
+    "explanation": "The correct answer is animation-delay."
+  },
+  {
+    "id": 1248,
+    "section": "Task-4",
+    "question": "Responsive design helps websites:",
+    "options": [
+      "Run databases",
+      "Adapt to different screen sizes",
+      "Increase internet speed",
+      "Store cookies"
+    ],
+    "correctAnswer": "Adapt to different screen sizes",
+    "explanation": "The correct answer is Adapt to different screen sizes."
+  },
+  {
+    "id": 1249,
+    "section": "Task-4",
+    "question": "Which CSS rule is used for responsive design?",
+    "options": [
+      "responsive",
+      "media",
+      "screen",
+      "mobile"
+    ],
+    "correctAnswer": "media",
+    "explanation": "The correct answer is media."
+  },
+  {
+    "id": 1250,
+    "section": "Task-4",
+    "question": "Which approach designs for smaller screens first?",
+    "options": [
+      "Desktop-first",
+      "Mobile-first",
+      "Grid-first",
+      "Fixed-width"
+    ],
+    "correctAnswer": "Mobile-first",
+    "explanation": "The correct answer is Mobile-first."
+  },
+  {
+    "id": 1251,
+    "section": "Task-4",
+    "question": "Which unit is commonly used in responsive layouts?",
+    "options": [
+      "px only",
+      "percent",
+      "km",
+      "pt only"
+    ],
+    "correctAnswer": "percent",
+    "explanation": "The correct answer is percent."
+  },
+  {
+    "id": 1252,
+    "section": "Task-4",
+    "question": "Which viewport setting helps responsive design?",
+    "options": [
+      "width=device-width",
+      "width=screen",
+      "responsive=true",
+      "fit=mobile"
+    ],
+    "correctAnswer": "width=device-width",
+    "explanation": "The correct answer is width=device-width."
+  },
+  {
+    "id": 1253,
+    "section": "Task-4",
+    "question": "Which CSS property changes layout direction in Flexbox?",
+    "options": [
+      "flex-wrap",
+      "flex-direction",
+      "justify-content",
+      "display"
+    ],
+    "correctAnswer": "justify-content",
+    "explanation": "The correct answer is justify-content."
+  },
+  {
+    "id": 1254,
+    "section": "Task-4",
+    "question": "Which value places Flexbox items in a column?",
+    "options": [
+      "row",
+      "inline",
+      "column",
+      "vertical"
+    ],
+    "correctAnswer": "row",
+    "explanation": "The correct answer is row."
+  },
+  {
+    "id": 1255,
+    "section": "Task-4",
+    "question": "Which property allows Flexbox items to move to a new line?",
+    "options": [
+      "flex-wrap",
+      "flex-flow",
+      "flex-line",
+      "wrap-content"
+    ],
+    "correctAnswer": "flex-line",
+    "explanation": "The correct answer is flex-line."
+  },
+  {
+    "id": 1256,
+    "section": "Task-4",
+    "question": "Which Grid property controls item placement?",
+    "options": [
+      "grid-area",
+      "grid-align",
+      "grid-style",
+      "place-item"
+    ],
+    "correctAnswer": "grid-area",
+    "explanation": "The correct answer is grid-area."
+  },
+  {
+    "id": 1257,
+    "section": "Task-4",
+    "question": "Which CSS property adds shadow to text?",
+    "options": [
+      "box-shadow",
+      "text-shadow",
+      "shadow-text",
+      "font-shadow"
+    ],
+    "correctAnswer": "text-shadow",
+    "explanation": "The correct answer is text-shadow."
+  },
+  {
+    "id": 1258,
+    "section": "Task-4",
+    "question": "Which property rounds element corners?",
+    "options": [
+      "corner-radius",
+      "border-round",
+      "border-radius",
+      "radius"
+    ],
+    "correctAnswer": "border-radius",
+    "explanation": "The correct answer is border-radius."
+  },
+  {
+    "id": 1259,
+    "section": "Task-4",
+    "question": "Which positioning method removes an element from normal flow?",
+    "options": [
+      "static",
+      "relative",
+      "absolute",
+      "inherit"
+    ],
+    "correctAnswer": "absolute",
+    "explanation": "The correct answer is absolute."
+  },
+  {
+    "id": 1260,
+    "section": "Task-4",
+    "question": "Which CSS property changes background color?",
+    "options": [
+      "color",
+      "background-color",
+      "bg-color",
+      "page-color"
+    ],
+    "correctAnswer": "background-color",
+    "explanation": "The correct answer is background-color."
+  },
+  {
+    "id": 1261,
+    "section": "Task-4",
+    "question": "Which layout technique is best for one-dimensional alignment?",
+    "options": [
+      "Grid",
+      "Flexbox",
+      "Float",
+      "Table"
+    ],
+    "correctAnswer": "Flexbox",
+    "explanation": "The correct answer is Flexbox."
+  },
+  {
+    "id": 1262,
+    "section": "Task-4",
+    "question": "Which layout technique is best for complex page layouts?",
+    "options": [
+      "Float",
+      "Inline-block",
+      "CSS Grid",
+      "Positioning"
+    ],
+    "correctAnswer": "CSS Grid",
+    "explanation": "The correct answer is CSS Grid."
+  },
+  {
+    "id": 1263,
+    "section": "Task-4",
+    "question": "Which HTML5 feature improves webpage meaning and accessibility?",
+    "options": [
+      "Semantic elements",
+      "Inline CSS",
+      "Tables",
+      "Frames"
+    ],
+    "correctAnswer": "Semantic elements",
+    "explanation": "The correct answer is Semantic elements."
   }
 ]
