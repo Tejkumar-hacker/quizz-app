@@ -238,3 +238,61 @@ button:focus {
 .quiz-topbar button:hover {
   background: #303f9f;
 }
+.quiz-header {
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.quiz-header h2 {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.quiz-info {
+  color: #666;
+  font-size: 14px;
+}
+
+.question-number {
+  font-size: 14px;
+  font-weight: bold;
+  color: #3f51b5;
+  margin-bottom: 10px;
+}
+
+.question-card {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 24px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.explanation {
+  margin-top: 15px;
+  padding: 12px;
+  background: #f5f7ff;
+  border-left: 4px solid #3f51b5;
+  border-radius: 6px;
+  color: #444;
+  font-size: 14px;
+}
+
+.finish-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.finish-btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #28a745;
+}
+
+.finish-btn:hover {
+  background: #218838;
+}

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener, OnDestroy } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Quiz as QuizService } from '../../services/quiz';
 import { Observable, map } from 'rxjs';
@@ -16,12 +16,11 @@ export class Quiz implements OnDestroy {
   questions$!: Observable<any[]>;
   questions: any[] = [];
 
-  currentIndex = 0;
   section = '';
   round = '1';
 
   batch = 1;
-  batchSize = 25;
+  batchSize = 60;
 
   totalBatches = 0;
   allQuestionsCount = 0;
@@ -30,7 +29,6 @@ export class Quiz implements OnDestroy {
 
   userAnswers: { [index: number]: string } = {};
   submittedMap: { [index: number]: boolean } = {};
-  visitedMap: { [index: number]: boolean } = {};
 
   constructor(
     private quizService: QuizService,
@@ -38,7 +36,7 @@ export class Quiz implements OnDestroy {
     private router: Router
   ) {}
 
-  // 🔀 Shuffle helper
+  // SHUFFLE
   shuffleArray(arr: any[]) {
     return arr
       .map(v => ({ v, r: Math.random() }))
@@ -61,7 +59,7 @@ export class Quiz implements OnDestroy {
     });
   }
 
-  // 🔥 LOAD QUESTIONS
+  // LOAD QUESTIONS
   loadQuestions() {
 
     this.questions$ = this.quizService.getQuestions().pipe(
@@ -71,29 +69,32 @@ export class Quiz implements OnDestroy {
           q => q.section.toLowerCase() === this.section.toLowerCase()
         );
 
-        // total batches
+        // TOTAL BATCHES
         this.allQuestionsCount = filtered.length;
-        this.totalBatches = Math.ceil(filtered.length / this.batchSize);
 
-        // apply batch
+        this.totalBatches = Math.ceil(
+          filtered.length / this.batchSize
+        );
+
+        // APPLY BATCH
         const start = (this.batch - 1) * this.batchSize;
+
         const end = start + this.batchSize;
 
         filtered = filtered.slice(start, end);
 
-        // round 2 randomization
+        // RANDOM ROUND
         if (this.round === '2') {
+
           filtered = this.shuffleArray(filtered).map(q => ({
             ...q,
             options: this.shuffleArray(q.options)
           }));
         }
 
-        // reset state
-        this.currentIndex = 0;
+        // RESET
         this.userAnswers = {};
         this.submittedMap = {};
-        this.visitedMap = { 0: true };
         this.answers = [];
 
         this.questions = filtered;
@@ -103,7 +104,38 @@ export class Quiz implements OnDestroy {
     );
   }
 
-  // 🔥 BATCH NAVIGATION
+  // SELECT ANSWER
+  selectAnswer(index: number, opt: string, q: any) {
+
+    // prevent changing answer
+    if (this.submittedMap[index]) return;
+
+    this.userAnswers[index] = opt;
+
+    this.submittedMap[index] = true;
+
+    this.answers[index] = {
+      section: q.section,
+      question: q.question,
+      options: q.options,
+      selected: opt,
+      correct: q.correctAnswer,
+      isCorrect: opt === q.correctAnswer,
+      explanation: q.explanation
+    };
+  }
+
+  // ANSWER COUNT
+  get answeredCount(): number {
+    return Object.keys(this.submittedMap).length;
+  }
+
+  // HOME
+  goToHome() {
+    this.router.navigate(['/']);
+  }
+
+  // BATCH NAVIGATION
   goToBatch(batch: number) {
 
     if (batch < 1 || batch > this.totalBatches) return;
@@ -118,85 +150,28 @@ export class Quiz implements OnDestroy {
     });
   }
 
-  // 🔥 AUTO SUBMIT
-  select(opt: string) {
-
-    // prevent changing answer
-    if (this.submittedMap[this.currentIndex]) return;
-
-    this.userAnswers[this.currentIndex] = opt;
-
-    const q = this.questions[this.currentIndex];
-
-    // instantly submit
-    this.submittedMap[this.currentIndex] = true;
-
-    this.answers[this.currentIndex] = {
-      section: q.section,
-      question: q.question,
-      options: q.options,
-      selected: opt,
-      correct: q.correctAnswer,
-      isCorrect: opt === q.correctAnswer,
-      explanation: q.explanation
-    };
-  }
-
-  get answeredCount(): number {
-    return Object.keys(this.submittedMap).length;
-  }
-
-  next(total: number) {
-
-    if (!this.submittedMap[this.currentIndex]) return;
-
-    if (this.currentIndex < total - 1) {
-
-      this.currentIndex++;
-      this.visitedMap[this.currentIndex] = true;
-
-    } else {
-
-      if (this.answeredCount !== total) {
-        alert('⚠️ Please answer all questions before finishing.');
-        return;
-      }
-
-      this.finishQuiz();
-    }
-  }
-
-  previous() {
-
-    if (this.currentIndex > 0) {
-      this.currentIndex--;
-      this.visitedMap[this.currentIndex] = true;
-    }
-  }
-
-  goToQuestion(index: number) {
-
-    this.currentIndex = index;
-    this.visitedMap[index] = true;
-  }
-
-  // 🏠 HOME
-  goToHome() {
-    this.router.navigate(['/']);
-  }
-
-  // ✅ FINISH
+  // FINISH QUIZ
   finishQuiz() {
 
     const finalAnswers = this.answers.filter(a => a !== undefined);
 
     const hasNextBatch = this.batch < this.totalBatches;
 
-    localStorage.setItem('answers', JSON.stringify(finalAnswers));
+    localStorage.setItem(
+      'answers',
+      JSON.stringify(finalAnswers)
+    );
+
     localStorage.setItem('round', this.round);
+
     localStorage.setItem('batch', String(this.batch));
+
     localStorage.setItem('section', this.section);
-    localStorage.setItem('hasNextBatch', String(hasNextBatch));
+
+    localStorage.setItem(
+      'hasNextBatch',
+      String(hasNextBatch)
+    );
 
     this.router.navigate(['/result'], {
       state: {
@@ -207,46 +182,6 @@ export class Quiz implements OnDestroy {
         hasNextBatch
       }
     });
-  }
-
-  // ⌨ KEYBOARD SHORTCUTS
-  @HostListener('window:keydown', ['$event'])
-  handleKeyboard(event: KeyboardEvent) {
-
-    const key = event.key.toLowerCase();
-
-    const q = this.questions[this.currentIndex];
-
-    if (!q) return;
-
-    // 1-4 select
-    if (key >= '1' && key <= '4') {
-
-      if (this.submittedMap[this.currentIndex]) return;
-
-      const index = Number(key) - 1;
-
-      if (q.options[index]) {
-        this.select(q.options[index]);
-      }
-
-      return;
-    }
-
-    // previous
-    if (key === 'arrowleft') {
-      this.previous();
-      return;
-    }
-
-    // next
-    if (
-      (key === 'arrowright' || key === 'n') &&
-      this.submittedMap[this.currentIndex]
-    ) {
-      this.next(this.questions.length);
-      return;
-    }
   }
 
   ngOnDestroy() {}
