@@ -20,10 +20,13 @@ export class Quiz implements OnDestroy {
   round = '1';
 
   batch = 1;
-  batchSize = 60;
+  batchSize = 2;
 
   totalBatches = 0;
   allQuestionsCount = 0;
+
+  // ✅ TOTAL QUESTIONS IN CURRENT SECTION
+  sectionQuestionCount = 0;
 
   answers: any[] = [];
 
@@ -69,9 +72,12 @@ export class Quiz implements OnDestroy {
           q => q.section.toLowerCase() === this.section.toLowerCase()
         );
 
-        // TOTAL BATCHES
+        // TOTAL QUESTIONS
         this.allQuestionsCount = filtered.length;
 
+        this.sectionQuestionCount = filtered.length;
+
+        // TOTAL BATCHES
         this.totalBatches = Math.ceil(
           filtered.length / this.batchSize
         );

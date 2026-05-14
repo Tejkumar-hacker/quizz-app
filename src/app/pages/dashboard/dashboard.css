@@ -42,3 +42,31 @@
   text-align: center;
   margin-top: 20px;
 }
+
+.question-count {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #020415;
+}
+
+.overall-count {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  
+}
+
+.overall-count span {
+  color: #3f51b5;
+  font-size: 22px;
+  font-weight: 900;
+}
+.totalq {
+  text-decoration: underline;
+  text-decoration-color: #3f51b5;
+  color: #3f51b5;
+  text-shadow: 1px 1px 2px rgba(63,81,181,0.5);
+}

@@ -13,15 +13,40 @@ import { map, Observable } from 'rxjs';
 })
 export class Dashboard {
 
-  sections$!: Observable<string[]>;
+  sections$!: Observable<any[]>;
 
-  constructor(private quiz: Quiz, private router: Router) {}
+  totalQuestions = 0;
+
+  constructor(
+    private quiz: Quiz,
+    private router: Router
+  ) {}
 
   ngOnInit() {
+
     this.sections$ = this.quiz.getQuestions().pipe(
-      map((data: any[]) => [
-        ...new Set(data.map(q => q.section))
-      ])
+
+      map((data: any[]) => {
+
+        // ✅ TOTAL OVERALL QUESTIONS
+        this.totalQuestions = data.length;
+
+        const grouped: any = {};
+
+        data.forEach(q => {
+
+          if (!grouped[q.section]) {
+            grouped[q.section] = 0;
+          }
+
+          grouped[q.section]++;
+        });
+
+        return Object.keys(grouped).map(section => ({
+          name: section,
+          total: grouped[section]
+        }));
+      })
     );
   }
 

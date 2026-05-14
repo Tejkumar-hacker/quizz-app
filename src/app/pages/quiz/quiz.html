@@ -1,5 +1,25 @@
 <div class="quiz-topbar">
-  <button (click)="goToHome()">🏠 Home</button>
+
+  <button (click)="goToHome()">
+    🏠 Home
+  </button>
+
+  <div class="topbar-info">
+
+    <span>
+      {{ section }}
+    </span>
+
+    <span>
+      {{ sectionQuestionCount }} Questions
+    </span>
+
+    <span>
+      Batch {{ batch }} / {{ totalBatches }}
+    </span>
+
+  </div>
+
 </div>
 
 <div *ngIf="questions$ | async as questions; else loading">
@@ -17,10 +37,12 @@
 
   <!-- PROGRESS -->
   <div class="progress-bar">
+
     <div
       class="progress-fill"
       [style.width.%]="(answeredCount / questions.length) * 100"
     ></div>
+
   </div>
 
   <!-- ALL QUESTIONS -->
