@@ -46,26 +46,24 @@ export class Quiz implements OnDestroy {
       .map(x => x.v);
   }
 
-  // 🔥 FIXED ngOnInit (SUBSCRIPTIONS)
   ngOnInit() {
 
-    // Listen to section changes
     this.route.paramMap.subscribe(params => {
       this.section = params.get('section') || '';
     });
 
-    // 🔥 Listen to query param changes (CRITICAL)
     this.route.queryParamMap.subscribe(query => {
 
       this.round = query.get('round') || '1';
       this.batch = Number(query.get('batch') || 1);
 
-      this.loadQuestions(); // reload questions on batch change
+      this.loadQuestions();
     });
   }
 
-  // 🔥 NEW METHOD (CORE FIX)
+  // 🔥 LOAD QUESTIONS
   loadQuestions() {
+
     this.questions$ = this.quizService.getQuestions().pipe(
       map((data: any[]) => {
 
@@ -80,8 +78,10 @@ export class Quiz implements OnDestroy {
         // apply batch
         const start = (this.batch - 1) * this.batchSize;
         const end = start + this.batchSize;
+
         filtered = filtered.slice(start, end);
 
+        // round 2 randomization
         if (this.round === '2') {
           filtered = this.shuffleArray(filtered).map(q => ({
             ...q,
@@ -89,7 +89,7 @@ export class Quiz implements OnDestroy {
           }));
         }
 
-        // 🔥 RESET STATE (IMPORTANT)
+        // reset state
         this.currentIndex = 0;
         this.userAnswers = {};
         this.submittedMap = {};
@@ -105,33 +105,39 @@ export class Quiz implements OnDestroy {
 
   // 🔥 BATCH NAVIGATION
   goToBatch(batch: number) {
+
     if (batch < 1 || batch > this.totalBatches) return;
 
     this.router.navigate([], {
       relativeTo: this.route,
-      queryParams: { batch: batch, round: this.round },
+      queryParams: {
+        batch: batch,
+        round: this.round
+      },
       queryParamsHandling: 'merge'
     });
   }
 
+  // 🔥 AUTO SUBMIT
   select(opt: string) {
+
+    // prevent changing answer
     if (this.submittedMap[this.currentIndex]) return;
+
     this.userAnswers[this.currentIndex] = opt;
-  }
 
-  submit(q: any) {
-    const selected = this.userAnswers[this.currentIndex];
-    if (!selected || this.submittedMap[this.currentIndex]) return;
+    const q = this.questions[this.currentIndex];
 
+    // instantly submit
     this.submittedMap[this.currentIndex] = true;
 
     this.answers[this.currentIndex] = {
       section: q.section,
       question: q.question,
       options: q.options,
-      selected,
+      selected: opt,
       correct: q.correctAnswer,
-      isCorrect: selected === q.correctAnswer,
+      isCorrect: opt === q.correctAnswer,
       explanation: q.explanation
     };
   }
@@ -141,21 +147,27 @@ export class Quiz implements OnDestroy {
   }
 
   next(total: number) {
+
     if (!this.submittedMap[this.currentIndex]) return;
 
     if (this.currentIndex < total - 1) {
+
       this.currentIndex++;
       this.visitedMap[this.currentIndex] = true;
+
     } else {
+
       if (this.answeredCount !== total) {
         alert('⚠️ Please answer all questions before finishing.');
         return;
       }
+
       this.finishQuiz();
     }
   }
 
   previous() {
+
     if (this.currentIndex > 0) {
       this.currentIndex--;
       this.visitedMap[this.currentIndex] = true;
@@ -163,16 +175,21 @@ export class Quiz implements OnDestroy {
   }
 
   goToQuestion(index: number) {
+
     this.currentIndex = index;
     this.visitedMap[index] = true;
   }
 
+  // 🏠 HOME
   goToHome() {
-  this.router.navigate(['/']);
-}
+    this.router.navigate(['/']);
+  }
 
+  // ✅ FINISH
   finishQuiz() {
+
     const finalAnswers = this.answers.filter(a => a !== undefined);
+
     const hasNextBatch = this.batch < this.totalBatches;
 
     localStorage.setItem('answers', JSON.stringify(finalAnswers));
@@ -192,33 +209,42 @@ export class Quiz implements OnDestroy {
     });
   }
 
+  // ⌨ KEYBOARD SHORTCUTS
   @HostListener('window:keydown', ['$event'])
   handleKeyboard(event: KeyboardEvent) {
+
     const key = event.key.toLowerCase();
+
     const q = this.questions[this.currentIndex];
+
     if (!q) return;
 
+    // 1-4 select
     if (key >= '1' && key <= '4') {
+
       if (this.submittedMap[this.currentIndex]) return;
+
       const index = Number(key) - 1;
+
       if (q.options[index]) {
-        this.userAnswers[this.currentIndex] = q.options[index];
+        this.select(q.options[index]);
       }
+
       return;
     }
 
+    // previous
     if (key === 'arrowleft') {
       this.previous();
       return;
     }
 
-    if ((key === 'arrowright' || key === 'n') && this.submittedMap[this.currentIndex]) {
+    // next
+    if (
+      (key === 'arrowright' || key === 'n') &&
+      this.submittedMap[this.currentIndex]
+    ) {
       this.next(this.questions.length);
-      return;
-    }
-
-    if (key === 'enter' || key === 's') {
-      this.submit(q);
       return;
     }
   }

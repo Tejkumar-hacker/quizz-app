@@ -1,6 +1,7 @@
 <div class="quiz-topbar">
   <button (click)="goToHome()">🏠 Home</button>
 </div>
+
 <div *ngIf="questions$ | async as questions; else loading">
 
   <!-- PROGRESS -->
@@ -15,8 +16,9 @@
     ></div>
   </div>
 
-  <!-- 🔥 QUESTION PALETTE -->
+  <!-- QUESTION PALETTE -->
   <div class="palette">
+
     <div
       *ngFor="let q of questions; let i = index"
       (click)="goToQuestion(i)"
@@ -29,6 +31,7 @@
     >
       {{ i + 1 }}
     </div>
+
   </div>
 
   <!-- QUESTION -->
@@ -38,43 +41,51 @@
 
     <!-- OPTIONS -->
     <div class="options">
+
       <div
         *ngFor="let opt of q.options"
         (click)="select(opt)"
         class="option"
+
         [class.selected]="opt === userAnswers[currentIndex]"
-        [class.correct]="submittedMap[currentIndex] && opt === q.correctAnswer"
-        [class.wrong]="submittedMap[currentIndex] && opt === userAnswers[currentIndex] && opt !== q.correctAnswer"
+
+        [class.correct]="
+          submittedMap[currentIndex] &&
+          opt === q.correctAnswer
+        "
+
+        [class.wrong]="
+          submittedMap[currentIndex] &&
+          opt === userAnswers[currentIndex] &&
+          opt !== q.correctAnswer
+        "
       >
         {{ opt }}
       </div>
+
     </div>
-    
-    <!-- ADD THIS BELOW OPTIONS
-    <div class="timer" *ngIf="submittedMap[currentIndex] && countdown > 0">
-      ⏱ Auto next in {{ countdown }}s
-    </div> -->
 
     <!-- KEYBOARD HINTS -->
     <div class="keyboard-hints">
+
       <span><b>1–4</b> Select</span>
-      <span><b>S / Enter</b> Submit</span>
+
+      <span><b>Click Option</b> Auto Submit</span>
+
       <span><b>N / →</b> Next</span>
+
       <span><b>←</b> Previous</span>
+
     </div>
 
     <!-- ACTIONS -->
     <div class="actions">
 
-      <button (click)="previous()" [disabled]="currentIndex === 0">
-        Previous
-      </button>
-
       <button
-        (click)="submit(q)"
-        [disabled]="!userAnswers[currentIndex] || submittedMap[currentIndex]"
+        (click)="previous()"
+        [disabled]="currentIndex === 0"
       >
-        Submit
+        Previous
       </button>
 
       <button
@@ -85,37 +96,40 @@
       </button>
 
     </div>
-    <!-- 🔥 SIMPLE PAGINATION (NO BOOTSTRAP) -->
-<div class="pagination-container" *ngIf="totalBatches > 1">
 
-  <button
-    (click)="goToBatch(batch - 1)"
-    [disabled]="batch === 1"
-  >
-    « Prev
-  </button>
+    <!-- PAGINATION -->
+    <div
+      class="pagination-container"
+      *ngIf="totalBatches > 1"
+    >
 
-  <button
-    *ngFor="let b of [].constructor(totalBatches); let i = index"
-    (click)="goToBatch(i + 1)"
-    [class.active]="batch === i + 1"
-  >
-    {{ i + 1 }}
-  </button>
+      <button
+        (click)="goToBatch(batch - 1)"
+        [disabled]="batch === 1"
+      >
+        « Prev
+      </button>
 
-  <button
-    (click)="goToBatch(batch + 1)"
-    [disabled]="batch === totalBatches"
-  >
-    Next »
-  </button>
+      <button
+        *ngFor="let b of [].constructor(totalBatches); let i = index"
+        (click)="goToBatch(i + 1)"
+        [class.active]="batch === i + 1"
+      >
+        {{ i + 1 }}
+      </button>
 
-</div>
+      <button
+        (click)="goToBatch(batch + 1)"
+        [disabled]="batch === totalBatches"
+      >
+        Next »
+      </button>
+
+    </div>
 
   </div>
 
 </div>
-
 
 <ng-template #loading>
   <p>Loading questions...</p>
