@@ -3239,7 +3239,7 @@
   {
     "id": 250,
     "section": "HTML/CSS",
-    "question": "Which CSS selector targets an element with id=&quot;menu&quot;?",
+    "question": "Which CSS selector targets an element with id=\"menu\"?",
     "options": [
       ".menu",
       "*menu",
@@ -3252,7 +3252,7 @@
   {
     "id": 251,
     "section": "HTML/CSS",
-    "question": "Which CSS selector targets elements with class=&quot;box&quot;?",
+    "question": "Which CSS selector targets elements with class=\"box\"?",
     "options": [
       "#box",
       ".box",
@@ -4687,7 +4687,7 @@
       "==",
       "=",
       "===",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "===",
     "explanation": "The correct answer is ===."
@@ -4804,7 +4804,7 @@
       "[]",
       "{}",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "()",
     "explanation": "The correct answer is ()."
@@ -5113,7 +5113,7 @@
     "section": "JavaScript",
     "question": "Which symbol is used for single-line comments in JavaScript?",
     "options": [
-      "&lt;!-- --&gt;",
+      "<!-- -->",
       "//",
       "##",
       "**"
@@ -5126,7 +5126,7 @@
     "section": "JavaScript",
     "question": "Which symbols are used for multi-line comments?",
     "options": [
-      "&lt;!-- --&gt;",
+      "<!-- -->",
       "## ##",
       "/* */",
       "// //"
@@ -5220,7 +5220,7 @@
       "[]",
       "{}",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "{}",
     "explanation": "The correct answer is {}."
@@ -5232,7 +5232,7 @@
     "options": [
       "object[property]",
       "object.property",
-      "object-&gt;property",
+      "object->property",
       "object::property"
     ],
     "correctAnswer": "object.property",
@@ -5244,7 +5244,7 @@
     "question": "How do you access a property using bracket notation?",
     "options": [
       "object.property",
-      "object-&gt;property",
+      "object->property",
       "object[property]",
       "object::property"
     ],
@@ -5324,7 +5324,7 @@
       "{}",
       "()",
       "[]",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "[]",
     "explanation": "The correct answer is []."
@@ -5727,7 +5727,7 @@
       "... (spread operator)",
       "::",
       "**",
-      "&amp;&amp;"
+      "&&"
     ],
     "correctAnswer": "... (spread operator)",
     "explanation": "The correct answer is ... (spread operator)."
@@ -5906,13 +5906,13 @@
     "section": "JavaScript",
     "question": "Which symbol is used in arrow functions?",
     "options": [
-      "=&gt;",
-      "-&gt;",
+      "=>",
+      "->",
       "::",
-      "==&gt;"
+      "==>"
     ],
-    "correctAnswer": "=&gt;",
-    "explanation": "The correct answer is =&gt;."
+    "correctAnswer": "=>",
+    "explanation": "The correct answer is =>."
   },
   {
     "id": 456,
@@ -5932,10 +5932,10 @@
     "section": "JavaScript",
     "question": "Which symbol is used for template literals?",
     "options": [
-      "&quot;&quot;",
-      "&#x27;&#x27;",
+      "\"\"",
+      "''",
       "``",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "``",
     "explanation": "The correct answer is ``."
@@ -5961,7 +5961,7 @@
       "{}",
       "[]",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "[]",
     "explanation": "The correct answer is []."
@@ -5974,7 +5974,7 @@
       "[]",
       "{}",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "{}",
     "explanation": "The correct answer is {}."
@@ -6208,7 +6208,7 @@
       "[]",
       "{}",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "()",
     "explanation": "The correct answer is ()."
@@ -6348,13 +6348,13 @@
     "section": "JavaScript",
     "question": "Which is correct arrow function syntax?",
     "options": [
-      "function =&gt; {}",
-      "() =&gt; {}",
-      "=&gt; function()",
-      "function -&gt; {}"
+      "function => {}",
+      "() => {}",
+      "=> function()",
+      "function -> {}"
     ],
-    "correctAnswer": "() =&gt; {}",
-    "explanation": "The correct answer is () =&gt; {}."
+    "correctAnswer": "() => {}",
+    "explanation": "The correct answer is () => {}."
   },
   {
     "id": 490,
@@ -6559,7 +6559,7 @@
       "? :",
       "++",
       "==",
-      "&amp;&amp; only"
+      "&& only"
     ],
     "correctAnswer": "? :",
     "explanation": "The correct answer is ? :."
@@ -6570,12 +6570,12 @@
     "question": "Which operator is often used for short-circuit rendering?",
     "options": [
       "||",
-      "&amp;&amp;",
+      "&&",
       "==",
       "!=="
     ],
-    "correctAnswer": "&amp;&amp;",
-    "explanation": "The correct answer is &amp;&amp;."
+    "correctAnswer": "&&",
+    "explanation": "The correct answer is &&."
   },
   {
     "id": 507,
@@ -6622,12 +6622,12 @@
     "question": "Which is correct state update pattern?",
     "options": [
       "setCount(count + 1)",
-      "setCount(prev =&gt; prev + 1)",
+      "setCount(prev => prev + 1)",
       "count = count + 1",
       "update(count)"
     ],
-    "correctAnswer": "setCount(prev =&gt; prev + 1)",
-    "explanation": "The correct answer is setCount(prev =&gt; prev + 1)."
+    "correctAnswer": "setCount(prev => prev + 1)",
+    "explanation": "The correct answer is setCount(prev => prev + 1)."
   },
   {
     "id": 511,
@@ -7117,7 +7117,7 @@
     "options": [
       "if/else",
       "ternary operator",
-      "logical &amp;&amp;",
+      "logical &&",
       "all of the above"
     ],
     "correctAnswer": "all of the above",
@@ -7490,7 +7490,7 @@
   {
     "id": 577,
     "section": "ReactJS",
-    "question": "What does &quot;pure function&quot; mean in Redux?",
+    "question": "What does \"pure function\" mean in Redux?",
     "options": [
       "Random output",
       "Same input gives same output",
@@ -8639,7 +8639,7 @@
       "number[]",
       "array()",
       "[]number",
-      "Array&lt;number[]&gt; only"
+      "Array<number[]> only"
     ],
     "correctAnswer": "number[]",
     "explanation": "The correct answer is number[]."
@@ -8662,13 +8662,13 @@
     "section": "TypeScript",
     "question": "Which example represents a tuple?",
     "options": [
-      "[1, &quot;text&quot;]",
+      "[1, \"text\"]",
       "{1, 2}",
       "(1, 2)",
-      "&lt;1, 2&gt;"
+      "<1, 2>"
     ],
-    "correctAnswer": "[1, &quot;text&quot;]",
-    "explanation": "The correct answer is [1, &quot;text&quot;]."
+    "correctAnswer": "[1, \"text\"]",
+    "explanation": "The correct answer is [1, \"text\"]."
   },
   {
     "id": 668,
@@ -8872,7 +8872,7 @@
     "options": [
       ":",
       "=",
-      "-&gt;",
+      "->",
       "#"
     ],
     "correctAnswer": ":",
@@ -10846,13 +10846,13 @@
     "section": "ReactJS",
     "question": "Which is valid JSX syntax?",
     "options": [
-      "&lt;div&gt;Hello&lt;/div&gt;",
+      "<div>Hello</div>",
       "div Hello div",
       "{div}Hello{/div}",
-      "&lt;div&gt;Hello"
+      "<div>Hello"
     ],
-    "correctAnswer": "&lt;div&gt;Hello&lt;/div&gt;",
-    "explanation": "The correct answer is &lt;div&gt;Hello&lt;/div&gt;."
+    "correctAnswer": "<div>Hello</div>",
+    "explanation": "The correct answer is <div>Hello</div>."
   },
   {
     "id": 836,
@@ -10862,7 +10862,7 @@
       "[]",
       "{}",
       "()",
-      "&lt;&gt;"
+      "<>"
     ],
     "correctAnswer": "{}",
     "explanation": "The correct answer is {}."
@@ -11199,7 +11199,7 @@
     "options": [
       "{}",
       "[]",
-      "&lt;&gt;",
+      "<>",
       "()"
     ],
     "correctAnswer": "{}",
@@ -11701,7 +11701,7 @@
   },
   {
     "id": 901,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is the correct way to declare a variable in JavaScript that cannot be reassigned?",
     "options": [
       "let x = 10;",
@@ -11714,20 +11714,20 @@
   },
   {
     "id": 902,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log(typeof null);",
     "options": [
-      "&quot;null&quot;",
-      "&quot;object&quot;",
-      "&quot;undefined&quot;",
-      "&quot;number&quot;"
+      "\"null\"",
+      "\"object\"",
+      "\"undefined\"",
+      "\"number\""
     ],
-    "correctAnswer": "&quot;object&quot;",
-    "explanation": "The correct answer is &quot;object&quot;."
+    "correctAnswer": "\"object\"",
+    "explanation": "The correct answer is \"object\"."
   },
   {
     "id": 903,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is NOT a JavaScript data type?",
     "options": [
       "Symbol",
@@ -11740,8 +11740,8 @@
   },
   {
     "id": 904,
-    "section": "node.js &amp; js",
-    "question": "What will the following code output? for (var i = 0; i &lt; 3; i++) { setTimeout(() =&gt; console.log(i), 0); }",
+    "section": "node.js & js",
+    "question": "What will the following code output? for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 0); }",
     "options": [
       "0 1 2",
       "3 3 3",
@@ -11753,7 +11753,7 @@
   },
   {
     "id": 905,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method is used to add an element to the end of an array?",
     "options": [
       "push()",
@@ -11766,8 +11766,8 @@
   },
   {
     "id": 906,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;this&#x27; keyword in JavaScript?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'this' keyword in JavaScript?",
     "options": [
       "Refers to the current function",
       "Refers to the global object by default in non-strict mode",
@@ -11779,12 +11779,12 @@
   },
   {
     "id": 907,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a function that returns the sum of all numbers in an array using reduce.",
     "options": [
-      "arr.reduce((acc, val) =&gt; acc + val, 0)",
-      "arr.reduce((acc, val) =&gt; acc + val)",
-      "arr.reduce((acc, val) =&gt; { return acc + val; }, 0)",
+      "arr.reduce((acc, val) => acc + val, 0)",
+      "arr.reduce((acc, val) => acc + val)",
+      "arr.reduce((acc, val) => { return acc + val; }, 0)",
       "All of the above are correct"
     ],
     "correctAnswer": "All of the above are correct",
@@ -11792,7 +11792,7 @@
   },
   {
     "id": 908,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following correctly creates a shallow copy of an object?",
     "options": [
       "Object.assign({}, obj)",
@@ -11805,7 +11805,7 @@
   },
   {
     "id": 909,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is a closure in JavaScript?",
     "options": [
       "A function that is immediately invoked",
@@ -11818,7 +11818,7 @@
   },
   {
     "id": 910,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log(0.1 + 0.2 === 0.3);",
     "options": [
       "true",
@@ -11831,7 +11831,7 @@
   },
   {
     "id": 911,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which array method creates a new array with all elements that pass a test?",
     "options": [
       "map()",
@@ -11844,8 +11844,8 @@
   },
   {
     "id": 912,
-    "section": "node.js &amp; js",
-    "question": "What does the &#x27;=== &#x27; operator do?",
+    "section": "node.js & js",
+    "question": "What does the '=== ' operator do?",
     "options": [
       "Compares only values, not types",
       "Compares both values and types without type coercion",
@@ -11857,38 +11857,38 @@
   },
   {
     "id": 913,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a promise that resolves after 1 second.",
     "options": [
-      "new Promise((resolve) =&gt; setTimeout(resolve, 1000))",
+      "new Promise((resolve) => setTimeout(resolve, 1000))",
       "Promise.delay(1000)",
-      "setTimeout(() =&gt; Promise.resolve(), 1000)",
+      "setTimeout(() => Promise.resolve(), 1000)",
       "Promise.resolve().setTimeout(1000)"
     ],
-    "correctAnswer": "new Promise((resolve) =&gt; setTimeout(resolve, 1000))",
-    "explanation": "The correct answer is new Promise((resolve) =&gt; setTimeout(resolve, 1000))."
+    "correctAnswer": "new Promise((resolve) => setTimeout(resolve, 1000))",
+    "explanation": "The correct answer is new Promise((resolve) => setTimeout(resolve, 1000))."
   },
   {
     "id": 914,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log([] + []);",
     "options": [
       "[]",
-      "&quot;&quot;",
+      "\"\"",
       "undefined",
       "TypeError"
     ],
-    "correctAnswer": "&quot;&quot;",
-    "explanation": "The correct answer is &quot;&quot;."
+    "correctAnswer": "\"\"",
+    "explanation": "The correct answer is \"\"."
   },
   {
     "id": 915,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is NOT a valid way to define a function in JavaScript?",
     "options": [
       "function foo() {}",
       "const foo = function() {};",
-      "const foo = () =&gt; {};",
+      "const foo = () => {};",
       "def foo(): {}"
     ],
     "correctAnswer": "def foo(): {}",
@@ -11896,7 +11896,7 @@
   },
   {
     "id": 916,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is event delegation in JavaScript?",
     "options": [
       "Attaching an event listener to a parent element to handle events on child elements",
@@ -11909,8 +11909,8 @@
   },
   {
     "id": 917,
-    "section": "node.js &amp; js",
-    "question": "What will the following code output? console.log(1 + &#x27;2&#x27; + 3);",
+    "section": "node.js & js",
+    "question": "What will the following code output? console.log(1 + '2' + 3);",
     "options": [
       "6",
       "123",
@@ -11922,7 +11922,7 @@
   },
   {
     "id": 918,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method is used to remove the last element from an array and return it?",
     "options": [
       "pop()",
@@ -11935,8 +11935,8 @@
   },
   {
     "id": 919,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;async/await&#x27; syntax?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'async/await' syntax?",
     "options": [
       "To write asynchronous code in a synchronous style",
       "To make functions run faster",
@@ -11948,8 +11948,8 @@
   },
   {
     "id": 920,
-    "section": "node.js &amp; js",
-    "question": "Write a function that uses destructuring to extract the &#x27;name&#x27; and &#x27;age&#x27; properties from an object.",
+    "section": "node.js & js",
+    "question": "Write a function that uses destructuring to extract the 'name' and 'age' properties from an object.",
     "options": [
       "const { name, age } = person;",
       "const name = person.name; const age = person.age;",
@@ -11961,21 +11961,21 @@
   },
   {
     "id": 921,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log(typeof NaN);",
     "options": [
-      "&quot;NaN&quot;",
-      "&quot;number&quot;",
-      "&quot;undefined&quot;",
-      "&quot;object&quot;"
+      "\"NaN\"",
+      "\"number\"",
+      "\"undefined\"",
+      "\"object\""
     ],
-    "correctAnswer": "&quot;number&quot;",
-    "explanation": "The correct answer is &quot;number&quot;."
+    "correctAnswer": "\"number\"",
+    "explanation": "The correct answer is \"number\"."
   },
   {
     "id": 922,
-    "section": "node.js &amp; js",
-    "question": "Which of the following statements about the &#x27;map()&#x27; method is true?",
+    "section": "node.js & js",
+    "question": "Which of the following statements about the 'map()' method is true?",
     "options": [
       "It modifies the original array",
       "It returns a new array of the same length",
@@ -11987,20 +11987,20 @@
   },
   {
     "id": 923,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;bind()&#x27; method?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'bind()' method?",
     "options": [
-      "To create a new function with a fixed &#x27;this&#x27; value",
+      "To create a new function with a fixed 'this' value",
       "To combine two functions",
       "To attach an event listener",
       "To bind a variable to a scope"
     ],
-    "correctAnswer": "To create a new function with a fixed &#x27;this&#x27; value",
-    "explanation": "The correct answer is To create a new function with a fixed &#x27;this&#x27; value."
+    "correctAnswer": "To create a new function with a fixed 'this' value",
+    "explanation": "The correct answer is To create a new function with a fixed 'this' value."
   },
   {
     "id": 924,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code output? console.log([] == false);",
     "options": [
       "true",
@@ -12013,7 +12013,7 @@
   },
   {
     "id": 925,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is a way to prevent default behavior of an event?",
     "options": [
       "event.stopPropagation()",
@@ -12026,24 +12026,24 @@
   },
   {
     "id": 926,
-    "section": "node.js &amp; js",
-    "question": "What is the output of: console.log(!!&quot;false&quot;);",
+    "section": "node.js & js",
+    "question": "What is the output of: console.log(!!\"false\");",
     "options": [
       "false",
       "true",
       "undefined",
-      "&quot;false&quot;"
+      "\"false\""
     ],
     "correctAnswer": "true",
     "explanation": "The correct answer is true."
   },
   {
     "id": 927,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a function that returns a new array containing only unique values from the input array.",
     "options": [
       "[...new Set(arr)]",
-      "arr.filter((v, i, a) =&gt; a.indexOf(v) === i)",
+      "arr.filter((v, i, a) => a.indexOf(v) === i)",
       "Both A and B are correct",
       "arr.unique()"
     ],
@@ -12052,8 +12052,8 @@
   },
   {
     "id": 928,
-    "section": "node.js &amp; js",
-    "question": "What is the difference between &#x27;let&#x27; and &#x27;var&#x27;?",
+    "section": "node.js & js",
+    "question": "What is the difference between 'let' and 'var'?",
     "options": [
       "let is block-scoped, var is function-scoped",
       "let cannot be redeclared in the same scope",
@@ -12065,7 +12065,7 @@
   },
   {
     "id": 929,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code output? const obj = { a: 1, b: 2 }; const { a, c } = obj; console.log(c);",
     "options": [
       "2",
@@ -12078,7 +12078,7 @@
   },
   {
     "id": 930,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method converts a JSON string into a JavaScript object?",
     "options": [
       "JSON.stringify()",
@@ -12091,8 +12091,8 @@
   },
   {
     "id": 931,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;Set&#x27; object in JavaScript?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'Set' object in JavaScript?",
     "options": [
       "To store unique values of any type",
       "To store key-value pairs",
@@ -12104,21 +12104,21 @@
   },
   {
     "id": 932,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a function that delays execution using setTimeout and returns a promise.",
     "options": [
-      "function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }",
-      "function delay(ms) { setTimeout(() =&gt; {}, ms); }",
+      "function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }",
+      "function delay(ms) { setTimeout(() => {}, ms); }",
       "function delay(ms) { return Promise.setTimeout(ms); }",
-      "function delay(ms) { return new Promise((resolve, reject) =&gt; { setTimeout(reject, ms); }); }"
+      "function delay(ms) { return new Promise((resolve, reject) => { setTimeout(reject, ms); }); }"
     ],
-    "correctAnswer": "function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }",
-    "explanation": "The correct answer is function delay(ms) { return new Promise(resolve =&gt; setTimeout(resolve, ms)); }."
+    "correctAnswer": "function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }",
+    "explanation": "The correct answer is function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }."
   },
   {
     "id": 933,
-    "section": "node.js &amp; js",
-    "question": "What is the output of: console.log(3 &gt; 2 &gt; 1);",
+    "section": "node.js & js",
+    "question": "What is the output of: console.log(3 > 2 > 1);",
     "options": [
       "true",
       "false",
@@ -12130,7 +12130,7 @@
   },
   {
     "id": 934,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is a valid way to create a class in ES6?",
     "options": [
       "class MyClass { constructor() {} }",
@@ -12143,8 +12143,8 @@
   },
   {
     "id": 935,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;Symbol&#x27; data type?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'Symbol' data type?",
     "options": [
       "To create unique identifiers",
       "To represent mathematical symbols",
@@ -12156,8 +12156,8 @@
   },
   {
     "id": 936,
-    "section": "node.js &amp; js",
-    "question": "What will the following code output? console.log(1 &lt; 2 &lt; 3);",
+    "section": "node.js & js",
+    "question": "What will the following code output? console.log(1 < 2 < 3);",
     "options": [
       "true",
       "false",
@@ -12169,7 +12169,7 @@
   },
   {
     "id": 937,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method is used to flatten an array to a specified depth?",
     "options": [
       "flat()",
@@ -12182,8 +12182,8 @@
   },
   {
     "id": 938,
-    "section": "node.js &amp; js",
-    "question": "What is a &#x27;callback hell&#x27; in JavaScript?",
+    "section": "node.js & js",
+    "question": "What is a 'callback hell' in JavaScript?",
     "options": [
       "An infinite loop of callbacks",
       "Nested callbacks that become hard to read and maintain",
@@ -12195,21 +12195,21 @@
   },
   {
     "id": 939,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a function that checks if a variable is an array.",
     "options": [
       "Array.isArray(variable)",
       "variable instanceof Array",
       "Both A and B are correct",
-      "typeof variable === &#x27;array&#x27;"
+      "typeof variable === 'array'"
     ],
     "correctAnswer": "Both A and B are correct",
     "explanation": "The correct answer is Both A and B are correct."
   },
   {
     "id": 940,
-    "section": "node.js &amp; js",
-    "question": "What is the output of: console.log(&#x27;5&#x27; - 3);",
+    "section": "node.js & js",
+    "question": "What is the output of: console.log('5' - 3);",
     "options": [
       "2",
       "53",
@@ -12221,12 +12221,12 @@
   },
   {
     "id": 941,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following statements about arrow functions is true?",
     "options": [
-      "They have their own &#x27;this&#x27; context",
+      "They have their own 'this' context",
       "They cannot be used as constructors",
-      "They cannot use the &#x27;arguments&#x27; object",
+      "They cannot use the 'arguments' object",
       "Both B and C are correct"
     ],
     "correctAnswer": "Both B and C are correct",
@@ -12234,8 +12234,8 @@
   },
   {
     "id": 942,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;spread&#x27; operator (...) in JavaScript?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'spread' operator (...) in JavaScript?",
     "options": [
       "To spread elements of an iterable into individual elements",
       "To create a shallow copy of an array or object",
@@ -12247,7 +12247,7 @@
   },
   {
     "id": 943,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code output? console.log(!![]);",
     "options": [
       "true",
@@ -12260,7 +12260,7 @@
   },
   {
     "id": 944,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method is used to combine two or more arrays?",
     "options": [
       "concat()",
@@ -12273,25 +12273,25 @@
   },
   {
     "id": 945,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log(typeof (function() {}));",
     "options": [
-      "&quot;function&quot;",
-      "&quot;object&quot;",
-      "&quot;undefined&quot;",
-      "&quot;array&quot;"
+      "\"function\"",
+      "\"object\"",
+      "\"undefined\"",
+      "\"array\""
     ],
-    "correctAnswer": "&quot;function&quot;",
-    "explanation": "The correct answer is &quot;function&quot;."
+    "correctAnswer": "\"function\"",
+    "explanation": "The correct answer is \"function\"."
   },
   {
     "id": 946,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Write a function that throttles another function to execute at most once every specified milliseconds.",
     "options": [
-      "function throttle(func, limit) { let inThrottle; return function() { if (!inThrottle) { func.apply(this, arguments); inThrottle = true; setTimeout(() =&gt; inThrottle = false, limit); } } }",
-      "function throttle(func, limit) { return function() { setTimeout(() =&gt; func.apply(this, arguments), limit); } }",
-      "function throttle(func, limit) { let lastCall = 0; return function() { const now = Date.now(); if (now - lastCall &gt;= limit) { lastCall = now; func.apply(this, arguments); } } }",
+      "function throttle(func, limit) { let inThrottle; return function() { if (!inThrottle) { func.apply(this, arguments); inThrottle = true; setTimeout(() => inThrottle = false, limit); } } }",
+      "function throttle(func, limit) { return function() { setTimeout(() => func.apply(this, arguments), limit); } }",
+      "function throttle(func, limit) { let lastCall = 0; return function() { const now = Date.now(); if (now - lastCall >= limit) { lastCall = now; func.apply(this, arguments); } } }",
       "Both A and C are valid throttle implementations"
     ],
     "correctAnswer": "Both A and C are valid throttle implementations",
@@ -12299,8 +12299,8 @@
   },
   {
     "id": 947,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;WeakMap&#x27; object?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'WeakMap' object?",
     "options": [
       "A Map with weak references to keys, allowing garbage collection",
       "A Map that only stores weak values",
@@ -12312,7 +12312,7 @@
   },
   {
     "id": 948,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code output? console.log([] + {});",
     "options": [
       "[object Object]",
@@ -12325,7 +12325,7 @@
   },
   {
     "id": 949,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which of the following is a valid way to create a deep clone of an object (excluding special cases like Date, RegExp)?",
     "options": [
       "JSON.parse(JSON.stringify(obj))",
@@ -12338,8 +12338,8 @@
   },
   {
     "id": 950,
-    "section": "node.js &amp; js",
-    "question": "What is the output of: console.log(Number(&quot;123abc&quot;));",
+    "section": "node.js & js",
+    "question": "What is the output of: console.log(Number(\"123abc\"));",
     "options": [
       "123",
       "NaN",
@@ -12351,7 +12351,7 @@
   },
   {
     "id": 951,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of: console.log(typeof null)?",
     "options": [
       "null",
@@ -12364,20 +12364,20 @@
   },
   {
     "id": 952,
-    "section": "node.js &amp; js",
-    "question": "Which of the following correctly explains the difference between &#x27;var&#x27;, &#x27;let&#x27;, and &#x27;const&#x27; in JavaScript?",
+    "section": "node.js & js",
+    "question": "Which of the following correctly explains the difference between 'var', 'let', and 'const' in JavaScript?",
     "options": [
-      "&#x27;var&#x27; is block-scoped; &#x27;let&#x27; and &#x27;const&#x27; are function-scoped",
-      "&#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting",
-      "&#x27;const&#x27; variables can be reassigned; &#x27;let&#x27; variables cannot",
-      "&#x27;let&#x27; and &#x27;var&#x27; behave identically; only &#x27;const&#x27; differs"
+      "'var' is block-scoped; 'let' and 'const' are function-scoped",
+      "'var' is function-scoped and hoisted; 'let' and 'const' are block-scoped and not initialized during hoisting",
+      "'const' variables can be reassigned; 'let' variables cannot",
+      "'let' and 'var' behave identically; only 'const' differs"
     ],
-    "correctAnswer": "&#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting",
-    "explanation": "The correct answer is &#x27;var&#x27; is function-scoped and hoisted; &#x27;let&#x27; and &#x27;const&#x27; are block-scoped and not initialized during hoisting."
+    "correctAnswer": "'var' is function-scoped and hoisted; 'let' and 'const' are block-scoped and not initialized during hoisting",
+    "explanation": "The correct answer is 'var' is function-scoped and hoisted; 'let' and 'const' are block-scoped and not initialized during hoisting."
   },
   {
     "id": 953,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does the following code output? console.log(0.1 + 0.2 === 0.3);",
     "options": [
       "true",
@@ -12390,7 +12390,7 @@
   },
   {
     "id": 954,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which operator returns the data type of a variable as a string?",
     "options": [
       "instanceof",
@@ -12403,8 +12403,8 @@
   },
   {
     "id": 955,
-    "section": "node.js &amp; js",
-    "question": "What is the result of: console.log(5 == &#x27;5&#x27;) and console.log(5 === &#x27;5&#x27;) respectively?",
+    "section": "node.js & js",
+    "question": "What is the result of: console.log(5 == '5') and console.log(5 === '5') respectively?",
     "options": [
       "false, false",
       "true, true",
@@ -12416,8 +12416,8 @@
   },
   {
     "id": 956,
-    "section": "node.js &amp; js",
-    "question": "What will this code output? let x = 10; if (x &gt; 5) { let x = 20; console.log(x); } console.log(x);",
+    "section": "node.js & js",
+    "question": "What will this code output? let x = 10; if (x > 5) { let x = 20; console.log(x); } console.log(x);",
     "options": [
       "20, 20",
       "10, 10",
@@ -12429,7 +12429,7 @@
   },
   {
     "id": 957,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does the nullish coalescing operator (??) do?",
     "options": [
       "Returns the left operand if it is falsy, otherwise the right",
@@ -12442,12 +12442,12 @@
   },
   {
     "id": 958,
-    "section": "node.js &amp; js",
-    "question": "What is the output of this code? console.log(1 + &#x27;2&#x27; + 3);",
+    "section": "node.js & js",
+    "question": "What is the output of this code? console.log(1 + '2' + 3);",
     "options": [
       "6",
       "123",
-      "&#x27;123&#x27;",
+      "'123'",
       "15"
     ],
     "correctAnswer": "123",
@@ -12455,7 +12455,7 @@
   },
   {
     "id": 959,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which control flow statement is used to exit a switch case block and prevent fall-through?",
     "options": [
       "exit",
@@ -12468,8 +12468,8 @@
   },
   {
     "id": 960,
-    "section": "node.js &amp; js",
-    "question": "What will this loop print? for (let i = 0; i &lt; 3; i++) { if (i === 1) continue; console.log(i); }",
+    "section": "node.js & js",
+    "question": "What will this loop print? for (let i = 0; i < 3; i++) { if (i === 1) continue; console.log(i); }",
     "options": [
       "0, 1, 2",
       "0, 2",
@@ -12481,7 +12481,7 @@
   },
   {
     "id": 961,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the result of the following code? const obj = { a: 1, b: 2 }; const { a, c = 5 } = obj; console.log(a, c);",
     "options": [
       "1 undefined",
@@ -12494,7 +12494,7 @@
   },
   {
     "id": 962,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which method creates a new object with the specified prototype object?",
     "options": [
       "Object.assign()",
@@ -12507,7 +12507,7 @@
   },
   {
     "id": 963,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does Object.freeze() do to an object?",
     "options": [
       "Creates a deep clone of the object",
@@ -12520,7 +12520,7 @@
   },
   {
     "id": 964,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of this code? const arr = [1, 2, 3]; const [first, ...rest] = arr; console.log(rest);",
     "options": [
       "[1]",
@@ -12533,7 +12533,7 @@
   },
   {
     "id": 965,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which Array method returns a new array with only the elements that pass a test?",
     "options": [
       "map()",
@@ -12546,8 +12546,8 @@
   },
   {
     "id": 966,
-    "section": "node.js &amp; js",
-    "question": "What does the following code return? [1, 2, 3].reduce((acc, val) =&gt; acc + val, 0);",
+    "section": "node.js & js",
+    "question": "What does the following code return? [1, 2, 3].reduce((acc, val) => acc + val, 0);",
     "options": [
       "[1, 2, 3]",
       "6",
@@ -12559,7 +12559,7 @@
   },
   {
     "id": 967,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the difference between Array.prototype.map() and Array.prototype.forEach()?",
     "options": [
       "forEach modifies the original array; map does not",
@@ -12572,8 +12572,8 @@
   },
   {
     "id": 968,
-    "section": "node.js &amp; js",
-    "question": "What is the output of this code? console.log([1, 2, 3].map(x =&gt; x * 2).filter(x =&gt; x &gt; 4));",
+    "section": "node.js & js",
+    "question": "What is the output of this code? console.log([1, 2, 3].map(x => x * 2).filter(x => x > 4));",
     "options": [
       "[2, 4, 6]",
       "[6]",
@@ -12585,7 +12585,7 @@
   },
   {
     "id": 969,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is a closure in JavaScript?",
     "options": [
       "A function that can only be called once",
@@ -12598,7 +12598,7 @@
   },
   {
     "id": 970,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code output? function outer() { let count = 0; return function() { count++; return count; }; } const inc = outer(); console.log(inc()); console.log(inc());",
     "options": [
       "1, 1",
@@ -12611,7 +12611,7 @@
   },
   {
     "id": 971,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the difference between function declarations and function expressions in terms of hoisting?",
     "options": [
       "Both are fully hoisted",
@@ -12624,8 +12624,8 @@
   },
   {
     "id": 972,
-    "section": "node.js &amp; js",
-    "question": "What does the &#x27;this&#x27; keyword refer to inside an arrow function?",
+    "section": "node.js & js",
+    "question": "What does the 'this' keyword refer to inside an arrow function?",
     "options": [
       "The arrow function itself",
       "The global object always",
@@ -12637,8 +12637,8 @@
   },
   {
     "id": 973,
-    "section": "node.js &amp; js",
-    "question": "What is the output of this code? const greet = (name = &#x27;World&#x27;) =&gt; `Hello, ${name}!`; console.log(greet());",
+    "section": "node.js & js",
+    "question": "What is the output of this code? const greet = (name = 'World') => `Hello, ${name}!`; console.log(greet());",
     "options": [
       "Hello, undefined!",
       "Hello, !",
@@ -12650,8 +12650,8 @@
   },
   {
     "id": 974,
-    "section": "node.js &amp; js",
-    "question": "Which of the following is the correct way to call a function with a specific &#x27;this&#x27; value and pass arguments one by one?",
+    "section": "node.js & js",
+    "question": "Which of the following is the correct way to call a function with a specific 'this' value and pass arguments one by one?",
     "options": [
       "fn.bind(thisArg, arg1, arg2)",
       "fn.call(thisArg, arg1, arg2)",
@@ -12663,21 +12663,21 @@
   },
   {
     "id": 975,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is a pure function?",
     "options": [
       "A function written in strict mode only",
       "A function that returns a value and has no side effects, always producing the same output for the same inputs",
       "A function that only accepts primitive types",
-      "A function declared with the &#x27;pure&#x27; keyword"
+      "A function declared with the 'pure' keyword"
     ],
     "correctAnswer": "A function that returns a value and has no side effects, always producing the same output for the same inputs",
     "explanation": "The correct answer is A function that returns a value and has no side effects, always producing the same output for the same inputs."
   },
   {
     "id": 976,
-    "section": "node.js &amp; js",
-    "question": "In Node.js, what is the purpose of the &#x27;process.argv&#x27; array?",
+    "section": "node.js & js",
+    "question": "In Node.js, what is the purpose of the 'process.argv' array?",
     "options": [
       "It lists all currently running processes",
       "It contains the command-line arguments passed when the Node.js process was launched",
@@ -12689,25 +12689,25 @@
   },
   {
     "id": 977,
-    "section": "node.js &amp; js",
-    "question": "What is the Node.js module system&#x27;s primary mechanism for sharing code between files?",
+    "section": "node.js & js",
+    "question": "What is the Node.js module system's primary mechanism for sharing code between files?",
     "options": [
       "Using the global window object",
-      "Using &#x27;import&#x27; and &#x27;export&#x27; with script tags",
-      "Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export",
-      "Using the &#x27;include()&#x27; function"
+      "Using 'import' and 'export' with script tags",
+      "Using 'require()' to import and 'module.exports' to export",
+      "Using the 'include()' function"
     ],
-    "correctAnswer": "Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export",
-    "explanation": "The correct answer is Using &#x27;require()&#x27; to import and &#x27;module.exports&#x27; to export."
+    "correctAnswer": "Using 'require()' to import and 'module.exports' to export",
+    "explanation": "The correct answer is Using 'require()' to import and 'module.exports' to export."
   },
   {
     "id": 978,
-    "section": "node.js &amp; js",
-    "question": "What is the difference between the CommonJS &#x27;require&#x27; system and ES Modules &#x27;import&#x27; in Node.js?",
+    "section": "node.js & js",
+    "question": "What is the difference between the CommonJS 'require' system and ES Modules 'import' in Node.js?",
     "options": [
       "require is synchronous; ES module imports are asynchronous and statically analyzed",
       "require is only for built-in modules; import is for npm packages",
-      "They are identical; &#x27;import&#x27; is just newer syntax",
+      "They are identical; 'import' is just newer syntax",
       "require works only on Windows; import works on all platforms"
     ],
     "correctAnswer": "require is synchronous; ES module imports are asynchronous and statically analyzed",
@@ -12715,8 +12715,8 @@
   },
   {
     "id": 979,
-    "section": "node.js &amp; js",
-    "question": "When reading a file using Node.js&#x27;s &#x27;fs&#x27; module, what is the key difference between fs.readFile() and fs.readFileSync()?",
+    "section": "node.js & js",
+    "question": "When reading a file using Node.js's 'fs' module, what is the key difference between fs.readFile() and fs.readFileSync()?",
     "options": [
       "readFile reads the entire file; readFileSync reads line by line",
       "readFile is asynchronous and non-blocking; readFileSync is synchronous and blocks the event loop",
@@ -12728,20 +12728,20 @@
   },
   {
     "id": 980,
-    "section": "node.js &amp; js",
-    "question": "What does the following Node.js code do? const fs = require(&#x27;fs&#x27;); fs.appendFile(&#x27;log.txt&#x27;, &#x27;New entry\\n&#x27;, (err) =&gt; { if (err) throw err; });",
+    "section": "node.js & js",
+    "question": "What does the following Node.js code do? const fs = require('fs'); fs.appendFile('log.txt', 'New entry\\n', (err) => { if (err) throw err; });",
     "options": [
       "Creates a new file called log.txt and overwrites it",
-      "Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist",
+      "Appends 'New entry\\n' to log.txt, creating it if it doesn't exist",
       "Reads the contents of log.txt and logs them",
       "Deletes log.txt and recreates it"
     ],
-    "correctAnswer": "Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist",
-    "explanation": "The correct answer is Appends &#x27;New entry\\n&#x27; to log.txt, creating it if it doesn&#x27;t exist."
+    "correctAnswer": "Appends 'New entry\\n' to log.txt, creating it if it doesn't exist",
+    "explanation": "The correct answer is Appends 'New entry\\n' to log.txt, creating it if it doesn't exist."
   },
   {
     "id": 981,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which Node.js built-in module is used to work with file and directory paths in a cross-platform way?",
     "options": [
       "fs",
@@ -12754,10 +12754,10 @@
   },
   {
     "id": 982,
-    "section": "node.js &amp; js",
-    "question": "In Node.js debugging with the &#x27;--inspect&#x27; flag, which tool is commonly used to connect to the debugger?",
+    "section": "node.js & js",
+    "question": "In Node.js debugging with the '--inspect' flag, which tool is commonly used to connect to the debugger?",
     "options": [
-      "Node&#x27;s built-in debug console only",
+      "Node's built-in debug console only",
       "Chrome DevTools via chrome://inspect",
       "The npm debug package exclusively",
       "Postman"
@@ -12767,7 +12767,7 @@
   },
   {
     "id": 983,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the Event Loop in Node.js?",
     "options": [
       "A for loop that processes all network requests",
@@ -12780,8 +12780,8 @@
   },
   {
     "id": 984,
-    "section": "node.js &amp; js",
-    "question": "What is &#x27;callback hell&#x27; and what is the primary way to avoid it in modern Node.js?",
+    "section": "node.js & js",
+    "question": "What is 'callback hell' and what is the primary way to avoid it in modern Node.js?",
     "options": [
       "Using too many callbacks in one file; avoided by reducing function count",
       "Deeply nested callbacks that are hard to read; avoided by using Promises or async/await",
@@ -12793,8 +12793,8 @@
   },
   {
     "id": 985,
-    "section": "node.js &amp; js",
-    "question": "What does &#x27;async/await&#x27; in Node.js ultimately rely on under the hood?",
+    "section": "node.js & js",
+    "question": "What does 'async/await' in Node.js ultimately rely on under the hood?",
     "options": [
       "Callbacks",
       "Generators",
@@ -12806,7 +12806,7 @@
   },
   {
     "id": 986,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What will the following code log? async function fetchData() { return 42; } console.log(fetchData());",
     "options": [
       "42",
@@ -12819,7 +12819,7 @@
   },
   {
     "id": 987,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which npm package is commonly used in Node.js to make HTTP requests to external APIs?",
     "options": [
       "fs",
@@ -12832,21 +12832,21 @@
   },
   {
     "id": 988,
-    "section": "node.js &amp; js",
-    "question": "In an Express.js web server, what does the following code create? const app = express(); app.get(&#x27;/&#x27;, (req, res) =&gt; { res.send(&#x27;Hello&#x27;); });",
+    "section": "node.js & js",
+    "question": "In an Express.js web server, what does the following code create? const app = express(); app.get('/', (req, res) => { res.send('Hello'); });",
     "options": [
       "A POST route at the root URL",
-      "A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;",
+      "A GET route at '/' that responds with 'Hello'",
       "A middleware function for all routes",
       "A database connection"
     ],
-    "correctAnswer": "A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;",
-    "explanation": "The correct answer is A GET route at &#x27;/&#x27; that responds with &#x27;Hello&#x27;."
+    "correctAnswer": "A GET route at '/' that responds with 'Hello'",
+    "explanation": "The correct answer is A GET route at '/' that responds with 'Hello'."
   },
   {
     "id": 989,
-    "section": "node.js &amp; js",
-    "question": "In Node.js, what is the &#x27;http&#x27; module used for?",
+    "section": "node.js & js",
+    "question": "In Node.js, what is the 'http' module used for?",
     "options": [
       "Sending emails via HTTP",
       "Creating HTTP servers and making HTTP requests natively without external packages",
@@ -12858,8 +12858,8 @@
   },
   {
     "id": 990,
-    "section": "node.js &amp; js",
-    "question": "What does the following code accomplish in a Node.js weather app context? const url = `https://api.weather.com/v1?q=${encodeURIComponent(city)}&amp;appid=${apiKey}`;",
+    "section": "node.js & js",
+    "question": "What does the following code accomplish in a Node.js weather app context? const url = `https://api.weather.com/v1?q=${encodeURIComponent(city)}&appid=${apiKey}`;",
     "options": [
       "Creates a URL with a raw city string and hardcoded key",
       "Encodes the city name to be URL-safe and embeds it with an API key in the query string",
@@ -12871,7 +12871,7 @@
   },
   {
     "id": 991,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "When deploying a Node.js app to Heroku, what file tells Heroku how to start the application?",
     "options": [
       "package.json (main field)",
@@ -12884,8 +12884,8 @@
   },
   {
     "id": 992,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;PORT&#x27; environment variable when deploying a Node.js app?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'PORT' environment variable when deploying a Node.js app?",
     "options": [
       "To set the MongoDB port",
       "To allow the hosting platform to assign a dynamic port, which the app should listen on",
@@ -12897,8 +12897,8 @@
   },
   {
     "id": 993,
-    "section": "node.js &amp; js",
-    "question": "What does &#x27;process.env&#x27; provide in a Node.js application?",
+    "section": "node.js & js",
+    "question": "What does 'process.env' provide in a Node.js application?",
     "options": [
       "A list of all running Node.js processes",
       "Access to environment variables set in the operating system or .env file",
@@ -12910,7 +12910,7 @@
   },
   {
     "id": 994,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Mongoose, what is the purpose of defining a Schema?",
     "options": [
       "To create the MongoDB database itself",
@@ -12923,8 +12923,8 @@
   },
   {
     "id": 995,
-    "section": "node.js &amp; js",
-    "question": "What does the following Mongoose code do? const User = mongoose.model(&#x27;User&#x27;, userSchema); const user = new User({ name: &#x27;Alice&#x27; }); user.save();",
+    "section": "node.js & js",
+    "question": "What does the following Mongoose code do? const User = mongoose.model('User', userSchema); const user = new User({ name: 'Alice' }); user.save();",
     "options": [
       "Updates an existing user named Alice",
       "Creates a new User document in MongoDB and saves it",
@@ -12936,8 +12936,8 @@
   },
   {
     "id": 996,
-    "section": "node.js &amp; js",
-    "question": "What is the difference between a Promise&#x27;s .then() and async/await syntax for handling asynchronous operations?",
+    "section": "node.js & js",
+    "question": "What is the difference between a Promise's .then() and async/await syntax for handling asynchronous operations?",
     "options": [
       ".then() is synchronous; async/await is asynchronous",
       "async/await is syntactic sugar over Promises, making asynchronous code look and behave like synchronous code",
@@ -12949,7 +12949,7 @@
   },
   {
     "id": 997,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In a REST API built with Express and Mongoose, what HTTP method and status code should be used when successfully creating a new resource?",
     "options": [
       "GET with 200",
@@ -12962,7 +12962,7 @@
   },
   {
     "id": 998,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the role of middleware in Express.js?",
     "options": [
       "Functions that serve static HTML files",
@@ -12975,7 +12975,7 @@
   },
   {
     "id": 999,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does app.use(express.json()) do in an Express application?",
     "options": [
       "Enables JSON responses for all routes",
@@ -12988,7 +12988,7 @@
   },
   {
     "id": 1000,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "How is authentication typically implemented in a Node.js REST API to protect routes?",
     "options": [
       "Using sessions only with express-session",
@@ -13001,12 +13001,12 @@
   },
   {
     "id": 1001,
-    "section": "node.js &amp; js",
-    "question": "In a Mongoose Task model for a multi-user app, what would the following schema field accomplish? owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: &#x27;User&#x27; }",
+    "section": "node.js & js",
+    "question": "In a Mongoose Task model for a multi-user app, what would the following schema field accomplish? owner: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User' }",
     "options": [
-      "Stores the user&#x27;s email as a reference",
+      "Stores the user's email as a reference",
       "Creates a foreign key-like reference to a User document by its MongoDB ObjectId",
-      "Automatically populates the user&#x27;s data whenever a task is retrieved",
+      "Automatically populates the user's data whenever a task is retrieved",
       "Limits one task per user"
     ],
     "correctAnswer": "Creates a foreign key-like reference to a User document by its MongoDB ObjectId",
@@ -13014,8 +13014,8 @@
   },
   {
     "id": 1002,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of Mongoose&#x27;s .populate() method?",
+    "section": "node.js & js",
+    "question": "What is the purpose of Mongoose's .populate() method?",
     "options": [
       "To add default values to a schema",
       "To replace a referenced ObjectId with the actual document data from the referenced collection",
@@ -13027,20 +13027,20 @@
   },
   {
     "id": 1003,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Express.js, how do you implement pagination for a GET /tasks endpoint using query parameters?",
     "options": [
       "Using req.body.page and req.body.limit",
       "Using req.params.page and req.params.limit",
-      "Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()",
+      "Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()",
       "Pagination is handled automatically by Mongoose"
     ],
-    "correctAnswer": "Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()",
-    "explanation": "The correct answer is Using req.query.page and req.query.limit with Mongoose&#x27;s .skip() and .limit()."
+    "correctAnswer": "Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()",
+    "explanation": "The correct answer is Using req.query.page and req.query.limit with Mongoose's .skip() and .limit()."
   },
   {
     "id": 1004,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What npm package is commonly used to hash passwords securely before storing them in a database?",
     "options": [
       "crypto",
@@ -13053,8 +13053,8 @@
   },
   {
     "id": 1005,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of &#x27;multer&#x27; in a Node.js application?",
+    "section": "node.js & js",
+    "question": "What is the purpose of 'multer' in a Node.js application?",
     "options": [
       "To handle multipart/form-data, primarily used for file uploads",
       "To multiply values in a MongoDB query",
@@ -13066,8 +13066,8 @@
   },
   {
     "id": 1006,
-    "section": "node.js &amp; js",
-    "question": "What does the following Mongoose middleware do? userSchema.pre(&#x27;save&#x27;, async function(next) { if (this.isModified(&#x27;password&#x27;)) { this.password = await bcrypt.hash(this.password, 8); } next(); });",
+    "section": "node.js & js",
+    "question": "What does the following Mongoose middleware do? userSchema.pre('save', async function(next) { if (this.isModified('password')) { this.password = await bcrypt.hash(this.password, 8); } next(); });",
     "options": [
       "Hashes the password after every save",
       "Automatically hashes the password only when it has been modified, before saving to the database",
@@ -13079,7 +13079,7 @@
   },
   {
     "id": 1007,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "Which package is commonly used to send transactional emails from a Node.js application?",
     "options": [
       "nodemailer or SendGrid",
@@ -13092,7 +13092,7 @@
   },
   {
     "id": 1008,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In the context of Node.js testing with Jest, what does the describe() block do?",
     "options": [
       "Executes an asynchronous test",
@@ -13105,7 +13105,7 @@
   },
   {
     "id": 1009,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the purpose of jest.fn() when testing Node.js code?",
     "options": [
       "To run tests in a separate process",
@@ -13118,7 +13118,7 @@
   },
   {
     "id": 1010,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What npm package is commonly used alongside Jest to test Express HTTP endpoints without starting a live server?",
     "options": [
       "axios",
@@ -13131,7 +13131,7 @@
   },
   {
     "id": 1011,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the core difference between unit tests and integration tests in a Node.js context?",
     "options": [
       "Unit tests test the entire application; integration tests test individual functions",
@@ -13144,7 +13144,7 @@
   },
   {
     "id": 1012,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Socket.io, what is the difference between socket.emit() and io.emit()?",
     "options": [
       "socket.emit sends to all clients; io.emit sends to one",
@@ -13157,21 +13157,21 @@
   },
   {
     "id": 1013,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What event does Socket.io fire when a new client connects to the server?",
     "options": [
-      "&#x27;message&#x27;",
-      "&#x27;connect&#x27;",
-      "&#x27;connection&#x27;",
-      "&#x27;open&#x27;"
+      "'message'",
+      "'connect'",
+      "'connection'",
+      "'open'"
     ],
-    "correctAnswer": "&#x27;connection&#x27;",
-    "explanation": "The correct answer is &#x27;connection&#x27;."
+    "correctAnswer": "'connection'",
+    "explanation": "The correct answer is 'connection'."
   },
   {
     "id": 1014,
-    "section": "node.js &amp; js",
-    "question": "In a Socket.io chat app, what does socket.to(room).emit(&#x27;event&#x27;, data) do?",
+    "section": "node.js & js",
+    "question": "In a Socket.io chat app, what does socket.to(room).emit('event', data) do?",
     "options": [
       "Sends the event to all clients including the sender in the specified room",
       "Sends the event to all clients in the specified room except the sender",
@@ -13183,7 +13183,7 @@
   },
   {
     "id": 1015,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the purpose of Express Router in a large Node.js application?",
     "options": [
       "To manage database connections",
@@ -13196,8 +13196,8 @@
   },
   {
     "id": 1016,
-    "section": "node.js &amp; js",
-    "question": "What does app.use(&#x27;/api/users&#x27;, userRouter) do in Express?",
+    "section": "node.js & js",
+    "question": "What does app.use('/api/users', userRouter) do in Express?",
     "options": [
       "Creates a new user automatically at the /api/users endpoint",
       "Mounts the userRouter middleware at the /api/users path prefix",
@@ -13209,7 +13209,7 @@
   },
   {
     "id": 1017,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In the Express generator, what is the default template engine used?",
     "options": [
       "EJS",
@@ -13222,20 +13222,20 @@
   },
   {
     "id": 1018,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is req.params used for in an Express route defined as GET /users/:id?",
     "options": [
       "To access query string parameters like ?sort=asc",
-      "To access the named route segments, e.g. req.params.id would contain the user&#x27;s id",
+      "To access the named route segments, e.g. req.params.id would contain the user's id",
       "To access data sent in the request body",
       "To access HTTP request headers"
     ],
-    "correctAnswer": "To access the named route segments, e.g. req.params.id would contain the user&#x27;s id",
-    "explanation": "The correct answer is To access the named route segments, e.g. req.params.id would contain the user&#x27;s id."
+    "correctAnswer": "To access the named route segments, e.g. req.params.id would contain the user's id",
+    "explanation": "The correct answer is To access the named route segments, e.g. req.params.id would contain the user's id."
   },
   {
     "id": 1019,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the Passport.js library used for in an Express application?",
     "options": [
       "Database schema validation",
@@ -13248,7 +13248,7 @@
   },
   {
     "id": 1020,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In a MongoDB-connected Express app, what is the recommended way to handle a failed database connection?",
     "options": [
       "Ignore the error and let the app run without a database",
@@ -13261,8 +13261,8 @@
   },
   {
     "id": 1021,
-    "section": "node.js &amp; js",
-    "question": "What does the following JavaScript code output? Promise.resolve(1) .then(x =&gt; x + 1) .then(x =&gt; { throw new Error(&#x27;err&#x27;) }) .catch(err =&gt; console.log(&#x27;caught&#x27;));",
+    "section": "node.js & js",
+    "question": "What does the following JavaScript code output? Promise.resolve(1) .then(x => x + 1) .then(x => { throw new Error('err') }) .catch(err => console.log('caught'));",
     "options": [
       "2, then throws uncaught error",
       "caught",
@@ -13274,7 +13274,7 @@
   },
   {
     "id": 1022,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of this code? const arr = [1, [2, [3, [4]]]]; console.log(arr.flat(Infinity));",
     "options": [
       "[1, [2, [3, [4]]]]",
@@ -13287,7 +13287,7 @@
   },
   {
     "id": 1023,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does the optional chaining operator (?.) do in JavaScript?",
     "options": [
       "Returns the default value if the left side is false",
@@ -13300,7 +13300,7 @@
   },
   {
     "id": 1024,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the output of the following? const a = [1, 2, 3]; const b = a; b.push(4); console.log(a.length);",
     "options": [
       "3",
@@ -13313,7 +13313,7 @@
   },
   {
     "id": 1025,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does JSON.parse(JSON.stringify(obj)) accomplish?",
     "options": [
       "A shallow clone of the object",
@@ -13326,7 +13326,7 @@
   },
   {
     "id": 1026,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the result of this code? console.log(typeof NaN);",
     "options": [
       "NaN",
@@ -13339,7 +13339,7 @@
   },
   {
     "id": 1027,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In JavaScript, what is the purpose of Symbol()?",
     "options": [
       "To create a special numeric type",
@@ -13352,21 +13352,21 @@
   },
   {
     "id": 1028,
-    "section": "node.js &amp; js",
-    "question": "What does this code log? const obj = { a: 1 }; Object.defineProperty(obj, &#x27;b&#x27;, { value: 2, writable: false, enumerable: false }); console.log(Object.keys(obj));",
+    "section": "node.js & js",
+    "question": "What does this code log? const obj = { a: 1 }; Object.defineProperty(obj, 'b', { value: 2, writable: false, enumerable: false }); console.log(Object.keys(obj));",
     "options": [
-      "[&#x27;a&#x27;, &#x27;b&#x27;]",
-      "[&#x27;a&#x27;]",
-      "[&#x27;b&#x27;]",
+      "['a', 'b']",
+      "['a']",
+      "['b']",
       "[]"
     ],
-    "correctAnswer": "[&#x27;a&#x27;]",
-    "explanation": "The correct answer is [&#x27;a&#x27;]."
+    "correctAnswer": "['a']",
+    "explanation": "The correct answer is ['a']."
   },
   {
     "id": 1029,
-    "section": "node.js &amp; js",
-    "question": "What is the purpose of the &#x27;yargs&#x27; package in a Node.js CLI application?",
+    "section": "node.js & js",
+    "question": "What is the purpose of the 'yargs' package in a Node.js CLI application?",
     "options": [
       "To parse and handle command-line arguments in a structured way",
       "To compress files from the command line",
@@ -13378,7 +13378,7 @@
   },
   {
     "id": 1030,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does the EventEmitter class in Node.js allow you to do?",
     "options": [
       "Send HTTP events to the browser",
@@ -13391,20 +13391,20 @@
   },
   {
     "id": 1031,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Node.js, what is a stream and why is it beneficial for reading large files?",
     "options": [
-      "A stream is a synchronous file reader; it&#x27;s faster because it avoids callbacks",
-      "A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once",
+      "A stream is a synchronous file reader; it's faster because it avoids callbacks",
+      "A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once",
       "A stream is a network connection protocol built into Node.js",
       "Streams are only useful for video data"
     ],
-    "correctAnswer": "A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once",
-    "explanation": "The correct answer is A stream allows reading data in chunks, so the entire file doesn&#x27;t need to be loaded into memory at once."
+    "correctAnswer": "A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once",
+    "explanation": "The correct answer is A stream allows reading data in chunks, so the entire file doesn't need to be loaded into memory at once."
   },
   {
     "id": 1032,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the purpose of package-lock.json in a Node.js project?",
     "options": [
       "To lock the Node.js version for the project",
@@ -13417,8 +13417,8 @@
   },
   {
     "id": 1033,
-    "section": "node.js &amp; js",
-    "question": "What does the following Express code do? app.use((err, req, res, next) =&gt; { console.error(err.stack); res.status(500).send(&#x27;Something broke!&#x27;); });",
+    "section": "node.js & js",
+    "question": "What does the following Express code do? app.use((err, req, res, next) => { console.error(err.stack); res.status(500).send('Something broke!'); });",
     "options": [
       "Creates a standard route handler for all GET requests",
       "Defines a global error-handling middleware (identified by 4 parameters) that catches errors passed to next(err)",
@@ -13430,7 +13430,7 @@
   },
   {
     "id": 1034,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Mongoose, what is the difference between .find() and .findOne()?",
     "options": [
       ".find() returns the first match; .findOne() returns all matches",
@@ -13443,7 +13443,7 @@
   },
   {
     "id": 1035,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the HTTP method used to partially update a resource in a RESTful API?",
     "options": [
       "PUT",
@@ -13456,33 +13456,33 @@
   },
   {
     "id": 1036,
-    "section": "node.js &amp; js",
-    "question": "In Mongoose, how would you query for all tasks where &#x27;completed&#x27; is true, sorted by &#x27;createdAt&#x27; descending?",
+    "section": "node.js & js",
+    "question": "In Mongoose, how would you query for all tasks where 'completed' is true, sorted by 'createdAt' descending?",
     "options": [
-      "Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)",
-      "Task.get({ completed: true }).orderBy(&#x27;createdAt&#x27;, &#x27;desc&#x27;)",
+      "Task.find({ completed: true }).sort('-createdAt')",
+      "Task.get({ completed: true }).orderBy('createdAt', 'desc')",
       "Task.filter({ completed: true }).sort({ createdAt: -1 })",
-      "Task.query({ completed: true, sort: &#x27;-createdAt&#x27; })"
+      "Task.query({ completed: true, sort: '-createdAt' })"
     ],
-    "correctAnswer": "Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)",
-    "explanation": "The correct answer is Task.find({ completed: true }).sort(&#x27;-createdAt&#x27;)."
+    "correctAnswer": "Task.find({ completed: true }).sort('-createdAt')",
+    "explanation": "The correct answer is Task.find({ completed: true }).sort('-createdAt')."
   },
   {
     "id": 1037,
-    "section": "node.js &amp; js",
-    "question": "What does the following Node.js code accomplish? const path = require(&#x27;path&#x27;); const publicPath = path.join(__dirname, &#x27;../public&#x27;); app.use(express.static(publicPath));",
+    "section": "node.js & js",
+    "question": "What does the following Node.js code accomplish? const path = require('path'); const publicPath = path.join(__dirname, '../public'); app.use(express.static(publicPath));",
     "options": [
-      "Serves files from the &#x27;public&#x27; folder as static assets",
-      "Creates a new directory called &#x27;public&#x27;",
+      "Serves files from the 'public' folder as static assets",
+      "Creates a new directory called 'public'",
       "Compiles static assets at build time",
       "Restricts access to files in the public directory"
     ],
-    "correctAnswer": "Serves files from the &#x27;public&#x27; folder as static assets",
-    "explanation": "The correct answer is Serves files from the &#x27;public&#x27; folder as static assets."
+    "correctAnswer": "Serves files from the 'public' folder as static assets",
+    "explanation": "The correct answer is Serves files from the 'public' folder as static assets."
   },
   {
     "id": 1038,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the purpose of CORS (Cross-Origin Resource Sharing) in an Express API?",
     "options": [
       "To compress API responses",
@@ -13495,11 +13495,11 @@
   },
   {
     "id": 1039,
-    "section": "node.js &amp; js",
-    "question": "In a Node.js Task app with authentication, what is the purpose of storing user-specific tokens in a &#x27;tokens&#x27; array on the User model?",
+    "section": "node.js & js",
+    "question": "In a Node.js Task app with authentication, what is the purpose of storing user-specific tokens in a 'tokens' array on the User model?",
     "options": [
       "To allow a user to be logged in on multiple devices simultaneously",
-      "To store the user&#x27;s password history",
+      "To store the user's password history",
       "To limit the number of tasks a user can create",
       "To cache API responses for the user"
     ],
@@ -13508,12 +13508,12 @@
   },
   {
     "id": 1040,
-    "section": "node.js &amp; js",
-    "question": "What does the following code output? const p = new Promise((resolve, reject) =&gt; { reject(&#x27;error&#x27;); resolve(&#x27;success&#x27;); }); p.catch(e =&gt; console.log(e));",
+    "section": "node.js & js",
+    "question": "What does the following code output? const p = new Promise((resolve, reject) => { reject('error'); resolve('success'); }); p.catch(e => console.log(e));",
     "options": [
       "success",
       "error",
-      "Both &#x27;error&#x27; and &#x27;success&#x27;",
+      "Both 'error' and 'success'",
       "undefined"
     ],
     "correctAnswer": "error",
@@ -13521,7 +13521,7 @@
   },
   {
     "id": 1041,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Express.js, what happens when you call next() inside a middleware function?",
     "options": [
       "The response is sent back to the client",
@@ -13534,8 +13534,8 @@
   },
   {
     "id": 1042,
-    "section": "node.js &amp; js",
-    "question": "What is the output of this JavaScript code? const map = new Map(); map.set(&#x27;a&#x27;, 1); map.set(&#x27;b&#x27;, 2); console.log(map.size);",
+    "section": "node.js & js",
+    "question": "What is the output of this JavaScript code? const map = new Map(); map.set('a', 1); map.set('b', 2); console.log(map.size);",
     "options": [
       "undefined",
       "2",
@@ -13547,7 +13547,7 @@
   },
   {
     "id": 1043,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What does Promise.all() do when one of the Promises rejects?",
     "options": [
       "It ignores the rejection and waits for all others to settle",
@@ -13560,8 +13560,8 @@
   },
   {
     "id": 1044,
-    "section": "node.js &amp; js",
-    "question": "In Node.js, what is the purpose of the &#x27;dotenv&#x27; package?",
+    "section": "node.js & js",
+    "question": "In Node.js, what is the purpose of the 'dotenv' package?",
     "options": [
       "To create .dot files for Git configuration",
       "To load environment variables from a .env file into process.env during development",
@@ -13573,7 +13573,7 @@
   },
   {
     "id": 1045,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is middleware order significance in Express.js?",
     "options": [
       "Order does not matter; Express automatically determines the correct sequence",
@@ -13586,8 +13586,8 @@
   },
   {
     "id": 1046,
-    "section": "node.js &amp; js",
-    "question": "What is the difference between MongoDB&#x27;s insertOne() and Mongoose&#x27;s .save() method?",
+    "section": "node.js & js",
+    "question": "What is the difference between MongoDB's insertOne() and Mongoose's .save() method?",
     "options": [
       "They are identical",
       "insertOne() is a raw MongoDB driver method; .save() is a Mongoose method that also runs schema validations and middleware hooks",
@@ -13599,34 +13599,34 @@
   },
   {
     "id": 1047,
-    "section": "node.js &amp; js",
-    "question": "What does this JavaScript code log? function foo() { console.log(this); } const bar = foo.bind({ name: &#x27;Test&#x27; }); bar();",
+    "section": "node.js & js",
+    "question": "What does this JavaScript code log? function foo() { console.log(this); } const bar = foo.bind({ name: 'Test' }); bar();",
     "options": [
       "undefined",
-      "{ name: &#x27;Test&#x27; }",
+      "{ name: 'Test' }",
       "The global object",
       "foo function object"
     ],
-    "correctAnswer": "{ name: &#x27;Test&#x27; }",
-    "explanation": "The correct answer is { name: &#x27;Test&#x27; }."
+    "correctAnswer": "{ name: 'Test' }",
+    "explanation": "The correct answer is { name: 'Test' }."
   },
   {
     "id": 1048,
-    "section": "node.js &amp; js",
-    "question": "In Node.js, what is the difference between require(&#x27;module&#x27;) and require(&#x27;./module&#x27;)?",
+    "section": "node.js & js",
+    "question": "In Node.js, what is the difference between require('module') and require('./module')?",
     "options": [
       "They are identical",
-      "require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file",
-      "require(&#x27;./module&#x27;) is asynchronous; require(&#x27;module&#x27;) is synchronous",
-      "require(&#x27;module&#x27;) only works for built-in modules; npm packages use import"
+      "require('module') looks for a built-in or npm package in node_modules; require('./module') loads a local file relative to the current file",
+      "require('./module') is asynchronous; require('module') is synchronous",
+      "require('module') only works for built-in modules; npm packages use import"
     ],
-    "correctAnswer": "require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file",
-    "explanation": "The correct answer is require(&#x27;module&#x27;) looks for a built-in or npm package in node_modules; require(&#x27;./module&#x27;) loads a local file relative to the current file."
+    "correctAnswer": "require('module') looks for a built-in or npm package in node_modules; require('./module') loads a local file relative to the current file",
+    "explanation": "The correct answer is require('module') looks for a built-in or npm package in node_modules; require('./module') loads a local file relative to the current file."
   },
   {
     "id": 1049,
-    "section": "node.js &amp; js",
-    "question": "What will this Node.js code output, assuming it runs successfully? setTimeout(() =&gt; console.log(&#x27;timeout&#x27;), 0); Promise.resolve().then(() =&gt; console.log(&#x27;promise&#x27;)); console.log(&#x27;sync&#x27;);",
+    "section": "node.js & js",
+    "question": "What will this Node.js code output, assuming it runs successfully? setTimeout(() => console.log('timeout'), 0); Promise.resolve().then(() => console.log('promise')); console.log('sync');",
     "options": [
       "timeout, promise, sync",
       "sync, timeout, promise",
@@ -13638,7 +13638,7 @@
   },
   {
     "id": 1050,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "In Express, what does res.json() do differently from res.send() when passed an object?",
     "options": [
       "res.json() sets the Content-Type to application/json and stringifies the object; res.send() may not set the correct Content-Type",
@@ -13651,7 +13651,7 @@
   },
   {
     "id": 1051,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is a race condition in the context of async Node.js code?",
     "options": [
       "When two setTimeout calls fire at the same time",
@@ -13664,10 +13664,10 @@
   },
   {
     "id": 1052,
-    "section": "node.js &amp; js",
-    "question": "In an Express app using Passport.js local strategy, what is the role of the &#x27;verify callback&#x27;?",
+    "section": "node.js & js",
+    "question": "In an Express app using Passport.js local strategy, what is the role of the 'verify callback'?",
     "options": [
-      "To hash the user&#x27;s password before login",
+      "To hash the user's password before login",
       "To find the user in the database and verify credentials, then call done() with the user or false",
       "To serialize the user into the session",
       "To define which routes require authentication"
@@ -13677,12 +13677,12 @@
   },
   {
     "id": 1053,
-    "section": "node.js &amp; js",
+    "section": "node.js & js",
     "question": "What is the correct way to handle async errors in an Express route so they reach the error-handling middleware?",
     "options": [
       "Wrap the logic in a try-catch and call next(err) in the catch block",
       "Throw the error directly inside the async function",
-      "Use process.on(&#x27;uncaughtException&#x27;) inside the route",
+      "Use process.on('uncaughtException') inside the route",
       "Express automatically catches async errors in route handlers"
     ],
     "correctAnswer": "Wrap the logic in a try-catch and call next(err) in the catch block",
@@ -13821,7 +13821,7 @@
   {
     "id": 1064,
     "section": "Task-1",
-    "question": "Which CSS unit is relative to the root element&#x27;s font size?",
+    "question": "Which CSS unit is relative to the root element's font size?",
     "options": [
       "em",
       "px",
@@ -13928,7 +13928,7 @@
     "question": "Which operator is used for optional chaining in JavaScript?",
     "options": [
       "??",
-      "&amp;&amp;",
+      "&&",
       "?.",
       "::"
     ],
@@ -13938,7 +13938,7 @@
   {
     "id": 1073,
     "section": "Task-1",
-    "question": "What will be the result of &quot;5&quot; + 2 in JavaScript?",
+    "question": "What will be the result of \"5\" + 2 in JavaScript?",
     "options": [
       "7",
       "52",
@@ -14484,7 +14484,7 @@
   {
     "id": 1115,
     "section": "Task-2",
-    "question": "What will be the output of the following code? let x = &quot;5&quot;;let y = 2;console.log(x + y);",
+    "question": "What will be the output of the following code? let x = \"5\";let y = 2;console.log(x + y);",
     "options": [
       "7",
       "52",
@@ -14562,7 +14562,7 @@
   {
     "id": 1121,
     "section": "Task-2",
-    "question": "What will the following code output? const person = { name: &quot;John&quot;};person.age = 25;console.log(person.age);",
+    "question": "What will the following code output? const person = { name: \"John\"};person.age = 25;console.log(person.age);",
     "options": [
       "undefined",
       "Error",
@@ -14640,7 +14640,7 @@
   {
     "id": 1127,
     "section": "Task-2",
-    "question": "What is the output of this code? const nums = [1, 2, 3];const result = nums.reduce((a, b) =&gt; a + b);console.log(result);",
+    "question": "What is the output of this code? const nums = [1, 2, 3];const result = nums.reduce((a, b) => a + b);console.log(result);",
     "options": [
       "6",
       "123",
@@ -14668,13 +14668,13 @@
     "section": "Task-2",
     "question": "What is the correct syntax for an arrow function?",
     "options": [
-      "(x) =&gt; x * 2",
-      "function =&gt; (x * 2)",
-      "(x) -&gt; x * 2",
+      "(x) => x * 2",
+      "function => (x * 2)",
+      "(x) -> x * 2",
       "arrow(x) = x * 2"
     ],
-    "correctAnswer": "(x) =&gt; x * 2",
-    "explanation": "The correct answer is (x) =&gt; x * 2."
+    "correctAnswer": "(x) => x * 2",
+    "explanation": "The correct answer is (x) => x * 2."
   },
   {
     "id": 1130,
