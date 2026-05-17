@@ -1,0 +1,2307 @@
+[
+  {
+    "id": 1,
+    "section": "HTML/CSS",
+    "question": "HTML: Which tag is used to define a clickable image map in HTML5?",
+    "options": [
+      "<map>",
+      "<area>",
+      "<img>",
+      "<figure>"
+    ],
+    "correctAnswer": "<map>",
+    "explanation": "The correct answer is <map>."
+  },
+  {
+    "id": 2,
+    "section": "HTML/CSS",
+    "question": "CSS: What is the effect of display: flex; justify-content: space-between; on a container’s children?",
+    "options": [
+      "Aligns children vertically with equal spacing",
+      "Aligns children horizontally with space between them",
+      "Centers children horizontally",
+      "Stacks children in a column"
+    ],
+    "correctAnswer": "Aligns children horizontally with space between them",
+    "explanation": "The correct answer is Aligns children horizontally with space between them."
+  },
+  {
+    "id": 3,
+    "section": "JavaScript",
+    "question": "JavaScript: What is the output of the following code? console.log(5 + \"5\");",
+    "options": [
+      "10",
+      "\"55\"",
+      "25",
+      "Error"
+    ],
+    "correctAnswer": "\"55\"",
+    "explanation": "The correct answer is \"55\"."
+  },
+  {
+    "id": 4,
+    "section": "JavaScript",
+    "question": "JavaScript: Which method is used to add an event listener to an element?",
+    "options": [
+      "addEvent()",
+      "attachEvent()",
+      "addEventListener()",
+      "onEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "explanation": "The correct answer is addEventListener()."
+  },
+  {
+    "id": 5,
+    "section": "HTML/CSS",
+    "question": "CSS: Which property ensures a background image stays fixed while scrolling?",
+    "options": [
+      "background-repeat: no-repeat;",
+      "background-attachment: fixed;",
+      "background-position: center;",
+      "background-size: cover;"
+    ],
+    "correctAnswer": "background-attachment: fixed;",
+    "explanation": "The correct answer is background-attachment: fixed;."
+  },
+  {
+    "id": 6,
+    "section": "React",
+    "question": "React: What is the purpose of the useState hook?",
+    "options": [
+      "Fetch data from an API",
+      "Manage state in functional components",
+      "Handle side effects",
+      "Create context"
+    ],
+    "correctAnswer": "Manage state in functional components",
+    "explanation": "The correct answer is Manage state in functional components."
+  },
+  {
+    "id": 7,
+    "section": "React",
+    "question": "React: What does the following code render? function App() { return <h1>{undefined}</h1>; }",
+    "options": [
+      "Nothing (empty string)",
+      "\"undefined\"",
+      "Error",
+      "null"
+    ],
+    "correctAnswer": "Nothing (empty string)",
+    "explanation": "The correct answer is Nothing (empty string)."
+  },
+  {
+    "id": 8,
+    "section": "React",
+    "question": "React: Which hook is used to perform side effects in a functional component?",
+    "options": [
+      "useEffect",
+      "useReducer",
+      "useContext",
+      "useCallback"
+    ],
+    "correctAnswer": "useEffect",
+    "explanation": "The correct answer is useEffect."
+  },
+  {
+    "id": 9,
+    "section": "React",
+    "question": "React: How do you pass data from a parent to a child component?",
+    "options": [
+      "Using state",
+      "Using props",
+      "Using context",
+      "Using hooks"
+    ],
+    "correctAnswer": "Using props",
+    "explanation": "The correct answer is Using props."
+  },
+  {
+    "id": 10,
+    "section": "React",
+    "question": "React: What is the correct way to update a state object? const [user, setUser] = useState({ name: \"John\", age: 30 });",
+    "options": [
+      "setUser({ name: \"Jane\" });",
+      "setUser({ ...user, name: \"Jane\" });",
+      "user.name = \"Jane\";",
+      "setUser(user.name = \"Jane\");"
+    ],
+    "correctAnswer": "setUser({ ...user, name: \"Jane\" });",
+    "explanation": "The correct answer is setUser({ ...user, name: \"Jane\" });."
+  },
+  {
+    "id": 11,
+    "section": "React",
+    "question": "React: What is a key prop used for in a list?",
+    "options": [
+      "Styling elements",
+      "Identifying unique elements for efficient rendering",
+      "Handling events",
+      "Managing state"
+    ],
+    "correctAnswer": "Identifying unique elements for efficient rendering",
+    "explanation": "The correct answer is Identifying unique elements for efficient rendering."
+  },
+  {
+    "id": 12,
+    "section": "React",
+    "question": "React: Which component lifecycle method is replaced by useEffect in functional components?",
+    "options": [
+      "componentDidMount",
+      "render",
+      "constructor",
+      "setState"
+    ],
+    "correctAnswer": "componentDidMount",
+    "explanation": "The correct answer is componentDidMount."
+  },
+  {
+    "id": 13,
+    "section": "React",
+    "question": "React: What does JSX stand for?",
+    "options": [
+      "JavaScript XML",
+      "JavaScript Extension",
+      "JSON XML",
+      "Java Syntax"
+    ],
+    "correctAnswer": "JavaScript XML",
+    "explanation": "The correct answer is JavaScript XML."
+  },
+  {
+    "id": 14,
+    "section": "React",
+    "question": "React: How do you create a ref in a functional component?",
+    "options": [
+      "const ref = useRef();",
+      "const ref = createRef();",
+      "const ref = useState();",
+      "const ref = useEffect();"
+    ],
+    "correctAnswer": "const ref = useRef();",
+    "explanation": "The correct answer is const ref = useRef();."
+  },
+  {
+    "id": 15,
+    "section": "React",
+    "question": "React: What is the output of this code if count is 0? const [count, setCount] = useState(0); useEffect(() => { setCount(count + 1); }, []);",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "Infinite loop"
+    ],
+    "correctAnswer": "1",
+    "explanation": "The correct answer is 1."
+  },
+  {
+    "id": 16,
+    "section": "MongoDB",
+    "question": "MongoDB: What is the primary key in a MongoDB document?",
+    "options": [
+      "_id",
+      "id",
+      "key",
+      "index"
+    ],
+    "correctAnswer": "_id",
+    "explanation": "The correct answer is _id."
+  },
+  {
+    "id": 17,
+    "section": "MongoDB",
+    "question": "MongoDB: Which command finds all documents where age > 25 in the users collection?",
+    "options": [
+      "db.users.find({ age: { $gt: 25 } })",
+      "db.users.find({ age: { $gte: 25 } })",
+      "db.users.find({ age: { $lt: 25 } })",
+      "db.users.find({ age: 25 })"
+    ],
+    "correctAnswer": "db.users.find({ age: { $gt: 25 } })",
+    "explanation": "The correct answer is db.users.find({ age: { $gt: 25 } })."
+  },
+  {
+    "id": 18,
+    "section": "MongoDB",
+    "question": "MongoDB: What does the $push operator do in an update operation?",
+    "options": [
+      "Replaces a field",
+      "Adds an element to an array",
+      "Removes an element from an array",
+      "Updates a single field"
+    ],
+    "correctAnswer": "Adds an element to an array",
+    "explanation": "The correct answer is Adds an element to an array."
+  },
+  {
+    "id": 19,
+    "section": "MongoDB",
+    "question": "MongoDB: Which index improves query performance on frequently searched fields?",
+    "options": [
+      "Compound index",
+      "Text index",
+      "Unique index",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 20,
+    "section": "Angular",
+    "question": "Angular: What is the purpose of *ngFor directive?",
+    "options": [
+      "Conditionally display elements",
+      "Iterate over a list to render elements",
+      "Bind data to an element",
+      "Handle form submissions"
+    ],
+    "correctAnswer": "Iterate over a list to render elements",
+    "explanation": "The correct answer is Iterate over a list to render elements."
+  },
+  {
+    "id": 21,
+    "section": "Angular",
+    "question": "Angular: Which decorator defines a component in Angular?",
+    "options": [
+      "@Component",
+      "@Directive",
+      "@NgModule",
+      "@Injectable"
+    ],
+    "correctAnswer": "@Component",
+    "explanation": "The correct answer is @Component."
+  },
+  {
+    "id": 22,
+    "section": "Angular",
+    "question": "Angular: What is the output of this code? <div *ngIf=\"false\">Hello</div>",
+    "options": [
+      "Hello",
+      "Nothing",
+      "Error",
+      "false"
+    ],
+    "correctAnswer": "Nothing",
+    "explanation": "The correct answer is Nothing."
+  },
+  {
+    "id": 23,
+    "section": "Angular",
+    "question": "Angular: How do you inject a service into a component?",
+    "options": [
+      "Using @Inject",
+      "In the constructor",
+      "Using @Service",
+      "In the template"
+    ],
+    "correctAnswer": "In the constructor",
+    "explanation": "The correct answer is In the constructor."
+  },
+  {
+    "id": 24,
+    "section": "Angular",
+    "question": "Angular: What does FormBuilder simplify?",
+    "options": [
+      "HTTP requests",
+      "Reactive form creation",
+      "Template rendering",
+      "Dependency injection"
+    ],
+    "correctAnswer": "Reactive form creation",
+    "explanation": "The correct answer is Reactive form creation."
+  },
+  {
+    "id": 25,
+    "section": "Angular",
+    "question": "Angular: Which module is required for HTTP requests?",
+    "options": [
+      "HttpClientModule",
+      "FormsModule",
+      "RouterModule",
+      "CommonModule"
+    ],
+    "correctAnswer": "HttpClientModule",
+    "explanation": "The correct answer is HttpClientModule."
+  },
+  {
+    "id": 26,
+    "section": "TypeScript",
+    "question": "TypeScript: What is the purpose of interface in TypeScript?",
+    "options": [
+      "Define class behavior",
+      "Specify object structure",
+      "Create modules",
+      "Handle exceptions"
+    ],
+    "correctAnswer": "Specify object structure",
+    "explanation": "The correct answer is Specify object structure."
+  },
+  {
+    "id": 27,
+    "section": "TypeScript",
+    "question": "TypeScript: What is the type of let x: any;?",
+    "options": [
+      "number",
+      "string",
+      "any",
+      "void"
+    ],
+    "correctAnswer": "any",
+    "explanation": "The correct answer is any."
+  },
+  {
+    "id": 28,
+    "section": "TypeScript",
+    "question": "TypeScript: What does this code do? function greet(name: string): string { return `Hello, ${name}`; }",
+    "options": [
+      "Throws a type error",
+      "Returns a string",
+      "Returns void",
+      "Returns any"
+    ],
+    "correctAnswer": "Returns a string",
+    "explanation": "The correct answer is Returns a string."
+  },
+  {
+    "id": 29,
+    "section": "TypeScript",
+    "question": "TypeScript: Which keyword extends a class?",
+    "options": [
+      "implements",
+      "extends",
+      "super",
+      "interface"
+    ],
+    "correctAnswer": "extends",
+    "explanation": "The correct answer is extends."
+  },
+  {
+    "id": 30,
+    "section": "TypeScript",
+    "question": "TypeScript: How do you define an optional property?",
+    "options": [
+      "name: string?",
+      "name?: string",
+      "name: string | null",
+      "name: string = null"
+    ],
+    "correctAnswer": "name?: string",
+    "explanation": "The correct answer is name?: string."
+  },
+  {
+    "id": 31,
+    "section": "HTML/CSS",
+    "question": "Whenever you are assigning two classes to a tag, you must separate them with a",
+    "options": [
+      "Space",
+      "Comma",
+      "Dash"
+    ],
+    "correctAnswer": "Space",
+    "explanation": "The correct answer is Space."
+  },
+  {
+    "id": 32,
+    "section": "HTML/CSS",
+    "question": "______ contains the navigation menu, or other navigation functionality for the page",
+    "options": [
+      "section",
+      "header",
+      "nav",
+      "aside"
+    ],
+    "correctAnswer": "nav",
+    "explanation": "The correct answer is nav."
+  },
+  {
+    "id": 33,
+    "section": "HTML/CSS",
+    "question": "The main purpose of the placeholder attribute in input controls is:",
+    "options": [
+      "Allow the end-user to remember the location in form",
+      "There is no such attribute known as \"placeholder\"",
+      "Allow the end-user to replace the data control with another",
+      "Display \"watermark\" data to assist the end-user"
+    ],
+    "correctAnswer": "Display \"watermark\" data to assist the end-user",
+    "explanation": "The correct answer is Display \"watermark\" data to assist the end-user."
+  },
+  {
+    "id": 34,
+    "section": "HTML/CSS",
+    "question": "Which of the following values are accepted by the float Property?",
+    "options": [
+      "left",
+      "right",
+      "none",
+      "all of the above"
+    ],
+    "correctAnswer": "all of the above",
+    "explanation": "The correct answer is all of the above."
+  },
+  {
+    "id": 35,
+    "section": "HTML/CSS",
+    "question": "Which of the following CSS Property controls how an element is positioned?",
+    "options": [
+      "position",
+      "set",
+      "static",
+      "fix"
+    ],
+    "correctAnswer": "position",
+    "explanation": "The correct answer is position."
+  },
+  {
+    "id": 36,
+    "section": "HTML/CSS",
+    "question": "If You are designing a column to occupy 3 of the 12 columns in your desktop design. What is the width in CSS?",
+    "options": [
+      "Width: 25%",
+      "Width: 33.3333%",
+      "Width: 21%"
+    ],
+    "correctAnswer": "Width: 25%",
+    "explanation": "The correct answer is Width: 25%."
+  },
+  {
+    "id": 37,
+    "section": "HTML/CSS",
+    "question": "In what direction does float will work? img { float: right; }",
+    "options": [
+      "left",
+      "top",
+      "bottom",
+      "right"
+    ],
+    "correctAnswer": "right",
+    "explanation": "The correct answer is right."
+  },
+  {
+    "id": 38,
+    "section": "HTML/CSS",
+    "question": "Which of the following CSS Property sets the stacking order of positioned elements?",
+    "options": [
+      "x-index",
+      "y-index",
+      "z-index"
+    ],
+    "correctAnswer": "z-index",
+    "explanation": "The correct answer is z-index."
+  },
+  {
+    "id": 39,
+    "section": "HTML/CSS",
+    "question": "You indicate a class selector with",
+    "options": [
+      "the hash (#) symbol",
+      "the dot (.)",
+      "the tag"
+    ],
+    "correctAnswer": "the dot (.)",
+    "explanation": "The correct answer is the dot (.)."
+  },
+  {
+    "id": 40,
+    "section": "HTML/CSS",
+    "question": "Which of the following media queries would apply to a tablet reporting a screen width of 768px?",
+    "options": [
+      "@media only screen and (min-width: 1140px)",
+      "@media only screen and (min-width: 641px)",
+      "@media only screen and (max-width: 1140px)"
+    ],
+    "correctAnswer": "@media only screen and (min-width: 641px)",
+    "explanation": "The correct answer is @media only screen and (min-width: 641px)."
+  },
+  {
+    "id": 41,
+    "section": "HTML/CSS",
+    "question": "To get the first or nth child you use",
+    "options": [
+      "the nested selector",
+      "A pseudo-class"
+    ],
+    "correctAnswer": "A pseudo-class",
+    "explanation": "The correct answer is A pseudo-class."
+  },
+  {
+    "id": 42,
+    "section": "HTML/CSS",
+    "question": "Which of the following rules allows users to import style rules from other style sheets?",
+    "options": [
+      "@media",
+      "@important",
+      "@import",
+      "@style"
+    ],
+    "correctAnswer": "@import",
+    "explanation": "The correct answer is @import."
+  },
+  {
+    "id": 43,
+    "section": "HTML/CSS",
+    "question": "I have a <p> which is the child of a <div> which is the child of a <section>, does the style in the section affect the p tag?",
+    "options": [
+      "Yes, inheritance accumulates",
+      "No, only the immediate parent’s style is inherited"
+    ],
+    "correctAnswer": "Yes, inheritance accumulates",
+    "explanation": "The correct answer is Yes, inheritance accumulates."
+  },
+  {
+    "id": 44,
+    "section": "HTML/CSS",
+    "question": "Which HTML tag allows styling from an external .css file?",
+    "options": [
+      "link",
+      "css",
+      "style"
+    ],
+    "correctAnswer": "link",
+    "explanation": "The correct answer is link."
+  },
+  {
+    "id": 45,
+    "section": "HTML/CSS",
+    "question": "Which of the following properties sets the distance between an element’s right border and the rightmost edge of its content?",
+    "options": [
+      "auto",
+      "padding-left",
+      "padding-right",
+      "Padding-top"
+    ],
+    "correctAnswer": "padding-right",
+    "explanation": "The correct answer is padding-right."
+  },
+  {
+    "id": 46,
+    "section": "JavaScript",
+    "question": "What built-in functions allows you to convert a string into an integer?",
+    "options": [
+      "toInt()",
+      "parseInt()",
+      "toInteger()",
+      "parseString()"
+    ],
+    "correctAnswer": "parseInt()",
+    "explanation": "The correct answer is parseInt()."
+  },
+  {
+    "id": 47,
+    "section": "JavaScript",
+    "question": "What is the catch method for a promise?",
+    "options": [
+      "To compose two promises",
+      "To listen to the result of a promise",
+      "To listen only for a rejected promise",
+      "There is no catch method on a promise"
+    ],
+    "correctAnswer": "To listen only for a rejected promise",
+    "explanation": "The correct answer is To listen only for a rejected promise."
+  },
+  {
+    "id": 48,
+    "section": "JavaScript",
+    "question": "What is the effect of using await?",
+    "options": [
+      "The awaited function runs in parallel",
+      "A promise is returned from a function instead of a value",
+      "A value is returned from a function instead of a promise"
+    ],
+    "correctAnswer": "A value is returned from a function instead of a promise",
+    "explanation": "The correct answer is A value is returned from a function instead of a promise."
+  },
+  {
+    "id": 49,
+    "section": "JavaScript",
+    "question": "What is a function in JavaScript?",
+    "options": [
+      "An instance of a class",
+      "A statement that evaluates an expression",
+      "A block of organized, reusable code that performs a single action",
+      "Code that allows us to write loops"
+    ],
+    "correctAnswer": "A block of organized, reusable code that performs a single action",
+    "explanation": "The correct answer is A block of organized, reusable code that performs a single action."
+  },
+  {
+    "id": 50,
+    "section": "JavaScript",
+    "question": "What does an async function return?",
+    "options": [
+      "A promise in a promise",
+      "The value returned from the function",
+      "A promise"
+    ],
+    "correctAnswer": "A promise",
+    "explanation": "The correct answer is A promise."
+  },
+  {
+    "id": 51,
+    "section": "JavaScript",
+    "question": "What is dependency injection?",
+    "options": [
+      "A coding technique in which all dependencies are defined with import statements",
+      "A coding technique for registering services",
+      "A coding pattern in which a class receives the instances of objects it needs from an external source"
+    ],
+    "correctAnswer": "A coding pattern in which a class receives the instances of objects it needs from an external source",
+    "explanation": "The correct answer is A coding pattern in which a class receives the instances of objects it needs from an external source."
+  },
+  {
+    "id": 52,
+    "section": "JavaScript",
+    "question": "Which is the proper syntax to make sessionTemplate available by name from a JavaScript module?",
+    "options": [
+      "export function sessionTemplate(sessions) {...}",
+      "export default function sessionTemplate(sessions) {...}",
+      "module.exports = function sessionTemplate(sessions) {...}",
+      "require function sessionTemplate(sessions) {...}"
+    ],
+    "correctAnswer": "export function sessionTemplate(sessions) {...}",
+    "explanation": "The correct answer is export function sessionTemplate(sessions) {...}."
+  },
+  {
+    "id": 53,
+    "section": "JavaScript",
+    "question": "What is a callback?",
+    "options": [
+      "A function that is called when a parallel operation is done",
+      "A boolean that is set to true when a parallel operation is done",
+      "A function that can be used with the 'await' keyword"
+    ],
+    "correctAnswer": "A function that is called when a parallel operation is done",
+    "explanation": "The correct answer is A function that is called when a parallel operation is done."
+  },
+  {
+    "id": 54,
+    "section": "JavaScript",
+    "question": "There is no catch method on a promise",
+    "options": [
+      "true",
+      "false"
+    ],
+    "correctAnswer": "false",
+    "explanation": "The correct answer is false."
+  },
+  {
+    "id": 55,
+    "section": "JavaScript",
+    "question": "What is blog.name? var blog = { name: 'Ski Utah' } var updatedBlog = blog updatedBlog.name = 'Rocky Mountain Skiing'",
+    "options": [
+      "Ski Utah",
+      "undefined",
+      "blog",
+      "Rocky Mountain Skiing"
+    ],
+    "correctAnswer": "Rocky Mountain Skiing",
+    "explanation": "The correct answer is Rocky Mountain Skiing."
+  },
+  {
+    "id": 56,
+    "section": "JavaScript",
+    "question": "What is the output of the following? greet = function(...months){ months.forEach(month => console.log('Month: '+ month)) } greet(['Jan', 'Feb']);",
+    "options": [
+      "Jan Feb",
+      "ReferenceError",
+      "Month: Jan,Feb",
+      "Month: Jan",
+      "Month: Feb"
+    ],
+    "correctAnswer": "Month: Jan,Feb",
+    "explanation": "The correct answer is Month: Jan,Feb."
+  },
+  {
+    "id": 57,
+    "section": "JavaScript",
+    "question": "What is the relationship between JavaScript and ECMAScript?",
+    "options": [
+      "ECMAScript is a standard that JavaScript implements.",
+      "They are different terms for the same thing.",
+      "JavaScript is a standard that ECMAScript implements.",
+      "JavaScript is an old term for what is now called ECMAScript."
+    ],
+    "correctAnswer": "ECMAScript is a standard that JavaScript implements.",
+    "explanation": "The correct answer is ECMAScript is a standard that JavaScript implements.."
+  },
+  {
+    "id": 58,
+    "section": "JavaScript",
+    "question": "What will show in the console when this code runs? var value = \"no value\" console.log(!!value);",
+    "options": [
+      "false",
+      "(an empty string)",
+      "true",
+      "no value"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 59,
+    "section": "JavaScript",
+    "question": "What is the output of the following? function display(num1, num2) { console.log(num1, num2); } let nums = \"12345\"; display(...nums);",
+    "options": [
+      "1 2",
+      "2 1",
+      "12345",
+      "4 5"
+    ],
+    "correctAnswer": "1 2",
+    "explanation": "The correct answer is 1 2."
+  },
+  {
+    "id": 60,
+    "section": "JavaScript",
+    "question": "What is the console output of the following code block? function printName() { name = \"Mary\"; name = \"John\"; console.log(name); }",
+    "options": [
+      "Empty",
+      "None",
+      "John",
+      "Mary"
+    ],
+    "correctAnswer": "John",
+    "explanation": "The correct answer is John."
+  },
+  {
+    "id": 61,
+    "section": "JavaScript",
+    "question": "Where is the correct place to insert a Javascript?",
+    "options": [
+      "The <head> section",
+      "Both the <head> section and the <body> section are correct.",
+      "The <body> section.",
+      "The <footer> section."
+    ],
+    "correctAnswer": "Both the <head> section and the <body> section are correct.",
+    "explanation": "The correct answer is Both the <head> section and the <body> section are correct.."
+  },
+  {
+    "id": 62,
+    "section": "JavaScript",
+    "question": "What syntax allows for a variable number of arguments to a function where the arguments are passed as an array?",
+    "options": [
+      "function([numbers])",
+      "function(\"numbers\")",
+      "function(...numbers)",
+      "function(numbers[])"
+    ],
+    "correctAnswer": "function(...numbers)",
+    "explanation": "The correct answer is function(...numbers)."
+  },
+  {
+    "id": 63,
+    "section": "JavaScript",
+    "question": "What statement will load a module from a script named employee.js?",
+    "options": [
+      "reference \"employee\";",
+      "import \"employee\";",
+      "import \"employee.js\";",
+      "reference \"employee.js\";"
+    ],
+    "correctAnswer": "import \"employee.js\";",
+    "explanation": "The correct answer is import \"employee.js\";."
+  },
+  {
+    "id": 64,
+    "section": "JavaScript",
+    "question": "Which flags are required to run nodes with ES6?",
+    "options": [
+      "harmony and strict-mode",
+      "experimental and strict-mode",
+      "harmony and block-binding",
+      "harmony and experimental"
+    ],
+    "correctAnswer": "harmony and experimental",
+    "explanation": "The correct answer is harmony and experimental."
+  },
+  {
+    "id": 65,
+    "section": "JavaScript",
+    "question": "What contextual keyword is used in a class definition to identify a function containing initialization logic for an object?",
+    "options": [
+      "ctor",
+      "new",
+      "constructor",
+      "class"
+    ],
+    "correctAnswer": "constructor",
+    "explanation": "The correct answer is constructor."
+  },
+  {
+    "id": 66,
+    "section": "JavaScript",
+    "question": "What syntax will create the array [1, 2, 3, 4, 5, 6]?",
+    "options": [
+      "[1, 2, [3, 4], ..., 5, 6];",
+      "[1, 2, ..., [3, 4], 5, 6];",
+      "[1, 2, [3, 4], 5, 6];",
+      "[1, 2, (3, 4), 5, 6];"
+    ],
+    "correctAnswer": "[1, 2, ..., [3, 4], 5, 6];",
+    "explanation": "The correct answer is [1, 2, ..., [3, 4], 5, 6];."
+  },
+  {
+    "id": 67,
+    "section": "JavaScript",
+    "question": "What symbol identifies a generator function?",
+    "options": [
+      "&",
+      "@",
+      "$",
+      "*"
+    ],
+    "correctAnswer": "*",
+    "explanation": "The correct answer is *."
+  },
+  {
+    "id": 68,
+    "section": "JavaScript",
+    "question": "By default, if you load a module that's not a JavaScript file, what will SystemJS do?",
+    "options": [
+      "Raise an error when loading the module.",
+      "Attempt to load the module as if it were a JavaScript file.",
+      "Look for a plugin with the name of the file extension to load the file."
+    ],
+    "correctAnswer": "Look for a plugin with the name of the file extension to load the file.",
+    "explanation": "The correct answer is Look for a plugin with the name of the file extension to load the file.."
+  },
+  {
+    "id": 69,
+    "section": "JavaScript",
+    "question": "Babel compiles the JavaScript code you write into",
+    "options": [
+      "ECMAScript 5",
+      "ECMAScript 7",
+      "ECMAScript 3",
+      "ECMAScript 6"
+    ],
+    "correctAnswer": "ECMAScript 5",
+    "explanation": "The correct answer is ECMAScript 5."
+  },
+  {
+    "id": 70,
+    "section": "JavaScript",
+    "question": "Which of these phrases describes Babel?",
+    "options": [
+      "JavaScript compiler",
+      "Requires a runtime",
+      "A programming language",
+      "Experimental"
+    ],
+    "correctAnswer": "JavaScript compiler",
+    "explanation": "The correct answer is JavaScript compiler."
+  },
+  {
+    "id": 71,
+    "section": "React",
+    "question": "The string \"api/route\" in Express is an example of a...",
+    "options": [
+      "Middleware",
+      "Route",
+      "Error Handler"
+    ],
+    "correctAnswer": "Route",
+    "explanation": "The correct answer is Route."
+  },
+  {
+    "id": 72,
+    "section": "React",
+    "question": "Which library allows the use of the \"require\" keyword in front-end code?",
+    "options": [
+      "guid",
+      "Browserify",
+      "React",
+      "jQuery"
+    ],
+    "correctAnswer": "Browserify",
+    "explanation": "The correct answer is Browserify."
+  },
+  {
+    "id": 73,
+    "section": "React",
+    "question": "The ______ attribute of a React form is called when the main action button inside the form is pressed.",
+    "options": [
+      "onSubmit",
+      "onChange",
+      "onComplete"
+    ],
+    "correctAnswer": "onSubmit",
+    "explanation": "The correct answer is onSubmit."
+  },
+  {
+    "id": 74,
+    "section": "React",
+    "question": "Which of the following are automation tools?",
+    "options": [
+      "Gulp",
+      "JSX",
+      "Express"
+    ],
+    "correctAnswer": "Gulp",
+    "explanation": "The correct answer is Gulp."
+  },
+  {
+    "id": 75,
+    "section": "React",
+    "question": "Which of the following is not a method of a dispatcher?",
+    "options": [
+      "register",
+      "vector",
+      "dispatch"
+    ],
+    "correctAnswer": "vector",
+    "explanation": "The correct answer is vector."
+  },
+  {
+    "id": 76,
+    "section": "React",
+    "question": "What React function is used to define a new element tag?",
+    "options": [
+      "renderComponent",
+      "createClass",
+      "setInnerHTML"
+    ],
+    "correctAnswer": "createClass",
+    "explanation": "The correct answer is createClass."
+  },
+  {
+    "id": 77,
+    "section": "React",
+    "question": "Isomorphic means to focus exclusively on an app's back-end.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "The correct answer is False."
+  },
+  {
+    "id": 78,
+    "section": "React",
+    "question": "React's abstraction of the document object model is often called...",
+    "options": [
+      "Virtual DOM",
+      "Meta DOM",
+      "Virtualized Model"
+    ],
+    "correctAnswer": "Virtual DOM",
+    "explanation": "The correct answer is Virtual DOM."
+  },
+  {
+    "id": 79,
+    "section": "React",
+    "question": "True or false: The only thing that can change the data inside a store is the store itself.",
+    "options": [
+      "false",
+      "true"
+    ],
+    "correctAnswer": "true",
+    "explanation": "The correct answer is true."
+  },
+  {
+    "id": 80,
+    "section": "React",
+    "question": "The Gulp task which takes a stream and outputs a file is...",
+    "options": [
+      "src",
+      "task",
+      "dest"
+    ],
+    "correctAnswer": "dest",
+    "explanation": "The correct answer is dest."
+  },
+  {
+    "id": 81,
+    "section": "React",
+    "question": "The best way to detect when a user has completed a form is",
+    "options": [
+      "to handle the onClick event on the form's submit element",
+      "to handle the onBlur event of the last form element",
+      "to handle the form's onSubmit event",
+      "to accumulate the onChange events for each form element"
+    ],
+    "correctAnswer": "to handle the form's onSubmit event",
+    "explanation": "The correct answer is to handle the form's onSubmit event."
+  },
+  {
+    "id": 82,
+    "section": "React",
+    "question": "React is",
+    "options": [
+      "A library that represents asynchronous data streams with observables",
+      "A comprehensive client-side application framework",
+      "An optimizing compiler for JavaScript",
+      "A client-side library providing rendering and event handling"
+    ],
+    "correctAnswer": "A client-side library providing rendering and event handling",
+    "explanation": "The correct answer is A client-side library providing rendering and event handling."
+  },
+  {
+    "id": 83,
+    "section": "React",
+    "question": "Routing can be added to a React application by",
+    "options": [
+      "adding an HTML5 or hash fragment based routing library",
+      "rendering the application on the server using react-page",
+      "handling the window.onLocationChanged event",
+      "using the React.route function"
+    ],
+    "correctAnswer": "adding an HTML5 or hash fragment based routing library",
+    "explanation": "The correct answer is adding an HTML5 or hash fragment based routing library."
+  },
+  {
+    "id": 84,
+    "section": "React",
+    "question": "Behavior is shared between components using",
+    "options": [
+      "propTypes",
+      "state",
+      "mixins",
+      "props"
+    ],
+    "correctAnswer": "mixins",
+    "explanation": "The correct answer is mixins."
+  },
+  {
+    "id": 85,
+    "section": "React",
+    "question": "An advantage of React is",
+    "options": [
+      "jQuery syntax",
+      "static type checking",
+      "speed",
+      "easy integration with other JavaScript libraries"
+    ],
+    "correctAnswer": "speed",
+    "explanation": "The correct answer is speed."
+  },
+  {
+    "id": 86,
+    "section": "React",
+    "question": "The JSX pre-processor is packaged as a",
+    "options": [
+      "dynamic link library",
+      "Nuget package",
+      "Gem",
+      "npm module"
+    ],
+    "correctAnswer": "npm module",
+    "explanation": "The correct answer is npm module."
+  },
+  {
+    "id": 87,
+    "section": "React",
+    "question": "The just-in-time JSX transformer is good for",
+    "options": [
+      "integrating with JavaScript tools",
+      "simple development workflow",
+      "reusing behavior",
+      "performance"
+    ],
+    "correctAnswer": "simple development workflow",
+    "explanation": "The correct answer is simple development workflow."
+  },
+  {
+    "id": 88,
+    "section": "React",
+    "question": "The function that creates React components is",
+    "options": [
+      "React.component.extend",
+      "React.createComponent",
+      "React.renderComponent",
+      "React.createClass"
+    ],
+    "correctAnswer": "React.createClass",
+    "explanation": "The correct answer is React.createClass."
+  },
+  {
+    "id": 89,
+    "section": "React",
+    "question": "How does React Router make URL params accessible to components?",
+    "options": [
+      "parseUrlParams",
+      "State",
+      "getUrlParams",
+      "Props"
+    ],
+    "correctAnswer": "Props",
+    "explanation": "The correct answer is Props."
+  },
+  {
+    "id": 90,
+    "section": "React",
+    "question": "Why is the Link component useful?",
+    "options": [
+      "It allows you to hyperlink to routes by name",
+      "It enhances page load performance",
+      "It removes invalid characters from the URL",
+      "It provides faster navigation than hyperlinks"
+    ],
+    "correctAnswer": "It allows you to hyperlink to routes by name",
+    "explanation": "The correct answer is It allows you to hyperlink to routes by name."
+  },
+  {
+    "id": 91,
+    "section": "React",
+    "question": "How do Flux stores find out about Flux actions?",
+    "options": [
+      "They query the server via AJAX",
+      "They poll HTML5 localstorage",
+      "They register a callback with the dispatcher.",
+      "They call action creators directly"
+    ],
+    "correctAnswer": "They register a callback with the dispatcher.",
+    "explanation": "The correct answer is They register a callback with the dispatcher.."
+  },
+  {
+    "id": 92,
+    "section": "React",
+    "question": "Where should mutable data for React components be stored?",
+    "options": [
+      "props",
+      "reactData",
+      "state",
+      "React.cookie"
+    ],
+    "correctAnswer": "state",
+    "explanation": "The correct answer is state."
+  },
+  {
+    "id": 93,
+    "section": "React",
+    "question": "What mechanism is recommended for passing data down to child components in React?",
+    "options": [
+      "props",
+      "sendChildData",
+      "getDefaultProps",
+      "state"
+    ],
+    "correctAnswer": "props",
+    "explanation": "The correct answer is props."
+  },
+  {
+    "id": 94,
+    "section": "React",
+    "question": "What is JSX?",
+    "options": [
+      "A language that looks like JavaScript that compiles to HTML.",
+      "A styling language that compiles down to CSS.",
+      "A language for querying RESTful web services.",
+      "A language that looks like HTML that complies down to JavaScript."
+    ],
+    "correctAnswer": "A language that looks like HTML that complies down to JavaScript.",
+    "explanation": "The correct answer is A language that looks like HTML that complies down to JavaScript.."
+  },
+  {
+    "id": 95,
+    "section": "React",
+    "question": "What function should all your JSX be placed in?",
+    "options": [
+      "render",
+      "compile",
+      "jsx",
+      "emit"
+    ],
+    "correctAnswer": "render",
+    "explanation": "The correct answer is render."
+  },
+  {
+    "id": 96,
+    "section": "React",
+    "question": "What does the \"webpack\" command do?",
+    "options": [
+      "Runs React Local Development Server.",
+      "Transpiles all the Javascript down into one file.",
+      "Both A and B."
+    ],
+    "correctAnswer": "Both A and B.",
+    "explanation": "The correct answer is Both A and B.."
+  },
+  {
+    "id": 97,
+    "section": "React",
+    "question": "Which of the following API is a MUST for every React Component?",
+    "options": [
+      "getInitialState.",
+      "render",
+      "renderComponent."
+    ],
+    "correctAnswer": "renderComponent.",
+    "explanation": "The correct answer is renderComponent.."
+  },
+  {
+    "id": 98,
+    "section": "React",
+    "question": "What are the advantages of React?",
+    "options": [
+      "React can be used on client as well as server side.",
+      "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus make it easier for maintaining larger props.",
+      "React can be used with any other framework (Backbone.js, Angular.js) as it is just a View Layer.",
+      "All of the above."
+    ],
+    "correctAnswer": "All of the above.",
+    "explanation": "The correct answer is All of the above.."
+  },
+  {
+    "id": 99,
+    "section": "React",
+    "question": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
+    "options": [
+      "aria-* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased, these attributes should be lowercase.",
+      "React processes aria-* attributes separately and updates the DOM for accessibility if the user requires it.",
+      "aria-* attributes should be converted to camelCase like other attributes; For example: className, onChange and so on.",
+      "React is yet to support the WAI-ARIA standard."
+    ],
+    "correctAnswer": "React is yet to support the WAI-ARIA standard.",
+    "explanation": "The correct answer is React is yet to support the WAI-ARIA standard.."
+  },
+  {
+    "id": 100,
+    "section": "React",
+    "question": "What is React in MVC?",
+    "options": [
+      "Controller",
+      "Middleware",
+      "Model",
+      "Router"
+    ],
+    "correctAnswer": "Controller",
+    "explanation": "The correct answer is Controller."
+  },
+  {
+    "id": 101,
+    "section": "React",
+    "question": "What is React?",
+    "options": [
+      "Just a server-side framework",
+      "Just a user-interface framework",
+      "Both a server-side framework as well as a user-interface framework"
+    ],
+    "correctAnswer": "Both a server-side framework as well as a user-interface framework",
+    "explanation": "The correct answer is Both a server-side framework as well as a user-interface framework."
+  },
+  {
+    "id": 102,
+    "section": "React",
+    "question": "What are the limitations of React?",
+    "options": [
+      "React is only for the view layer of the app so we still need the help of other technologies to get a complete tooling set for development.",
+      "React uses inline templating and JSX. This can seem awkward to some developers.",
+      "The library of React is too large.",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 103,
+    "section": "React",
+    "question": "How can you access the state of a component from inside of a member function in React?",
+    "options": [
+      "this.getState()",
+      "this.prototype.stateValue",
+      "this.state",
+      "this.values"
+    ],
+    "correctAnswer": "this.state",
+    "explanation": "The correct answer is this.state."
+  },
+  {
+    "id": 104,
+    "section": "React",
+    "question": "You can also use an ES6 class to define a component in React.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "The correct answer is True."
+  },
+  {
+    "id": 105,
+    "section": "React",
+    "question": "Which of the following API is a MUST for every React component?",
+    "options": [
+      "getInitialState",
+      "render",
+      "renderComponent"
+    ],
+    "correctAnswer": "renderComponent",
+    "explanation": "The correct answer is renderComponent."
+  },
+  {
+    "id": 106,
+    "section": "React",
+    "question": "At the highest level, React components have lifecycle events that fall into ______.",
+    "options": [
+      "Initialization",
+      "State/Property updates",
+      "Destruction",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 107,
+    "section": "React",
+    "question": "What are the advantages of React?",
+    "options": [
+      "React can be used on client as well as server side.",
+      "Using React increases readability and makes maintainability easier. Component and Data patterns improve readability and thus make it easier for maintaining larger apps.",
+      "React can be used with any other framework (Backbone.js, Angular.js), as it is just a view layer.",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 108,
+    "section": "React",
+    "question": "How does React handle the Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) standard?",
+    "options": [
+      "aria-* HTML attributes are fully supported in JSX where most DOM properties and attributes in React are camelCased, these attributes should be lowercase.",
+      "React processes aria-* attributes separately and updates the DOM for accessibility if the user requires it.",
+      "aria-* attributes should be converted to camelCase like other attributes. For example: className, onChange, and so on",
+      "React is yet to support the WAI-ARIA standard."
+    ],
+    "correctAnswer": "React is yet to support the WAI-ARIA standard.",
+    "explanation": "The correct answer is React is yet to support the WAI-ARIA standard.."
+  },
+  {
+    "id": 109,
+    "section": "React",
+    "question": "What does the \"webpack\" command do?",
+    "options": [
+      "Transpiles all the Javascript down into one file",
+      "Runs react local development server",
+      "Both A and B"
+    ],
+    "correctAnswer": "Both A and B",
+    "explanation": "The correct answer is Both A and B."
+  },
+  {
+    "id": 110,
+    "section": "TypeScript",
+    "question": "Which features does TypeScript support natively?",
+    "options": [
+      "Support for standard JavaScript code",
+      "Classes and modules",
+      "Static typing",
+      "Interfaces",
+      "Constructors",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 111,
+    "section": "TypeScript",
+    "question": "Which of the following is not a type keyword in TypeScript?",
+    "options": [
+      "float",
+      "bool",
+      "all are valid types in TypeScript",
+      "number",
+      "string"
+    ],
+    "correctAnswer": "float",
+    "explanation": "The correct answer is float."
+  },
+  {
+    "id": 112,
+    "section": "TypeScript",
+    "question": "Interfaces defined in TypeScript are included in the JavaScript that is generated?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "False",
+    "explanation": "The correct answer is False."
+  },
+  {
+    "id": 113,
+    "section": "TypeScript",
+    "question": "How do you extend an interface in TypeScript?",
+    "options": [
+      "Interface ITruckOptions extends IAutoOptions",
+      "Interface ITruckOptions => IAutoOptions",
+      "Interface ITruckOptions : IAutoOptions",
+      "Interface ITruckOptions implements IAutoOptions"
+    ],
+    "correctAnswer": "Interface ITruckOptions extends IAutoOptions",
+    "explanation": "The correct answer is Interface ITruckOptions extends IAutoOptions."
+  },
+  {
+    "id": 114,
+    "section": "TypeScript",
+    "question": "Benefits offered by TypeScript include:",
+    "options": [
+      "Code encapsulation",
+      "All of these",
+      "More maintainable code",
+      "Strongly-typed code"
+    ],
+    "correctAnswer": "All of these",
+    "explanation": "The correct answer is All of these."
+  },
+  {
+    "id": 115,
+    "section": "TypeScript",
+    "question": "How do you automatically generate fields in a TypeScript class?",
+    "options": [
+      "Add the public keyword to a constructor parameter",
+      "None of these",
+      "Use the auto keyword",
+      "TypeScript doesn't support automatically generated fields"
+    ],
+    "correctAnswer": "Add the public keyword to a constructor parameter",
+    "explanation": "The correct answer is Add the public keyword to a constructor parameter."
+  },
+  {
+    "id": 116,
+    "section": "TypeScript",
+    "question": "Which TypeScript function will accept 2 parameters that must be numbers and return their product?",
+    "options": [
+      "var func = (x: number, y: number) => x * y;",
+      "var func = (x, y) => x * y;",
+      "None of these",
+      "var func = function(x, y) => x * y;",
+      "All of these"
+    ],
+    "correctAnswer": "var func = (x: number, y: number) => x * y;",
+    "explanation": "The correct answer is var func = (x: number, y: number) => x * y;."
+  },
+  {
+    "id": 117,
+    "section": "TypeScript",
+    "question": "Which statement will allow your code to reference an internal module in a file named shapes.ts using TypeScript?",
+    "options": [
+      "/// <reference=\"shapes.ts\" />",
+      "/// <reference path=\"shapes.ts\" />",
+      "import \"shapes\"",
+      "/// shapes.ts"
+    ],
+    "correctAnswer": "import \"shapes\"",
+    "explanation": "The correct answer is import \"shapes\"."
+  },
+  {
+    "id": 118,
+    "section": "TypeScript",
+    "question": "Which TypeScript statement will import an external module in a file named viewmodels.ts that is in the same folder as your code?",
+    "options": [
+      "import vm = module(viewmodels);",
+      "import vm = module(\"../viewmodels\");",
+      "import module(Viewmodels);",
+      "import vm = module(Viewmodels);"
+    ],
+    "correctAnswer": "import vm = module(Viewmodels);",
+    "explanation": "The correct answer is import vm = module(Viewmodels);."
+  },
+  {
+    "id": 119,
+    "section": "TypeScript",
+    "question": "Which TypeScript compiler parameter will emit JavaScript that is AMD compliant?",
+    "options": [
+      "-AMD",
+      "-module AMD",
+      "Neither of these"
+    ],
+    "correctAnswer": "-module AMD",
+    "explanation": "The correct answer is -module AMD."
+  },
+  {
+    "id": 120,
+    "section": "TypeScript",
+    "question": "What keyword is used to apply all of the properties on one interface to another interface?",
+    "options": [
+      "implements",
+      "extends",
+      "class",
+      "furthers",
+      "references"
+    ],
+    "correctAnswer": "extends",
+    "explanation": "The correct answer is extends."
+  },
+  {
+    "id": 121,
+    "section": "TypeScript",
+    "question": "What value will be output at the end of the following code block? enum Color { Red = 5, Green = 10, Blue = 15 }; console.log(Color.Green);",
+    "options": [
+      "2",
+      "Color.Green",
+      "1",
+      "Green",
+      "10"
+    ],
+    "correctAnswer": "10",
+    "explanation": "The correct answer is 10."
+  },
+  {
+    "id": 122,
+    "section": "TypeScript",
+    "question": "Which of the following best defines a \"class\"?",
+    "options": [
+      "Objects with no implementation details",
+      "Object with no properties or methods",
+      "JSON objects with methods",
+      "Collection of private, reusable functions",
+      "Template for creating objects"
+    ],
+    "correctAnswer": "Template for creating objects",
+    "explanation": "The correct answer is Template for creating objects."
+  },
+  {
+    "id": 123,
+    "section": "TypeScript",
+    "question": "What term describes the concept of treating an object as if it were a particular type, even if it weren't declared as that type?",
+    "options": [
+      "Extension Typing",
+      "Duck Typing",
+      "Interface Typing",
+      "Generic Typing",
+      "Ruby Typing"
+    ],
+    "correctAnswer": "Duck Typing",
+    "explanation": "The correct answer is Duck Typing."
+  },
+  {
+    "id": 124,
+    "section": "TypeScript",
+    "question": "What access modifier limits the accessibility of a class member to its own class and subclasses?",
+    "options": [
+      "export",
+      "internal",
+      "protected",
+      "private",
+      "sensitive"
+    ],
+    "correctAnswer": "protected",
+    "explanation": "The correct answer is protected."
+  },
+  {
+    "id": 125,
+    "section": "TypeScript",
+    "question": "What is the primary difference between a generic class and a non-generic class?",
+    "options": [
+      "Generic classes do not accept constructor parameters.",
+      "Generic classes are always declared abstract.",
+      "Generic classes may not implement interfaces.",
+      "Generic classes accept a type parameter.",
+      "Generic classes must inherit from a base class."
+    ],
+    "correctAnswer": "Generic classes accept a type parameter.",
+    "explanation": "The correct answer is Generic classes accept a type parameter.."
+  },
+  {
+    "id": 126,
+    "section": "TypeScript",
+    "question": "Which TypeScript compiler options lets you specify the location of the tsconfig.json f ile to be used for the compilation?",
+    "options": [
+      "--project",
+      "--json",
+      "--outDir",
+      "--input",
+      "--source"
+    ],
+    "correctAnswer": "--project",
+    "explanation": "The correct answer is --project."
+  },
+  {
+    "id": 127,
+    "section": "TypeScript",
+    "question": "Which of the following symbols is used to denote that a function parameter is a rest parameter?",
+    "options": [
+      "<>",
+      ">>>",
+      "||",
+      "...",
+      "||"
+    ],
+    "correctAnswer": "...",
+    "explanation": "The correct answer is ...."
+  },
+  {
+    "id": 128,
+    "section": "TypeScript",
+    "question": "Which of the following will correctly import the items exported by this export statement? export { GetUser as GetLibraryUser, GetBook as GetLibraryBook };",
+    "options": [
+      "Import TypeScript from './library';",
+      "Import namespace from './library';",
+      "Import { GetLibraryUser, GetLibraryBook } from './library';",
+      "Import { GetUser, GetBook } from './library';",
+      "Import all from './library';"
+    ],
+    "correctAnswer": "Import { GetLibraryUser, GetLibraryBook } from './library';",
+    "explanation": "The correct answer is Import { GetLibraryUser, GetLibraryBook } from './library';."
+  },
+  {
+    "id": 129,
+    "section": "TypeScript",
+    "question": "Which are the different Data Types supported by Typescript?",
+    "options": [
+      "Boolean var bValue: boolean = false",
+      "Number var age: number = 16",
+      "String var name: string = \"join\"",
+      "All of the above mentioned"
+    ],
+    "correctAnswer": "All of the above mentioned",
+    "explanation": "The correct answer is All of the above mentioned."
+  },
+  {
+    "id": 130,
+    "section": "TypeScript",
+    "question": "What are the variable scopes available in TypeScript?",
+    "options": [
+      "Global Scope",
+      "Class Scope",
+      "Local Scope",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 131,
+    "section": "TypeScript",
+    "question": "Which object oriented terms are supported by Typescript?",
+    "options": [
+      "Modules",
+      "Classes",
+      "Interfaces",
+      "All of these"
+    ],
+    "correctAnswer": "All of these",
+    "explanation": "The correct answer is All of these."
+  },
+  {
+    "id": 132,
+    "section": "TypeScript",
+    "question": "In typescript, it calls an javascript internally and then performs validations",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "The correct answer is True."
+  },
+  {
+    "id": 133,
+    "section": "TypeScript",
+    "question": "To change the datatype from one type to another, we require",
+    "options": [
+      "TypeOperator",
+      "TypeAssertion",
+      "InferredTyping"
+    ],
+    "correctAnswer": "TypeAssertion",
+    "explanation": "The correct answer is TypeAssertion."
+  },
+  {
+    "id": 134,
+    "section": "TypeScript",
+    "question": "For a variable, Without Specifying any data type is",
+    "options": [
+      "InferredTyping",
+      "TypeOperator",
+      "TypeAssertion"
+    ],
+    "correctAnswer": "InferredTyping",
+    "explanation": "The correct answer is InferredTyping."
+  },
+  {
+    "id": 135,
+    "section": "TypeScript",
+    "question": "Which of the following is valid command to compile typescript file?",
+    "options": [
+      "ts abc.ts",
+      "t abc.ts",
+      "tsc abc.ts",
+      "tst abc.ts"
+    ],
+    "correctAnswer": "tsc abc.ts",
+    "explanation": "The correct answer is tsc abc.ts."
+  },
+  {
+    "id": 136,
+    "section": "TypeScript",
+    "question": "What will be output of: var a:string=47; console.log(\"Value of a=\"+a);",
+    "options": [
+      "Value of a=47",
+      "Value of a=0",
+      "Value of a=",
+      "None of the above"
+    ],
+    "correctAnswer": "None of the above",
+    "explanation": "The correct answer is None of the above."
+  },
+  {
+    "id": 137,
+    "section": "TypeScript",
+    "question": "Internal Modules are known as namespaces in Typescript.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "True",
+    "explanation": "The correct answer is True."
+  },
+  {
+    "id": 138,
+    "section": "TypeScript",
+    "question": "Which of the following Arrow Functions are true",
+    "options": [
+      "var reflect = value => value;",
+      "var sum = (num1, num2) => num1 + num2;",
+      "var getName = () => \"Nicholas\";",
+      "var sum = (num1, num2) => { return num1 + num2; };",
+      "All"
+    ],
+    "correctAnswer": "All",
+    "explanation": "The correct answer is All."
+  },
+  {
+    "id": 139,
+    "section": "TypeScript",
+    "question": "Which concept resemble the above program function fun1(...params) { console.log(params.length); } fun1(); fun1(5); fun1(5, 6, 7);",
+    "options": [
+      "String Interpolation",
+      "Tagged Templates",
+      "Spread Operator/Rest Parameters",
+      "Object Destructuring"
+    ],
+    "correctAnswer": "Spread Operator/Rest Parameters",
+    "explanation": "The correct answer is Spread Operator/Rest Parameters."
+  },
+  {
+    "id": 140,
+    "section": "TypeScript",
+    "question": "Typescript is a",
+    "options": [
+      "Strongly typed",
+      "Object oriented",
+      "Compiled Language",
+      "All the above"
+    ],
+    "correctAnswer": "All the above",
+    "explanation": "The correct answer is All the above."
+  },
+  {
+    "id": 141,
+    "section": "TypeScript",
+    "question": "Typescript is",
+    "options": [
+      "Language",
+      "set of tools",
+      "Both",
+      "None"
+    ],
+    "correctAnswer": "Both",
+    "explanation": "The correct answer is Both."
+  },
+  {
+    "id": 142,
+    "section": "TypeScript",
+    "question": "Select user defined data types in typescript",
+    "options": [
+      "arrays",
+      "String",
+      "Boolean",
+      "Void"
+    ],
+    "correctAnswer": "arrays",
+    "explanation": "The correct answer is arrays."
+  },
+  {
+    "id": 143,
+    "section": "TypeScript",
+    "question": "Which of the following are true",
+    "options": [
+      "we can use printf in ts(typescript)",
+      "we can use console.log in ts(typescript)"
+    ],
+    "correctAnswer": "we can use console.log in ts(typescript)",
+    "explanation": "The correct answer is we can use console.log in ts(typescript)."
+  },
+  {
+    "id": 144,
+    "section": "TypeScript",
+    "question": "Which of the following are array methods",
+    "options": [
+      "Unshift()",
+      "Sort()",
+      "Pop()",
+      "All the above"
+    ],
+    "correctAnswer": "All the above",
+    "explanation": "The correct answer is All the above."
+  },
+  {
+    "id": 145,
+    "section": "TypeScript",
+    "question": "Supertype of all datatypes in typescript",
+    "options": [
+      "number",
+      "Enum",
+      "Void",
+      "Any"
+    ],
+    "correctAnswer": "Any",
+    "explanation": "The correct answer is Any."
+  },
+  {
+    "id": 146,
+    "section": "TypeScript",
+    "question": "Which of the following are true",
+    "options": [
+      "var a=new String(hil)",
+      "var b=new array[1]",
+      "var a.String=hil;",
+      "All the above"
+    ],
+    "correctAnswer": "var b=new array[1]",
+    "explanation": "The correct answer is var b=new array[1]."
+  },
+  {
+    "id": 147,
+    "section": "TypeScript",
+    "question": "List some features of Typescript?",
+    "options": [
+      "Typescript can be compiled to all major versions of JavaScript(ES3,ES5,ES6,ES7)",
+      "Typescript can be used for cross-browser development and is an open source project",
+      "Typescript is a superset of JavaScript that provides typed nature to your code",
+      "All of the above"
+    ],
+    "correctAnswer": "All of the above",
+    "explanation": "The correct answer is All of the above."
+  },
+  {
+    "id": 148,
+    "section": "TypeScript",
+    "question": "What are the components of TypeScript?",
+    "options": [
+      "TypeScript Language",
+      "TypeScript Compiler",
+      "TypeScript Language Service",
+      "All of these"
+    ],
+    "correctAnswer": "All of these",
+    "explanation": "The correct answer is All of these."
+  },
+  {
+    "id": 149,
+    "section": "TypeScript",
+    "question": "How to declare variables in Typescript?",
+    "options": [
+      "Var",
+      "Let",
+      "Both"
+    ],
+    "correctAnswer": "Both",
+    "explanation": "The correct answer is Both."
+  },
+  {
+    "id": 150,
+    "section": "TypeScript",
+    "question": "Typescript uses which data type?",
+    "options": [
+      "String",
+      "Number",
+      "Boolean",
+      "All above option"
+    ],
+    "correctAnswer": "All above option",
+    "explanation": "The correct answer is All above option."
+  },
+  {
+    "id": 151,
+    "section": "TypeScript",
+    "question": "Default access modifier typescript?",
+    "options": [
+      "public",
+      "private",
+      "protected"
+    ],
+    "correctAnswer": "public",
+    "explanation": "The correct answer is public."
+  },
+  {
+    "id": 152,
+    "section": "TypeScript",
+    "question": "What is async/await?",
+    "options": [
+      "New syntax to write JavaScript promises",
+      "New syntax to consume JavaScript promises",
+      "New syntax to consume asynchronous callbacks"
+    ],
+    "correctAnswer": "New syntax to consume JavaScript promises",
+    "explanation": "The correct answer is New syntax to consume JavaScript promises."
+  },
+  {
+    "id": 153,
+    "section": "TypeScript",
+    "question": "Which of the following is an attribute css selector?",
+    "options": [
+      "[selector]",
+      ".selector",
+      "#selector"
+    ],
+    "correctAnswer": "[selector]",
+    "explanation": "The correct answer is [selector]."
+  },
+  {
+    "id": 154,
+    "section": "TypeScript",
+    "question": "When is it recommended to pass this.setState a function instead of an object",
+    "options": [
+      "When the new state should completely replace the old state.",
+      "When the new state does not depend on the old state.",
+      "When the new state depends on the old state."
+    ],
+    "correctAnswer": "When the new state depends on the old state.",
+    "explanation": "The correct answer is When the new state depends on the old state.."
+  },
+  {
+    "id": 155,
+    "section": "TypeScript",
+    "question": "A promise represents what?",
+    "options": [
+      "A single value in the future",
+      "Multiple values in the present",
+      "Multiple values in the future",
+      "A single value in the present"
+    ],
+    "correctAnswer": "A single value in the future",
+    "explanation": "The correct answer is A single value in the future."
+  },
+  {
+    "id": 156,
+    "section": "TypeScript",
+    "question": "Can a component be styled with a global styled sheet?",
+    "options": [
+      "Only function components can be styled with a global styled sheet",
+      "Only if the component returns HTML elements",
+      "Yes",
+      "No"
+    ],
+    "correctAnswer": "Yes",
+    "explanation": "The correct answer is Yes."
+  },
+  {
+    "id": 157,
+    "section": "TypeScript",
+    "question": "When binding to data in templates, how do you avoid issues with binding to properties of null or undefined objects?",
+    "options": [
+      "You don’t need to worry about null objects, Angular will handle them gracefully.",
+      "Use the * operator on any object that could be null.",
+      "Use the ? operator on any object that could be null.",
+      "In the component, ensure the objects are never null."
+    ],
+    "correctAnswer": "Use the ? operator on any object that could be null.",
+    "explanation": "The correct answer is Use the ? operator on any object that could be null.."
+  },
+  {
+    "id": 158,
+    "section": "TypeScript",
+    "question": "Where should you sort and filter data?",
+    "options": [
+      "In a directive",
+      "In a pipe",
+      "In your component",
+      "In a filter"
+    ],
+    "correctAnswer": "In your component",
+    "explanation": "The correct answer is In your component."
+  },
+  {
+    "id": 159,
+    "section": "TypeScript",
+    "question": "What’s the right syntax to assign the function doSomething as the handler of a click event?",
+    "options": [
+      "onClick={doSomething}",
+      "onClick={() => doSomething}",
+      "onClick={doSomething()}"
+    ],
+    "correctAnswer": "onClick={doSomething}",
+    "explanation": "The correct answer is onClick={doSomething}."
+  },
+  {
+    "id": 160,
+    "section": "TypeScript",
+    "question": "Assuming you define the statement: “var person: string.” TypeScript will alert you that there is an error if you enter which additional code?",
+    "options": [
+      "person = { name: 'Colleen', age: 25; }",
+      "person = 0",
+      "person = ['Colleen', 'John'];",
+      "all of the above"
+    ],
+    "correctAnswer": "all of the above",
+    "explanation": "The correct answer is all of the above."
+  },
+  {
+    "id": 161,
+    "section": "TypeScript",
+    "question": "When bootstrapping an Angular app, how do you specify the main, top-level app component to be used?",
+    "options": [
+      "You add the component as a package in your SystemJs config.",
+      "You load the component directly in your index.html file.",
+      "You add the component to the bootstrap array in your main app module.",
+      "You load the component directly from your main SystemJs package (e.g. main.ts)."
+    ],
+    "correctAnswer": "You add the component to the bootstrap array in your main app module.",
+    "explanation": "The correct answer is You add the component to the bootstrap array in your main app module.."
+  },
+  {
+    "id": 162,
+    "section": "TypeScript",
+    "question": "What is the format of the data returned by the JSON Server API?",
+    "options": [
+      "YAML",
+      "XML",
+      "JSON"
+    ],
+    "correctAnswer": "JSON",
+    "explanation": "The correct answer is JSON."
+  },
+  {
+    "id": 163,
+    "section": "TypeScript",
+    "question": "What syntax do you use to render the App component into an HTML element with id \"root\"?",
+    "options": [
+      "ReactDOM.render(App, document.getElementById('root');",
+      "React.render(App, document.getElementById('root');",
+      "ReactDOM.mountNode(<App />, document.getElementById('root');",
+      "ReactDOM.render(<App />, document.getElementById('root');"
+    ],
+    "correctAnswer": "ReactDOM.render(<App />, document.getElementById('root');",
+    "explanation": "The correct answer is ReactDOM.render(<App />, document.getElementById('root');."
+  },
+  {
+    "id": 164,
+    "section": "TypeScript",
+    "question": "What function can be used to change the state of a React component?",
+    "options": [
+      "this.state = {}",
+      "this.setState",
+      "this.changeState"
+    ],
+    "correctAnswer": "this.setState",
+    "explanation": "The correct answer is this.setState."
+  },
+  {
+    "id": 165,
+    "section": "TypeScript",
+    "question": "What can we do if components A and B are siblings and they require access to the same state element?",
+    "options": [
+      "Restructure the application to have A and B be related differently",
+      "Place the state in either A or B",
+      "Place the state in a third component C that is a sibling to A and B",
+      "Place the state in the parent component of A and B"
+    ],
+    "correctAnswer": "Place the state in the parent component of A and B",
+    "explanation": "The correct answer is Place the state in the parent component of A and B."
+  },
+  {
+    "id": 166,
+    "section": "TypeScript",
+    "question": "What is the name of the file that manages TypeScript projects?",
+    "options": [
+      "tsproj.config",
+      "tsmeta.json",
+      "isconfig.json",
+      "package.json"
+    ],
+    "correctAnswer": "tsproj.config",
+    "explanation": "The correct answer is tsproj.config."
+  },
+  {
+    "id": 167,
+    "section": "TypeScript",
+    "question": "When dealing with asynchronous functions, what type of generic must your return type be?",
+    "options": [
+      "Async",
+      "Promise",
+      "Array",
+      "AsyncAwait"
+    ],
+    "correctAnswer": "Promise",
+    "explanation": "The correct answer is Promise."
+  },
+  {
+    "id": 168,
+    "section": "TypeScript",
+    "question": "What tool installs type declaration files?",
+    "options": [
+      "Duck",
+      "npm",
+      "Ruby",
+      "NuGet",
+      "Async"
+    ],
+    "correctAnswer": "npm",
+    "explanation": "The correct answer is npm."
+  },
+  {
+    "id": 169,
+    "section": "TypeScript",
+    "question": "What should appear to the left of the arrow in an arrow function?",
+    "options": [
+      "Function name",
+      "Function parameters",
+      "Curly braces",
+      "Function return value",
+      "Number of function parameters."
+    ],
+    "correctAnswer": "Function parameters",
+    "explanation": "The correct answer is Function parameters."
+  },
+  {
+    "id": 170,
+    "section": "TypeScript",
+    "question": "What character separates a variable from its type annotation in a declaration?",
+    "options": [
+      "#",
+      "$",
+      "%",
+      ":"
+    ],
+    "correctAnswer": ":",
+    "explanation": "The correct answer is :."
+  },
+  {
+    "id": 171,
+    "section": "TypeScript",
+    "question": "How would you define a string type variable with the value bar in TypeScript?",
+    "options": [
+      "let string: foo = 'bar';",
+      "let foo.string = 'bar';",
+      "let string foo = 'bar';",
+      "let foo (string) = 'bar';"
+    ],
+    "correctAnswer": "let foo.string = 'bar';",
+    "explanation": "The correct answer is let foo.string = 'bar';."
+  },
+  {
+    "id": 172,
+    "section": "TypeScript",
+    "question": "What keyword requires a variable to be declared before it's used?",
+    "options": [
+      "let",
+      "dim",
+      "declare",
+      "set"
+    ],
+    "correctAnswer": "let",
+    "explanation": "The correct answer is let."
+  },
+  {
+    "id": 173,
+    "section": "TypeScript",
+    "question": "What keyword declares a class member in the class rather than an instance of the class?",
+    "options": [
+      "enum",
+      "static",
+      "intersection",
+      "function",
+      "async"
+    ],
+    "correctAnswer": "static",
+    "explanation": "The correct answer is static."
+  },
+  {
+    "id": 174,
+    "section": "TypeScript",
+    "question": "Within which function scope would a variable that you declare using the keyword var cover?",
+    "options": [
+      "Within the entire function scope",
+      "Within an if statement scope",
+      "Within a for loop scope",
+      "Within a while loop scope"
+    ],
+    "correctAnswer": "Within the entire function scope",
+    "explanation": "The correct answer is Within the entire function scope."
+  },
+  {
+    "id": 175,
+    "section": "TypeScript",
+    "question": "What keyword lets you derive a subclass from a superclass?",
+    "options": [
+      "stretches",
+      "extends",
+      "sub",
+      "follows",
+      "buildslpon"
+    ],
+    "correctAnswer": "extends",
+    "explanation": "The correct answer is extends."
+  },
+  {
+    "id": 176,
+    "section": "Angular",
+    "question": "We need to tell AngularJS what part of our HTML page contains the AngularJS app. You do so by adding the . . . . attribute to the root HTML element of the AngularJS app.",
+    "options": [
+      "ng-app",
+      "ag-app",
+      "js-app",
+      "aj-app"
+    ],
+    "correctAnswer": "ng-app",
+    "explanation": "The correct answer is ng-app."
+  },
+  {
+    "id": 177,
+    "section": "Angular",
+    "question": "AngularJS can show or hide HTML depending on the state of data in the model. You do so using a set of AngularJS directives such as . . . . . which are created specifically for that purpose.",
+    "options": [
+      "ng-shown, ng-hidden",
+      "ng-show, ng-hide",
+      "nt-show, nt-hide",
+      "ng-shows, ng-hides"
+    ],
+    "correctAnswer": "ng-show, ng-hide",
+    "explanation": "The correct answer is ng-show, ng-hide."
+  },
+  {
+    "id": 178,
+    "section": "Angular",
+    "question": "EventEmitter class's simple interface, which basically encompass two methods . . . . . . . can therefore be used to trigger custom events and listen to events as well, both synchronously or asynchronously.",
+    "options": [
+      "exit()",
+      "superscript()",
+      "subscribe()",
+      "emit()"
+    ],
+    "correctAnswer": "subscribe()",
+    "explanation": "The correct answer is subscribe()."
+  },
+  {
+    "id": 179,
+    "section": "Angular",
+    "question": "The directive substitutes the normal href property and makes it easier to work with route links in Angular 2. Which directive is used to navigate between routes?",
+    "options": [
+      "RouterLinks",
+      "RouterLinking",
+      "RouterLink",
+      "RouterLing"
+    ],
+    "correctAnswer": "RouterLink",
+    "explanation": "The correct answer is RouterLink."
+  },
+  {
+    "id": 180,
+    "section": "Angular",
+    "question": "Three main components of Routing include which of the following?",
+    "options": [
+      "RouteObject",
+      "RouterOutlet",
+      "RouterLink",
+      "Routes"
+    ],
+    "correctAnswer": "RouterOutlet",
+    "explanation": "The correct answer is RouterOutlet."
+  }
+]
