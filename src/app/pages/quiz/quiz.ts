@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Quiz as QuizService } from '../../services/quiz';
-import { Observable, map } from 'rxjs';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   standalone: true,
@@ -13,69 +13,102 @@ import { Observable, map } from 'rxjs';
 })
 export class Quiz implements OnDestroy {
 
-  questions$!: Observable<any[]>;
   questions: any[] = [];
 
   section = '';
+
+  quizType = '';
+
   round = '1';
 
   batch = 1;
+
   batchSize = 60;
 
   totalBatches = 0;
+
   allQuestionsCount = 0;
 
-  // ✅ TOTAL QUESTIONS IN CURRENT SECTION
   sectionQuestionCount = 0;
 
   answers: any[] = [];
 
   userAnswers: { [index: number]: string } = {};
+
   submittedMap: { [index: number]: boolean } = {};
 
   constructor(
     private quizService: QuizService,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private cdr: ChangeDetectorRef
   ) {}
 
-  // SHUFFLE
+  // SHUFFLE ARRAY
   shuffleArray(arr: any[]) {
-    return arr
-      .map(v => ({ v, r: Math.random() }))
+
+    return [...arr]
+      .map(v => ({
+        v,
+        r: Math.random()
+      }))
       .sort((a, b) => a.r - b.r)
       .map(x => x.v);
   }
 
   ngOnInit() {
 
-    this.route.paramMap.subscribe(params => {
-      this.section = params.get('section') || '';
-    });
+  this.route.params.subscribe(params => {
 
-    this.route.queryParamMap.subscribe(query => {
+    // QUIZ TYPE
+    this.quizType =
+      params['quizType'] || 'frontend';
 
-      this.round = query.get('round') || '1';
-      this.batch = Number(query.get('batch') || 1);
+    // SECTION
+    this.section =
+      params['section'] || '';
 
+    // QUERY PARAMS
+    this.route.queryParams.subscribe(query => {
+
+      this.round =
+        query['round'] || '1';
+
+      this.batch = Number(
+        query['batch'] || 1
+      );
+
+      // LOAD QUESTIONS
       this.loadQuestions();
     });
-  }
+  });
+}
 
   // LOAD QUESTIONS
-  loadQuestions() {
+ // LOAD QUESTIONS
+loadQuestions() {
 
-    this.questions$ = this.quizService.getQuestions().pipe(
-      map((data: any[]) => {
+  this.questions = [];
+
+  this.quizService
+    .getQuestions(this.quizType)
+    .subscribe({
+
+      next: (data: any[]) => {
 
         let filtered = data.filter(
-          q => q.section.toLowerCase() === this.section.toLowerCase()
+          q =>
+            q?.section &&
+            q.section.toLowerCase().trim() ===
+            this.section.toLowerCase().trim()
         );
 
         // TOTAL QUESTIONS
-        this.allQuestionsCount = filtered.length;
+        this.allQuestionsCount =
+          filtered.length;
 
-        this.sectionQuestionCount = filtered.length;
+        this.sectionQuestionCount =
+          filtered.length;
 
         // TOTAL BATCHES
         this.totalBatches = Math.ceil(
@@ -83,37 +116,81 @@ export class Quiz implements OnDestroy {
         );
 
         // APPLY BATCH
-        const start = (this.batch - 1) * this.batchSize;
+        const start =
+          (this.batch - 1) * this.batchSize;
 
-        const end = start + this.batchSize;
+        const end =
+          start + this.batchSize;
 
         filtered = filtered.slice(start, end);
 
-        // RANDOM ROUND
+        // ROUND 2 SHUFFLE
         if (this.round === '2') {
 
-          filtered = this.shuffleArray(filtered).map(q => ({
-            ...q,
-            options: this.shuffleArray(q.options)
-          }));
+          filtered =
+            this.shuffleArray(filtered).map(q => ({
+
+              ...q,
+
+              options:
+                this.shuffleArray(q.options)
+
+            }));
         }
 
         // RESET
         this.userAnswers = {};
+
         this.submittedMap = {};
+
         this.answers = [];
 
+        // IMPORTANT
         this.questions = filtered;
+        
+        console.log('Loaded Questions:', this.questions);
+        this.cdr.detectChanges();
+        console.log(this.questions);
 
-        return filtered;
-      })
-    );
+      },
+      
+
+      error: (err) => {
+
+        console.log('ERROR:', err);
+      }
+    });
+}
+
+  // SHUFFLE BUTTON
+  shuffleQuestions() {
+
+    this.questions =
+      this.shuffleArray(this.questions).map(q => ({
+
+        ...q,
+
+        options:
+          this.shuffleArray(q.options)
+
+      }));
+
+    // RESET ANSWERS
+    this.userAnswers = {};
+
+    this.submittedMap = {};
+
+    this.answers = [];
   }
 
   // SELECT ANSWER
-  selectAnswer(index: number, opt: string, q: any) {
+  selectAnswer(
+    index: number,
+    opt: string,
+    q: any
+  ) {
 
-    // prevent changing answer
+    // PREVENT CHANGING
     if (this.submittedMap[index]) return;
 
     this.userAnswers[index] = opt;
@@ -121,37 +198,64 @@ export class Quiz implements OnDestroy {
     this.submittedMap[index] = true;
 
     this.answers[index] = {
+
       section: q.section,
+
       question: q.question,
+
       options: q.options,
+
       selected: opt,
+
       correct: q.correctAnswer,
-      isCorrect: opt === q.correctAnswer,
+
+      isCorrect:
+        opt === q.correctAnswer,
+
       explanation: q.explanation
     };
   }
 
   // ANSWER COUNT
   get answeredCount(): number {
-    return Object.keys(this.submittedMap).length;
+
+    return Object.keys(
+      this.submittedMap
+    ).length;
   }
 
   // HOME
   goToHome() {
+
     this.router.navigate(['/']);
+  }
+
+  // GO TO SECTIONS PAGE
+  goToSections() {
+
+    this.router.navigate([
+      '/sections',
+      this.quizType
+    ]);
   }
 
   // BATCH NAVIGATION
   goToBatch(batch: number) {
 
-    if (batch < 1 || batch > this.totalBatches) return;
+    if (
+      batch < 1 ||
+      batch > this.totalBatches
+    ) return;
 
     this.router.navigate([], {
+
       relativeTo: this.route,
+
       queryParams: {
         batch: batch,
         round: this.round
       },
+
       queryParamsHandling: 'merge'
     });
   }
@@ -159,20 +263,38 @@ export class Quiz implements OnDestroy {
   // FINISH QUIZ
   finishQuiz() {
 
-    const finalAnswers = this.answers.filter(a => a !== undefined);
+    const finalAnswers =
+      this.answers.filter(
+        a => a !== undefined
+      );
 
-    const hasNextBatch = this.batch < this.totalBatches;
+    const hasNextBatch =
+      this.batch < this.totalBatches;
 
     localStorage.setItem(
       'answers',
       JSON.stringify(finalAnswers)
     );
 
-    localStorage.setItem('round', this.round);
+    localStorage.setItem(
+      'round',
+      this.round
+    );
 
-    localStorage.setItem('batch', String(this.batch));
+    localStorage.setItem(
+      'batch',
+      String(this.batch)
+    );
 
-    localStorage.setItem('section', this.section);
+    localStorage.setItem(
+      'section',
+      this.section
+    );
+
+    localStorage.setItem(
+      'quizType',
+      this.quizType
+    );
 
     localStorage.setItem(
       'hasNextBatch',
@@ -180,13 +302,39 @@ export class Quiz implements OnDestroy {
     );
 
     this.router.navigate(['/result'], {
+
       state: {
+
         answers: finalAnswers,
+
         round: this.round,
+
         batch: this.batch,
+
         section: this.section,
+
+        quizType: this.quizType,
+
         hasNextBatch
       }
+    });
+  }
+
+  // SCROLL TO TOP
+  scrollToTop() {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // SCROLL TO BOTTOM
+  scrollToBottom() {
+
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth'
     });
   }
 

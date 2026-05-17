@@ -1,10 +1,19 @@
 <div class="quiz-topbar">
 
-  <button (click)="goToHome()">
+  <!-- HOME -->
+  <button
+    class="home-btn"
+    (click)="goToHome()"
+  >
     🏠 Home
   </button>
 
+  <!-- CENTER INFO -->
   <div class="topbar-info">
+
+    <span>
+      {{ quizType | uppercase }}
+    </span>
 
     <span>
       {{ section }}
@@ -14,15 +23,38 @@
       {{ sectionQuestionCount }} Questions
     </span>
 
-    <span>
-      Batch {{ batch }} / {{ totalBatches }}
-    </span>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="topbar-buttons">
+
+    <button
+      class="back-btn"
+      (click)="goToSections()"
+    >
+      ⬅ Back
+    </button>
+
+    <button
+      class="shuffle-btn"
+      (click)="shuffleQuestions()"
+    >
+      🔀 Shuffle
+    </button>
+
+    <button
+      class="bottom-btn"
+      (click)="scrollToBottom()"
+    >
+      ⬇ Bottom
+    </button>
 
   </div>
 
 </div>
 
-<div *ngIf="questions$ | async as questions; else loading">
+<!-- QUESTIONS -->
+<div *ngIf="questions && questions.length > 0; else loading">
 
   <!-- HEADER -->
   <div class="quiz-header">
@@ -40,23 +72,26 @@
 
     <div
       class="progress-fill"
-      [style.width.%]="(answeredCount / questions.length) * 100"
+      [style.width.%]="
+        (answeredCount / questions.length) * 100
+      "
     ></div>
 
   </div>
 
-  <!-- ALL QUESTIONS -->
+  <!-- QUESTION LIST -->
   <div
-    *ngFor="let q of questions; let i = index"
+    *ngFor="
+      let q of questions;
+      let i = index
+    "
     class="question-card"
   >
 
-    <!-- QUESTION NUMBER -->
     <div class="question-number">
       Question {{ i + 1 }}
     </div>
 
-    <!-- QUESTION -->
     <h3>{{ q.question }}</h3>
 
     <!-- OPTIONS -->
@@ -67,7 +102,9 @@
         (click)="selectAnswer(i, opt, q)"
         class="option"
 
-        [class.selected]="opt === userAnswers[i]"
+        [class.selected]="
+          opt === userAnswers[i]
+        "
 
         [class.correct]="
           submittedMap[i] &&
@@ -96,13 +133,15 @@
 
   </div>
 
-  <!-- FINISH BUTTON -->
+  <!-- FINISH -->
   <div class="finish-container">
 
     <button
       class="finish-btn"
       (click)="finishQuiz()"
-      [disabled]="answeredCount !== questions.length"
+      [disabled]="
+        answeredCount !== questions.length
+      "
     >
       Finish Quiz
     </button>
@@ -123,7 +162,10 @@
     </button>
 
     <button
-      *ngFor="let b of [].constructor(totalBatches); let i = index"
+      *ngFor="
+        let b of [].constructor(totalBatches);
+        let i = index
+      "
       (click)="goToBatch(i + 1)"
       [class.active]="batch === i + 1"
     >
@@ -139,8 +181,25 @@
 
   </div>
 
+  <!-- BACK TO TOP -->
+  <div class="scroll-top-container">
+
+    <button
+      class="scroll-top-btn"
+      (click)="scrollToTop()"
+    >
+      ⬆ Back To Top
+    </button>
+
+  </div>
+
 </div>
 
+<!-- LOADING -->
 <ng-template #loading>
-  <p>Loading questions...</p>
+
+  <div class="loading">
+    Loading questions...
+  </div>
+
 </ng-template>

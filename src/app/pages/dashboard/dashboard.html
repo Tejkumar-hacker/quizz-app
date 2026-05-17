@@ -1,23 +1,45 @@
-<h2 class="title">Front-End Topics</h2>
+<h2 class="title">Front-End</h2>
 
-<div *ngIf="sections$ | async as sections; else loading" class="grid">
+<div class="grid">
 
+  <!-- FRONTEND -->
   <div
-    *ngFor="let s of sections"
     class="card"
-    (click)="start(s.name)"
+    (click)="openFrontend()"
   >
 
     <div class="card-content">
 
-      <h3>{{ s.name }}</h3>
+      <h3>Class Room-MCQS</h3>
 
       <p class="question-count">
-        {{ s.total }} Questions
+        Front-End Questions
       </p>
 
       <p class="start-text">
-        Start Quiz →
+        Select Sections →
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- REFMOCK -->
+  <div
+    class="card"
+    (click)="openRefMock()"
+  >
+
+    <div class="card-content">
+
+      <h3>Ref-MCQS</h3>
+
+      <p class="question-count">
+        Mock Interview Questions
+      </p>
+
+      <p class="start-text">
+        Select Sections →
       </p>
 
     </div>
@@ -25,14 +47,3 @@
   </div>
 
 </div>
-
-<!-- ✅ TOTAL QUESTIONS -->
-<div class="overall-count">
-<strong>Total Questions Available: </strong>
-  <span class="totalq">{{ totalQuestions }}</span>
-
-</div>
-
-<ng-template #loading>
-  <p class="loading">Loading sections...</p>
-</ng-template>

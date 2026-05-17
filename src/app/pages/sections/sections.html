@@ -1,0 +1,58 @@
+<div class="topbar">
+
+  <button (click)="goHome()">
+    🏠 Home
+  </button>
+
+  <h2>
+    {{ quizType | uppercase }} Sections
+  </h2>
+
+</div>
+
+<div
+  *ngIf="sections$ | async as sections; else loading"
+  class="grid"
+>
+
+  <div
+    *ngFor="let s of sections"
+    class="card"
+    (click)="start(s.name)"
+  >
+
+    <div class="card-content">
+
+      <h3>{{ s.name }}</h3>
+
+      <p class="question-count">
+        {{ s.total }} Questions
+      </p>
+
+      <p class="start-text">
+        Start Quiz →
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="overall-count">
+
+  <strong>Total Questions:</strong>
+
+  <span class="totalq">
+    {{ totalQuestions }}
+  </span>
+
+</div>
+
+<ng-template #loading>
+
+  <p class="loading">
+    Loading Sections...
+  </p>
+
+</ng-template>

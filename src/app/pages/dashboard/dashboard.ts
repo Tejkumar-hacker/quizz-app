@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { Quiz } from '../../services/quiz';
-import { map, Observable } from 'rxjs';
 
 @Component({
   standalone: true,
@@ -13,44 +11,21 @@ import { map, Observable } from 'rxjs';
 })
 export class Dashboard {
 
-  sections$!: Observable<any[]>;
+  constructor(private router: Router) {}
 
-  totalQuestions = 0;
+  openFrontend() {
 
-  constructor(
-    private quiz: Quiz,
-    private router: Router
-  ) {}
-
-  ngOnInit() {
-
-    this.sections$ = this.quiz.getQuestions().pipe(
-
-      map((data: any[]) => {
-
-        // ✅ TOTAL OVERALL QUESTIONS
-        this.totalQuestions = data.length;
-
-        const grouped: any = {};
-
-        data.forEach(q => {
-
-          if (!grouped[q.section]) {
-            grouped[q.section] = 0;
-          }
-
-          grouped[q.section]++;
-        });
-
-        return Object.keys(grouped).map(section => ({
-          name: section,
-          total: grouped[section]
-        }));
-      })
-    );
+    this.router.navigate([
+      '/sections',
+      'frontend'
+    ]);
   }
 
-  start(section: string) {
-    this.router.navigate(['/quiz', section]);
+  openRefMock() {
+
+    this.router.navigate([
+      '/sections',
+      'refmock'
+    ]);
   }
 }

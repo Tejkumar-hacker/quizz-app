@@ -277,3 +277,121 @@
   font-size: 15px;
   font-weight: 500;
 }
+/* TOPBAR BUTTON GROUP */
+.topbar-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background: linear-gradient(
+    135deg,
+    #ef5350,
+    #e53935
+  ) !important;
+}
+
+.back-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #e53935,
+    #c62828
+  ) !important;
+}
+
+/* SHUFFLE BUTTON */
+.shuffle-btn {
+  background: linear-gradient(
+    135deg,
+    #7b1fa2,
+    #512da8
+  ) !important;
+}
+
+.shuffle-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #6a1b9a,
+    #4527a0
+  ) !important;
+}
+
+/* HOME BUTTON */
+.home-btn {
+  background: linear-gradient(
+    135deg,
+    #1976d2,
+    #0d47a1
+  ) !important;
+}
+
+.home-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #1565c0,
+    #08306b
+  ) !important;
+}
+
+/* SCROLL TO TOP */
+.scroll-top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.scroll-top-btn {
+
+  border: none;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #00897b,
+    #00695c
+  );
+
+  transition: 0.3s;
+}
+
+.scroll-top-btn:hover {
+
+  transform: translateY(-2px);
+
+  background: linear-gradient(
+    135deg,
+    #00796b,
+    #004d40
+  );
+}
+/* BOTTOM BUTTON */
+.bottom-btn {
+
+  background: linear-gradient(
+    135deg,
+    #ff9800,
+    #f57c00
+  ) !important;
+}
+
+.bottom-btn:hover {
+
+  background: linear-gradient(
+    135deg,
+    #fb8c00,
+    #ef6c00
+  ) !important;
+}
